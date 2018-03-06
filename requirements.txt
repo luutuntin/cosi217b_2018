@@ -1,0 +1,12 @@
+anaconda
+python-3.4
+networkx-2.1
+
+#jamr
+scala-2.11.2
+IllinoisNerExtended-2.7
+cdec-2014-06-15
+WordNet-3.0
+
+#amr_reader
+pygraphviz-1.3.1

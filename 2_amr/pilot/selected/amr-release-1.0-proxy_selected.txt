@@ -1,0 +1,1078 @@
+# ::id PROXY_AFP_ENG_20020422_0296.1 ::date 2013-05-29T14:28:56 ::snt-type date ::annotator LDC-AMR-14 ::preferred
+# ::snt 2002-04-22
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_1.txt
+(d / date-entity :year 2002 :month 4 :day 22)
+
+# ::id PROXY_AFP_ENG_20020422_0296.2 ::date 2013-05-29T14:29:31 ::snt-type country ::annotator LDC-AMR-14 ::preferred
+# ::snt Thailand (TH)
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_2.txt
+(c / country :name (n / name :op1 "Thailand"))
+
+# ::id PROXY_AFP_ENG_20020422_0296.3 ::date 2013-05-29T14:30:07 ::snt-type topic ::annotator LDC-AMR-14 ::preferred
+# ::snt International; economy; business
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_3.txt
+(a / and
+      :op1 (i / international)
+      :op2 (e / economy)
+      :op3 (b / business))
+
+# ::id PROXY_AFP_ENG_20020422_0296.4 ::date 2013-05-29T14:31:19 ::snt-type summary ::annotator LDC-AMR-14 ::preferred
+# ::snt Southeast Asian nations are collaborating with the European Union in the European Commission-ASEAN intellectual rights cooperation program in order to strengthen intellectual property rights in Southeast Asia with the goal of strengthening business and investor confidence.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_4.txt
+(c / collaborate-01
+      :ARG0 (n / nation
+            :location (w / world-region :name (n2 / name :op1 "Southeast" :op2 "Asia")))
+      :ARG1 (o / organization :name (n3 / name :op1 "European" :op2 "Union"))
+      :ARG2 (p / program
+            :topic (c2 / cooperate-01
+                  :ARG0 (o2 / organization :name (n4 / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o3 / organization :name (n5 / name :op1 "ASEAN"))
+                  :ARG2 (r / rights
+                        :mod (i / intellectual))))
+      :purpose (s / strengthen-01
+            :ARG1 (r2 / rights
+                  :mod (p2 / property
+                        :mod (i2 / intellectual)))
+            :location w
+            :purpose (s2 / strengthen-01
+                  :ARG1 (c3 / confidence
+                        :poss (a / and
+                              :op1 (b / business)
+                              :op2 (p3 / person
+                                    :ARG0-of (i3 / invest-01)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.5 ::date 2013-05-29T16:00:49 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European Union officials stated on April 22, 2002 that Southeast Asians would boost their trade and investment prospects by introducing stricter intellectual property rights.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_5.txt
+(s / state-01
+      :ARG0 (p4 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o2 / organization :name (n / name :op1 "European" :op2 "Union"))
+                  :ARG2 (o / official)))
+      :ARG1 (b / boost-01
+            :ARG0 (p / person
+                  :mod (w / world-region :name (n2 / name :op1 "Southeast" :op2 "Asia")))
+            :ARG1 (p2 / prospect
+                  :poss p
+                  :mod (t / trade-01)
+                  :mod (i / invest-01))
+            :manner (i2 / introduce-02
+                  :ARG0 p
+                  :ARG1 (r / rights
+                        :mod (p3 / property
+                              :mod (i3 / intellectual))
+                        :mod (s2 / strict
+                              :degree (m / more)))))
+      :time (d / date-entity :year 2002 :month 4 :day 22))
+
+# ::id PROXY_AFP_ENG_20020422_0296.6 ::date 2013-05-29T16:06:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European Union officers and the Association of Southeast Asian Nations started negotiating how to strengthen intellectual property rights.
+# ::save-date Wed Dec 11, 2013 ::file PROXY_AFP_ENG_20020422_0296_6.txt
+(s / start-01
+      :ARG0 (a / and
+            :op1 (o / officer
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (o2 / organization :name (n / name :op1 "European" :op2 "Union"))))
+            :op2 (o3 / organization :name (n2 / name :op1 "Association" :op2 "of" :op3 "Southeast" :op4 "Asian" :op5 "Nations")))
+      :ARG1 (n3 / negotiate-01
+            :ARG0 o
+            :ARG1 o3
+            :ARG2 (t / thing
+                  :manner-of (s2 / strengthen-01
+                        :ARG1 (e / entitle-01
+                              :ARG1 (p / property
+                                    :mod (i / intellectual)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.7 ::date 2013-05-29T16:15:17 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The negotiation began with a two-day workshop in Bangkok on April 22, 2002.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_7.txt
+(b / begin-01
+      :ARG1 (n / negotiate-01)
+      :ARG2 (w / workshop
+            :duration (t / temporal-quantity :quant 2
+                  :unit (d / day))
+            :location (c / city :name (n2 / name :op1 "Bangkok")))
+      :time (d2 / date-entity :year 2002 :month 4 :day 22))
+
+# ::id PROXY_AFP_ENG_20020422_0296.8 ::date 2013-05-29T16:18:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The negotiation was organized under the new European Commission-ASEAN intellectual property rights cooperation program.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_8.txt
+(o / organize-01
+      :ARG1 (n / negotiate-01)
+      :prep-under (p / program
+            :topic (c / cooperate-01
+                  :ARG0 (o2 / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o3 / organization :name (n3 / name :op1 "ASEAN"))
+                  :ARG2 (e / entitle-01
+                        :ARG1 (p2 / property
+                              :mod (i / intellectual))))
+            :mod (n4 / new)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.9 ::date 2013-05-29T16:24:40 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Head of the delegation of the European Commission in Bangkok Klauspeter schmallenbach stated that the ability to comply with intellectual property rights rules would help developing nations take part in global trade.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_9.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach")
+            :ARG0-of (h / head-01
+                  :ARG1 (d / delegation
+                        :part-of (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :location (c / city :name (n3 / name :op1 "Bangkok")))))
+      :ARG1 (h2 / help-01
+            :ARG0 (c3 / capable-41
+                  :ARG2 (c2 / comply-01
+                        :ARG0 (n4 / nation
+                              :ARG1-of (d2 / develop-02))
+                        :ARG1 (r / rule
+                              :topic (e / entitle-01
+                                    :ARG1 (p3 / property
+                                          :mod (i / intellectual))))))
+            :ARG1 (p4 / participate-01
+                  :ARG0 n4
+                  :ARG1 (t / trade-01
+                        :location (g / globe)))
+            :ARG2 n4))
+
+# ::id PROXY_AFP_ENG_20020422_0296.10 ::date 2013-05-29T16:38:22 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated intellectual property rights form one of the basic pillars upon which business and investor confidence are based.
+# ::save-date Fri Jan 24, 2014 ::file PROXY_AFP_ENG_20020422_0296_10.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (f / form-02
+            :ARG0 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :ARG1 (o / one
+                  :subset-of (p3 / pillar
+                        :mod (b / basic)
+                        :ARG2-of (b2 / base-02
+                              :ARG1 (c / confidence
+                                    :mod (b3 / business)
+                                    :mod (p4 / person
+                                          :ARG0-of (i2 / invest-01))))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.11 ::date 2013-05-29T16:52:40 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach also stated that the intellectual property rights for essential for any country's economic development.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_11.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (e / essential
+            :domain (e3 / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :purpose (d / develop-02
+                  :ARG1 (e2 / economy
+                        :poss (c / country
+                              :mod (a2 / any)))))
+      :mod (a / also))
+
+# ::id PROXY_AFP_ENG_20020422_0296.12 ::date 2013-05-29T16:56:45 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated that intellectual property rights may help boost European investment in Southeast Asia to pre-crisis levels.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_12.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (p2 / possible
+            :domain (h / help-01
+                  :ARG0 (e / entitle-01
+                        :ARG1 (p3 / property
+                              :mod (i / intellectual)))
+                  :ARG1 (b / boost-01
+                        :ARG1 (i2 / invest-01
+                              :ARG0 (c / continent :name (n2 / name :op1 "Europe"))
+                              :ARG2 (w / world-region :name (n3 / name :op1 "Southeast" :op2 "Asia")))
+                        :ARG4 (l / level
+                              :time (p4 / pre-crisis))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.13 ::date 2013-05-29T17:01:29 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European patents office President Ingo Kober said that it was vital that Southeast Asian Nations introduced proper legal and technical infrastructure to defend trademarks.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_13.txt
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :name (n2 / name :op1 "European" :op2 "Patent" :op3 "Office"))
+                  :ARG2 (p3 / president)))
+      :ARG1 (v / vital
+            :domain (i / introduce-02
+                  :ARG0 (n3 / nation
+                        :location (w / world-region :name (n4 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (a / and
+                        :op1 (i2 / infrastructure
+                              :mod (p2 / proper)
+                              :mod (l / legal))
+                        :op2 (i3 / infrastructure
+                              :mod (p4 / proper)
+                              :mod (t / technical)))
+                  :purpose (d / defend-01
+                        :ARG1 (t2 / trademark-01)))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.14 ::date 2013-05-29T17:08:08 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that intellectual property rights are currently developing in Southeast Asian nations.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_14.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (d / develop-02
+            :ARG1 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :time (c / current)
+            :location (n2 / nation
+                  :location (w / world-region :name (n3 / name :op1 "Southeast" :op2 "Asia")))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.15 ::date 2013-05-29T17:10:04 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated there is larger interest in intellectual property rights now than 20 or 30 years ago.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_15.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (i / interest-01
+            :ARG2 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i2 / intellectual)))
+            :mod (l / large
+                  :degree (m / more)
+                  :compared-to (b / before
+                        :op1 (n3 / now)
+                        :quant (o2 / or
+                              :op1 (t / temporal-quantity :quant 20
+                                    :unit (y / year))
+                              :op2 (t2 / temporal-quantity :quant 30
+                                    :unit (y2 / year)))))
+            :time (n2 / now)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.16 ::date 2013-05-29T17:17:02 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that some nations had stronger intellectual property rights than others.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_16.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (h / have-03
+            :ARG0 (n2 / nation
+                  :quant (s2 / some))
+            :ARG1 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual))
+                  :mod (s3 / strong
+                        :degree (m / more
+                              :compared-to (n3 / nation
+                                    :mod (o / other)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.17 ::date 2013-05-29T17:21:48 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober also stated that one should not tell the countries that are lagging in intellectual property rights that they are lagging in intellectual property rights.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_17.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (r / recommend-01 :polarity -
+            :ARG1 (t / tell-01
+                  :ARG0 (o / one)
+                  :ARG1 (l2 / lag-01
+                        :ARG0 c
+                        :topic e)
+                  :ARG2 (c / country
+                        :ARG0-of (l / lag-01
+                              :topic (e / entitle-01
+                                    :ARG1 (p2 / property
+                                          :mod (i / intellectual)))))))
+      :mod (a / also))
+
+# ::id PROXY_AFP_ENG_20020422_0296.18 ::date 2013-05-30T08:01:47 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Director General of Thailand's Department of intellectual property yanyong phuangranch stated that Southeast Asian nations had to work together to ensure trademarks were protected.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_18.txt
+(s / state-01
+      :ARG0 (p2 / person :name (n / name :op1 "Yanyong" :op2 "Phuangranch")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (g2 / government-organization :name (n2 / name :op1 "Department" :op2 "of" :op3 "Intellectual" :op4 "Property")
+                        :poss (c / country :name (n3 / name :op1 "Thailand")))
+                  :ARG2 (d / director
+                        :mod (g / general))))
+      :ARG1 (o / obligate-01
+            :ARG2 (w / work-01
+                  :ARG0 (n4 / nation
+                        :location (w2 / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (e / ensure-01
+                        :ARG0 n4
+                        :ARG1 (p / protect-01
+                              :ARG1 (t / trademark-01)))
+                  :ARG3 n4
+                  :mod (t2 / together))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.19 ::date 2013-05-30T08:12:43 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The European Commission-ASEAN intellectual property rights cooperation program fosters trade, investment and technology transfer between the European Union and Southeast Asian nations.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_19.txt
+(f / foster-01
+      :ARG0 (p / program
+            :topic (c / cooperate-01
+                  :ARG0 (o / organization :name (n / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o2 / organization :name (n2 / name :op1 "ASEAN"))
+                  :ARG2 (e / entitle-01
+                        :ARG1 (p2 / property
+                              :mod (i / intellectual)))))
+      :ARG1 (t / transfer-01
+            :ARG1 (a / and
+                  :op1 (t2 / trade-01)
+                  :op2 (i2 / invest-01)
+                  :op3 (t3 / technology))
+            :ARG2 (n4 / nation
+                  :location (w / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+            :ARG3 (o3 / organization :name (n3 / name :op1 "European" :op2 "Union"))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.20 ::date 2013-05-30T08:21:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated that the European Commission-ASEAN intellectual property rights cooperation program would help Southeast Asian Nations draw on European expertise in how to protect and enforce intellectual property rights in compliance with World Trade Organization rules.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_20.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (h / help-01
+            :ARG0 (p2 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e3 / entitle-01
+                              :ARG1 (p3 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (d / draw-02
+                  :ARG0 (n4 / nation
+                        :location (w / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (e / expert-41
+                        :ARG1 c2
+                        :ARG2 (t / thing
+                              :manner-of (a / and
+                                    :op1 (p4 / protect-01)
+                                    :op2 (e2 / enforce-01
+                                          :ARG1 e3)
+                                    :ARG0-of (c3 / comply-01
+                                          :ARG1 (r2 / rule
+                                                :poss (o3 / organization :name (n7 / name :op1 "World" :op2 "Trade" :op3 "Organization")))))))
+                  :ARG2 (c2 / continent :name (n6 / name :op1 "Europe")))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.21 ::date 2013-05-30T08:29:38 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt 50 experts in intellectual property rights attended the European Commission-ASEAN intellectual property rights cooperation program.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_21.txt
+(a / attend-01
+      :ARG0 (p / person :quant 50
+            :ARG1-of (e / expert-41
+                  :ARG2 (e2 / entitle-01
+                        :mod (p2 / property
+                              :mod (i / intellectual)))))
+      :ARG1 (p3 / program
+            :topic (c / cooperate-01
+                  :ARG0 (o / organization :name (n / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o2 / organization :name (n2 / name :op1 "ASEAN"))
+                  :ARG2 e2)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.22 ::date 2013-06-03T07:37:06 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that the European Commission-ASEAN intellectual property rights cooperation program is further proof of the growing importance of intellectual property rights protection to world trade.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_22.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (p2 / prove-01
+            :ARG0 (p3 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e / entitle-01
+                              :ARG1 (p4 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (g / grow-01
+                  :ARG1 (i2 / important
+                        :domain (p5 / protect-01
+                              :ARG0 e
+                              :ARG1 (t / trade-01
+                                    :ARG0 (w / world)))))
+            :mod (f / further)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.23 ::date 2013-06-03T07:47:28 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober also stated that the European Commission-ASEAN intellectual property rights cooperation program marks the latest stage in a successful initiative to develop effective systems for protecting patents, trademarks, designs, and copyrights in the region.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_23.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (m / mark-01
+            :ARG0 (p2 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e / entitle-01
+                              :ARG1 (p3 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (s2 / stage
+                  :frequency (l / late
+                        :degree (m2 / most))
+                  :part-of (i2 / initiative
+                        :mod (s3 / successful)
+                        :purpose (d / develop-02
+                              :ARG1 (s4 / system
+                                    :purpose (p4 / protect-01
+                                          :ARG1 (a / and
+                                                :op1 (p5 / patent-01)
+                                                :op2 (t / trademark-01)
+                                                :op3 (d2 / design-01)
+                                                :op4 (c2 / copyright-01))
+                                          :location (r2 / region))
+                                    :mod (e2 / effective))))))
+      :mod (a2 / also))
+
+# ::id PROXY_AFP_ENG_20021112_0467.1 ::date 2013-05-25T12:21:39 ::snt-type date ::annotator UCO-AMR-05 ::preferred
+# ::snt 2002-11-12
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_1.txt
+(d / date-entity :year 2002 :month 11 :day 12)
+
+# ::id PROXY_AFP_ENG_20021112_0467.2 ::date 2013-05-25T12:23:26 ::snt-type country ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzania (tz)
+# ::save-date Sat Jun 8, 2013 ::file PROXY_AFP_ENG_20021112_0467_2.txt
+(c2 / country :name (n / name :op1 "Tanzania"))
+
+# ::id PROXY_AFP_ENG_20021112_0467.3 ::date 2013-05-25T12:33:41 ::snt-type topic ::annotator UCO-AMR-05 ::preferred
+# ::snt International; health
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_3.txt
+(a / and
+      :op1 (i / international)
+      :op2 (h / health))
+
+# ::id PROXY_AFP_ENG_20021112_0467.4 ::date 2013-05-25T12:34:04 ::snt-type summary ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzanian Vice President Ali Mohamed Sheni said on November 12, 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_4.txt
+(s / say-01
+      :ARG0 (p2 / person :name (n / name :op1 "Ali" :op2 "Mohamed" :op3 "Sheni")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "Tanzania"))
+                  :ARG2 (p3 / president
+                        :mod (v / vice))))
+      :ARG1 (n3 / need-01
+            :ARG0 (c2 / continent :name (n4 / name :op1 "Africa"))
+            :ARG1 (f / forum
+                  :topic (h / health)
+                  :poss c2
+                  :purpose (c3 / create-01
+                        :ARG1 (p / priority
+                              :mod (r / research)
+                              :purpose (c4 / combat-01
+                                    :ARG1 (d2 / disease
+                                          :location c2)
+                                    :manner (e / effective))))
+                  :mod (o / own)))
+      :time (d / date-entity :month 11 :day 12 :year 2002))
+
+# ::id PROXY_AFP_ENG_20021112_0467.5 ::date 2013-05-25T12:36:37 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzanian Vice President Ali Mohamed Sheni said on November 12, 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_5.txt
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Ali" :op2 "Mohamed" :op3 "Sheni")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "Tanzania"))
+                  :ARG2 (p3 / president
+                        :mod (v / vice))))
+      :ARG1 (n3 / need-01
+            :ARG0 (c2 / continent :name (n4 / name :op1 "Africa"))
+            :ARG1 (f / forum
+                  :topic (h / health)
+                  :poss c2
+                  :purpose (c3 / create-01
+                        :ARG1 (p2 / priority
+                              :mod (r / research)
+                              :purpose (c4 / combat-01
+                                    :ARG1 (d2 / disease
+                                          :location c2)
+                                    :manner (e / effective))))
+                  :mod (o / own)))
+      :time (d / date-entity :year 2002 :month 11 :day 12))
+
+# ::id PROXY_AFP_ENG_20021112_0467.6 ::date 2013-05-25T12:39:47 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni stated that Africa will find it difficult to influence global research priorities in its favor without a forum.
+# ::save-date Wed Jul 24, 2013 ::file PROXY_AFP_ENG_20021112_0467_6.txt
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (f / find-02
+            :ARG0 (c / continent :name (n2 / name :op1 "Africa"))
+            :ARG1 (d / difficult
+                  :mod (i / influence-01
+                        :ARG1 (p2 / priority
+                              :mod (g / globe)
+                              :mod (r / research))
+                        :ARG2 (f2 / favor
+                              :poss c)
+                        :manner (w / with-forum :polarity -)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.7 ::date 2013-05-25T12:45:19 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt The continent lacks resources.
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_7.txt
+(l / lack-01
+      :ARG0 (c / continent)
+      :ARG1 (r / resource))
+
+# ::id PROXY_AFP_ENG_20021112_0467.8 ::date 2013-05-25T12:45:55 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni attended a four-day meeting to discuss global health at Arusha in northern Tanzania.
+# ::save-date Mon Dec 9, 2013 ::file PROXY_AFP_ENG_20021112_0467_8.txt
+(a / attend-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (m / meeting
+            :location (c / city :name (n2 / name :op1 "Arusha")
+                  :location (n4 / north
+                        :part-of (c2 / country :name (n3 / name :op1 "Tanzania"))))
+            :duration (t / temporal-quantity :quant 4
+                  :unit (d / day)))
+      :purpose (d2 / discuss-01
+            :ARG1 (h / health
+                  :mod (g / globe))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.9 ::date 2013-05-25T12:49:17 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni addressed more than 700 public health specialists from 100 countries.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20021112_0467_9.txt
+(a / address-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG2 (p3 / person
+            :ARG0-of (s2 / specialize-01
+                  :ARG1 (h / health
+                        :mod (p2 / public)))
+            :quant (m / more-than :op1 700)
+            :source (c / country :quant 100)))
+
+# ::id PROXY_AFP_ENG_20021112_0467.10 ::date 2013-05-25T12:52:32 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni told delegates at the Global Forum for Health Research's annual meeting that less than 10 percent of the global health research budget of 70 billion dollars went to Africa.
+# ::save-date Mon Dec 9, 2013 ::file PROXY_AFP_ENG_20021112_0467_10.txt
+(t / tell-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (g / go-01
+            :ARG1 (l2 / less-than
+                  :op1 (m5 / monetary-quantity
+                        :ARG2-of (i2 / include-91
+                              :ARG1 (m3 / monetary-quantity :quant 70000000000
+                                    :unit (d / dollar)
+                                    :ARG1-of (b2 / budget-01
+                                          :purpose (r2 / research-01
+                                                :ARG1 (h / health
+                                                      :mod (g2 / globe)))))
+                              :ARG3 (p2 / percentage-entity :value 10))))
+            :ARG4 (c / continent :name (n3 / name :op1 "Africa")))
+      :ARG2 (d3 / delegate)
+      :location (m / meet-03
+            :ARG0 (o / organization :name (n2 / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+            :frequency (r / rate-entity-91
+                  :ARG3 (t2 / temporal-quantity :quant 1
+                        :unit (y / year)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.11 ::date 2013-05-25T12:58:24 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Africa has 90 percent of the global diseases.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20021112_0467_11.txt
+(h / have-03
+      :ARG0 (c / continent :name (n / name :op1 "Africa"))
+      :ARG1 (d2 / disease
+            :quant (p / percentage-entity :value 90
+                  :ARG3-of (i2 / include-91
+                        :ARG1 d2
+                        :ARG2 (d / disease
+                              :mod (g / globe))))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.12 ::date 2013-05-25T13:01:57 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni said the formation of the Asian and Pacific Health Research Forum and the Latin American Health Research Forum are steps in the right direction.
+# ::save-date Sat Jun 8, 2013 ::file PROXY_AFP_ENG_20021112_0467_12.txt
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (f / form-01
+            :ARG1 (a / and
+                  :op1 (o / organization :name (n2 / name :op1 "Asian" :op2 "and" :op3 "Pacific" :op4 "Health" :op5 "Research" :op6 "Forum"))
+                  :op2 (o2 / organization :name (n3 / name :op1 "Latin" :op2 "American" :op3 "Health" :op4 "Research" :op5 "Forum")))
+            :mod (s2 / step-01
+                  :direction (r / right))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.13 ::date 2013-05-25T13:04:19 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Global Forum for Health Research Chairman Richard Feachem said it was unfair for poor countries to be allocated meager sums of research funding.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_13.txt
+(s / say-01
+      :ARG0 (p2 / person :name (n / name :op1 "Richard" :op2 "Feachem")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :name (n2 / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+                  :ARG2 (c / chairman)))
+      :ARG1 (u2 / unfair
+            :domain (a / allocate-01
+                  :ARG1 (s2 / sum
+                        :mod (m / meager)
+                        :ARG2-of (f2 / fund-01
+                              :ARG1 (r / research-01)))
+                  :ARG2 (c2 / country
+                        :mod (p / poor)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.14 ::date 2013-05-25T13:11:39 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Feachem said the majority of the poor are getting little health research funding compared to the wealthy few.
+# ::save-date Thu Jan 23, 2014 ::file PROXY_AFP_ENG_20021112_0467_14.txt
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Feachem"))
+      :ARG1 (g / get-01
+            :ARG0 (m / majority
+                  :ARG3-of (i / include-91
+                        :ARG2 (p2 / person
+                              :mod (p3 / poor))))
+            :ARG1 (f / fund-01
+                  :ARG1 (r / research-01
+                        :ARG1 (h / health))
+                  :ARG2 (m2 / monetary-quantity
+                        :mod (l / little)
+                        :ARG1-of (c / compare-01
+                              :ARG2 (m3 / monetary-quantity
+                                    :ARG2-of (f3 / fund-01
+                                          :ARG1 r
+                                          :beneficiary (p4 / person
+                                                :mod (w / wealth)
+                                                :quant (f2 / few)))))))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.15 ::date 2013-05-25T13:16:28 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt The Global Forum for Health Research is an independent, international foundation funded by the Rockefeller Foundation, the World Health Organization, the World Bank and the Governments of Canada, Denmark, Netherlands, Norway, Sweden and Switzerland.
+# ::save-date Wed Jul 24, 2013 ::file PROXY_AFP_ENG_20021112_0467_15.txt
+(f3 / foundation
+      :domain (o / organization :name (n / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+      :mod (i2 / international)
+      :ARG1-of (f2 / fund-01
+            :ARG0 (a / and
+                  :op1 (o2 / organization :name (n2 / name :op1 "Rockefeller" :op2 "Foundation"))
+                  :op2 (o3 / organization :name (n3 / name :op1 "World" :op2 "Health" :op3 "Organization"))
+                  :op3 (o4 / organization :name (n4 / name :op1 "World" :op2 "Bank"))
+                  :op4 (g / government-organzation
+                        :ARG0-of (g2 / govern-01
+                              :ARG1 (c / country :name (n5 / name :op1 "Canada"))))
+                  :op5 (g3 / government-organization
+                        :ARG0-of (g4 / govern-01
+                              :ARG1 (c2 / country :name (n6 / name :op1 "Denmark"))))
+                  :op6 (g5 / government-organization
+                        :ARG0-of (g6 / govern-01
+                              :ARG1 (c3 / country :name (n7 / name :op1 "Netherlands"))))
+                  :op7 (g7 / government-organization
+                        :ARG0-of (g8 / govern-01
+                              :ARG1 (c4 / country :name (n8 / name :op1 "Norway"))))
+                  :op8 (g9 / government-organization
+                        :ARG0-of (g10 / govern-01
+                              :ARG1 (c5 / country :name (n9 / name :op1 "Sweden"))))
+                  :op9 (g11 / government-organization
+                        :ARG0-of (g12 / govern-01
+                              :ARG1 (c6 / country :name (n10 / name :op1 "Switzerland"))))))
+      :ARG0-of (d / depend-01 :polarity -))
+
+# ::id PROXY_AFP_ENG_20040329_0408.1 ::date 2013-05-14T02:50:18 ::snt-type date ::annotator SDL-AMR-09 ::preferred
+# ::snt 2004-03-29
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_1.txt
+(d / date-entity
+  :month 3
+  :day 29
+  :year 2004)
+
+# ::id PROXY_AFP_ENG_20040329_0408.2 ::date 2013-05-14T03:15:38 ::snt-type country ::annotator SDL-AMR-09 ::preferred
+# ::snt Korea, Republic of (KR); China (CN)
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_2.txt
+(a / and
+  :op1 (c / country
+         :name (n / name
+                 :op1 "Republic"
+                 :op2 "of"
+                 :op3 "Korea"))
+  :op2 (c2 / country
+         :name (n2 / name
+                 :op1 "China")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.3 ::date 2013-05-14T03:12:09 ::snt-type topic ::annotator SDL-AMR-09 ::preferred
+# ::snt International; business; technology
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_3.txt
+(a / and
+  :op1 (i / international)
+  :op2 (b / business)
+  :op3 (t / technology))
+
+# ::id PROXY_AFP_ENG_20040329_0408.4 ::date 2013-05-24T01:26:49 ::snt-type summary ::annotator SDL-AMR-09 ::preferred
+# ::snt French energy and transport company Alstom may sign a contract to build a high-speed rail link between Beijing and Shanghai.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_4.txt
+(p / possible
+  :domain (s / sign-02
+            :ARG0 (c / company
+                    :name (n / name
+                            :op1 "Alstom")
+                    :mod (c3 / country
+                           :name (n2 / name
+                                   :op1 "France"))
+                    :mod (e / energy)
+                    :mod (t / transport-01))
+            :ARG1 (c2 / contract-02
+                    :ARG1 (b / build-01
+                            :ARG0 c
+                            :ARG1 (r / rail
+                                    :mod (s2 / speed
+                                           :mod (h / high))
+                                    :ARG2-of (l / link-01
+                                               :ARG1 (a / and
+                                                       :op1 (c4 / city
+                                                              :name (n3 / name
+                                                                      :op1 "Beijing"))
+                                                       :op2 (c5 / city
+                                                              :name (n4 / name
+                                                                      :op1 "Shanghai")))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.5 ::date 2013-05-15T03:35:57 ::snt-type summary ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is in competition with Japanese and German countries for the contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_5.txt
+(c / compete-01
+  :ARG0 (c2 / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (a / and
+          :op1 (c3 / country
+                 :name (n2 / name
+                         :op1 "Japan"))
+          :op2 (c4 / country
+                 :name (n3 / name
+                         :op1 "Germany")))
+  :ARG2 (c5 / contract-02))
+
+# ::id PROXY_AFP_ENG_20040329_0408.6 ::date 2013-05-15T03:45:21 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt 29 March 2004 French energy and transport company Alstom president Patrick Kron announced --
+# ::save-date Fri Sep 13, 2013 ::file PROXY_AFP_ENG_20040329_0408_6.txt
+(a / announce-01
+      :ARG0 (p2 / person :name (n / name :op1 "Patrick" :op2 "Kron")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / company :name (n2 / name :op1 "Alstom")
+                        :mod (e / energy)
+                        :mod (c2 / country :name (n3 / name :op1 "France"))
+                        :mod (t / transport-01))
+                  :ARG2 (p / president)))
+      :time (d / date-entity :month 3 :day 29 :year 2004))
+
+# ::id PROXY_AFP_ENG_20040329_0408.7 ::date 2013-05-24T01:39:59 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom may sign a contract to build a high-speed rail link between Beijing and Shanghai.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_7.txt
+(p / possible
+  :domain (s / sign-02
+            :ARG0 (c / company
+                    :name (n / name
+                            :op1 "Alstom"))
+            :ARG1 (c2 / contract-02
+                    :ARG1 (b / build-01
+                            :ARG0 c
+                            :ARG1 (r / rail
+                                    :mod (s2 / speed
+                                           :mod (h2 / high))
+                                    :ARG2-of (l / link-01
+                                               :ARG1 (a / and
+                                                       :op1 (c3 / city
+                                                              :name (n2 / name
+                                                                      :op1 "Beijing"))
+                                                       :op2 (c4 / city
+                                                              :name (n3 / name
+                                                                      :op1 "Shanghai")))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.8 ::date 2013-05-15T04:06:47 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is competing against Japanese company Shinkansen and German company ice for the contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_8.txt
+(c / compete-01
+  :ARG0 (c2 / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (a / and
+          :op1 (c3 / company
+                 :name (n2 / name
+                         :op1 "Shinkansen")
+                 :mod (c5 / country
+                        :name (n4 / name
+                                :op1 "Japan")))
+          :op2 (c4 / company
+                 :name (n3 / name
+                         :op1 "Ice")
+                 :mod (c6 / country
+                        :name (n5 / name
+                                :op1 "Germany"))))
+  :ARG2 (c7 / contract-02))
+
+# ::id PROXY_AFP_ENG_20040329_0408.9 ::date 2013-05-15T04:12:02 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt The tender has not been announced by Chinese authorities.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_9.txt
+(a / announce-01
+  :ARG0 (a2 / authority
+          :mod (c / country
+                 :name (n / name
+                         :op1 "China")))
+  :ARG1 (t / tender-01)
+  :polarity -)
+
+# ::id PROXY_AFP_ENG_20040329_0408.10 ::date 2013-05-15T04:18:06 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom seeks to develop further business in Asia.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_10.txt
+(s / seek-01
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (d / develop-02
+          :ARG0 c
+          :ARG1 (b / business
+                  :mod (f / further))
+          :location (c2 / continent
+                      :name (n2 / name
+                              :op1 "Asia"))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.11 ::date 2013-05-24T01:50:43 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is well-placed to receive the Beijing-Shanghai rail link contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_11.txt
+(p / place-01
+  :ARG1 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :manner (g / good)
+  :purpose (r / receive-01
+             :ARG0 c
+             :ARG1 (c2 / contract-02
+                     :ARG1 (r3 / rail
+                             :ARG2-of (l / link-01
+                                        :ARG1 (a / and
+                                                :op1 (c3 / city
+                                                       :name (n2 / name
+                                                               :op1 "Beijing"))
+                                                :op2 (c4 / city
+                                                       :name (n3 / name
+                                                               :op1 "Shanghai"))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.12 ::date 2013-05-24T02:00:13 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt 23 March 2004 the high-speed ktx train launched in Seoul.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_12.txt
+(l / launch-01
+  :ARG1 (t2 / train
+          :name (n2 / name
+                  :op1 "KTX")
+          :mod (s / speed
+                 :mod (h / high)))
+  :time (d / date-entity
+          :month 3
+          :day 23
+          :year 2004)
+  :location (c / city
+              :name (n / name
+                      :op1 "Seoul")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.13 ::date 2013-05-26T03:15:06 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The ktx was manufactured in South Korea using technology transferred by Alstom.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_13.txt
+(m / manufacture-01
+  :ARG1 (r / railway-line
+          :name (n / name
+                  :op1 "KTX"))
+  :location (c / country
+              :name (n2 / name
+                      :op1 "South"
+                      :op2 "Korea"))
+  :ARG2-of (u / use-01
+             :ARG1 (t2 / technology
+                     :ARG1-of (t3 / transfer-01
+                                :ARG0 (c2 / company
+                                        :name (n3 / name
+                                                :op1 "Alstom"))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.14 ::date 2013-05-14T03:19:02 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Kron stated --
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_14.txt
+(s / state-01
+  :ARG0 (p / person
+          :name (n / name
+                  :op1 "Kron")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.15 ::date 2013-05-14T13:12:08 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is willing to negotiate a technology transfer deal in China.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_15.txt
+(w / will-02
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (n2 / negotiate-01
+          :ARG2 (d / deal-01
+                  :ARG1 (t / transfer-01
+                          :ARG1 (t2 / technology)
+                          :ARG2 (c2 / country
+                                  :name (n3 / name
+                                          :op1 "China"))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.16 ::date 2013-05-26T03:29:31 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt A similar technology transfer deal was signed in 1994 for the ktx.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_16.txt
+(s / sign-02
+  :ARG1 (d / deal-01
+          :ARG1 (t2 / transfer-01
+                  :ARG1 (t3 / technology))
+          :ARG1-of (r / resemble-01))
+  :time (d2 / date-entity
+          :year 1994)
+  :purpose (r2 / railway-line
+             :name (n / name
+                     :op1 "KTX")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.17 ::date 2013-05-26T03:36:51 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Technology transfer was Alstom's entry-ticket to Asia.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_17.txt
+(t3 / ticket
+  :instrument-of (e / enter-01
+                   :ARG0 (c / company
+                           :name (n / name
+                                   :op1 "Alstom"))
+                   :ARG1 (c2 / continent
+                           :name (n2 / name
+                                   :op1 "Asia")))
+  :domain (t / transfer-01
+            :ARG1 (t2 / technology)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.18 ::date 2013-05-26T05:26:39 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom wishes to develop local partnerships to reduce costs.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_18.txt
+(w / wish-01
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (d / develop-02
+          :ARG0 c
+          :ARG1 (p / partner-01
+                  :ARG0 c
+                  :mod (l / local))
+          :ARG4 (r / reduce-01
+                  :ARG1 (t / thing
+                          :ARG2-of (c2 / cost-01)))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.19 ::date 2013-05-26T05:51:11 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Beijing-Shanghai rail link represents China's potential for development in transport including freight, subways and energy.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_19.txt
+(r / represent-01
+  :ARG0 (r2 / rail
+          :ARG2-of (l / link-01
+                     :ARG1 (a / and
+                             :op1 (c / city
+                                    :name (n / name
+                                            :op1 "Beijing"))
+                             :op2 (c2 / city
+                                    :name (n2 / name
+                                            :op1 "Shanghai")))))
+  :ARG1 (p2 / potential
+          :prep-for (d / develop-02
+                      :ARG1 (t / transport-01)
+                      :ARG2-of (i / include-01
+                                 :ARG1 (a2 / and
+                                         :op1 (f / freight)
+                                         :op2 (s / subway)
+                                         :op3 (e / energy))))
+          :poss (c3 / country
+                  :name (n3 / name
+                          :op1 "China"))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.20 ::date 2013-05-26T06:02:02 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt In 2003 China ordered as much energy equipment as the rest of the world in total.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_20.txt
+(o / order-02
+  :ARG0 (c / country
+          :name (n / name
+                  :op1 "China"))
+  :ARG1 (e / equipment
+          :mod (e2 / energy)
+          :ARG1-of (e4 / equal-01
+                     :ARG2 (e3 / equipment
+                             :ARG1-of (o2 / order-02
+                                        :ARG0 (r / rest
+                                                :part-of (w / world))))))
+  :time (d / date-entity
+          :year 2003))
+
+# ::id PROXY_AFP_ENG_20040329_0408.21 ::date 2013-05-26T08:06:24 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The Beijing-Shanghai rail link would be 1,000-kilometres (620-miles) long.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_21.txt
+(e / equal-01
+  :ARG1 (l2 / length
+          :poss (r2 / rail
+                  :ARG2-of (l3 / link-01
+                             :ARG1 (a / and
+                                     :op1 (c / city
+                                            :name (n2 / name
+                                                    :op1 "Beijing"))
+                                     :op2 (c2 / city
+                                            :name (n3 / name
+                                                    :op1 "Shanghai"))))))
+  :ARG2 (d / distance-quantity
+          :quant 1000
+          :unit (k / kilometer)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.22 ::date 2013-05-26T08:37:28 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Building the Beijing-Shanghai rail link would cost an estimated 100 million yuan (12 million dollars).
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_22.txt
+(c3 / cost-01
+  :ARG1 (b / build-01
+          :ARG1 (r / rail
+                  :ARG2-of (l / link-01
+                             :ARG1 (a / and
+                                     :op1 (c / city
+                                            :name (n / name
+                                                    :op1 "Beijing"))
+                                     :op2 (c2 / city
+                                            :name (n2 / name
+                                                    :op1 "Shanghai"))))))
+  :ARG2 (m / monetary-quantity
+          :quant 100000000
+          :unit (y / yuan)
+          :ARG2-of (e / estimate-01)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.23 ::date 2013-05-26T10:39:43 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The Beijing-Shanghai rail link would reduce traveling time from Beijing to Shanghai from 12 to 5 hours.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_23.txt
+(r / reduce-01
+  :ARG0 (r3 / rail
+          :ARG2-of (l / link-01
+                     :ARG1 (a / and
+                             :op1 (c3 / city
+                                    :name (n2 / name
+                                            :op1 "Beijing"))
+                             :op2 (c2 / city
+                                    :name (n3 / name
+                                            :op1 "Shanghai")))))
+  :ARG1 (t2 / time
+          :duration-of (t / travel-01
+                         :ARG1 c2
+                         :source c3))
+  :ARG3 (t3 / temporal-quantity
+          :quant 12
+          :unit (h / hour))
+  :ARG4 (t4 / temporal-quantity
+          :quant 5
+          :unit (h2 / hour)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.24 ::date 2013-05-26T10:59:42 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is involved in large-scale infrastructure projects the Three Gorges Dam in southwest China and Daya Bay Nuclear thermal power station near Hong Kong.
+# ::save-date Wed Sep 18, 2013 ::file PROXY_AFP_ENG_20040329_0408_24.txt
+(i / involve-01
+      :ARG1 (c / company :name (n / name :op1 "Alstom"))
+      :ARG2 (p / project
+            :topic (i2 / infrastructure)
+            :mod (s3 / scale
+                  :mod (l / large))
+            :example (a2 / and
+                  :op1 (f / facility :name (n7 / name :op1 "Three" :op2 "Gorges" :op3 "Dam")
+                        :location (c2 / country :name (n4 / name :op1 "China")
+                              :mod (s4 / southwest)))
+                  :op2 (f2 / facility :name (n8 / name :op1 "Daya" :op2 "Bay" :op3 "Nuclear" :op4 "Thermal" :op5 "Power" :op6 "Station")
+                        :location (n5 / near
+                              :op1 (c3 / city :name (n6 / name :op1 "Hong" :op2 "Kong")))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.25 ::date 2013-05-14T02:53:13 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Beijing is China's capital.
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_25.txt
+(c / capital
+  :poss (c2 / country
+          :name (n / name
+                  :op1 "China"))
+  :domain (c3 / city
+            :name (n2 / name
+                    :op1 "Beijing")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.26 ::date 2013-05-14T02:56:45 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Shanghai is China's business hub.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_26.txt
+(h / hub
+  :mod (b / business)
+  :poss (c / country
+          :name (n / name
+                  :op1 "China"))
+  :domain (c2 / city
+            :name (n2 / name
+                    :op1 "Shanghai")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.27 ::date 2013-05-14T02:58:20 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Shanghai is located on China's eastern coast.
+# ::save-date Fri Sep 20, 2013 ::file PROXY_AFP_ENG_20040329_0408_27.txt
+(b / be-located-at-91
+  :ARG1 (c3 / city
+          :name (n2 / name
+                  :op1 "Shanghai"))
+  :ARG2 (c / coast
+          :mod (e / east)
+          :part-of (c2 / country
+                     :name (n / name
+                             :op1 "China"))))
+

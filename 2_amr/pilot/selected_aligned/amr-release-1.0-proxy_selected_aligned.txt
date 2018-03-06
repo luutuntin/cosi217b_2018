@@ -1,0 +1,3414 @@
+# ::id PROXY_AFP_ENG_20020422_0296.1 ::date 2013-05-29T14:28:56 ::snt-type date ::annotator LDC-AMR-14 ::preferred
+# ::snt 2002-04-22
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_1.txt
+# ::tok 2002-04-22
+# ::alignments 0-1|0+0.0+0.1+0.2 ::annotator Aligner v.03 ::date 2018-02-26T00:29:50.978
+# ::node	0	date-entity	0-1
+# ::node	0.0	2002	0-1
+# ::node	0.1	4	0-1
+# ::node	0.2	22	0-1
+# ::root	0	date-entity
+# ::edge	date-entity	day	22	0	0.2	
+# ::edge	date-entity	month	4	0	0.1	
+# ::edge	date-entity	year	2002	0	0.0	
+(d / date-entity :year 2002 :month 4 :day 22)
+
+# ::id PROXY_AFP_ENG_20020422_0296.2 ::date 2013-05-29T14:29:31 ::snt-type country ::annotator LDC-AMR-14 ::preferred
+# ::snt Thailand (TH)
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_2.txt
+# ::tok Thailand ( TH )
+# ::alignments 0-1|0+0.0+0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.078
+# ::node	0	country	0-1
+# ::node	0.0	name	0-1
+# ::node	0.0.0	"Thailand"	0-1
+# ::root	0	country
+# ::edge	country	name	name	0	0.0	
+# ::edge	name	op1	"Thailand"	0.0	0.0.0	
+(c / country :name (n / name :op1 "Thailand"))
+
+# ::id PROXY_AFP_ENG_20020422_0296.3 ::date 2013-05-29T14:30:07 ::snt-type topic ::annotator LDC-AMR-14 ::preferred
+# ::snt International; economy; business
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_3.txt
+# ::tok International ; economy ; business
+# ::alignments 1-2|0 4-5|0.2 2-3|0.1 0-1|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.136
+# ::node	0	and	1-2
+# ::node	0.0	international	0-1
+# ::node	0.1	economy	2-3
+# ::node	0.2	business	4-5
+# ::root	0	and
+# ::edge	and	op1	international	0	0.0	
+# ::edge	and	op2	economy	0	0.1	
+# ::edge	and	op3	business	0	0.2	
+(a / and
+      :op1 (i / international)
+      :op2 (e / economy)
+      :op3 (b / business))
+
+# ::id PROXY_AFP_ENG_20020422_0296.4 ::date 2013-05-29T14:31:19 ::snt-type summary ::annotator LDC-AMR-14 ::preferred
+# ::snt Southeast Asian nations are collaborating with the European Union in the European Commission-ASEAN intellectual rights cooperation program in order to strengthen intellectual property rights in Southeast Asia with the goal of strengthening business and investor confidence.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_4.txt
+# ::tok Southeast Asian nations are collaborating with the European Union in the European Commission - ASEAN intellectual rights cooperation program in order to strengthen intellectual property rights in Southeast Asia with the goal of strengthening business and investor confidence .
+# ::alignments 27-29|0.0.0+0.0.0.0+0.0.0.0.0+0.0.0.0.1 7-9|0.1+0.1.0+0.1.0.0+0.1.0.1 11-13|0.2.0.0+0.2.0.0.0+0.2.0.0.0.0+0.2.0.0.0.1 14-15|0.2.0.1+0.2.0.1.0+0.2.0.1.0.0 4-5|0 22-23|0.3 33-34|0.3.1 37-38|0.3.1.0 35-36|0.3.1.0.0 34-35|0.3.1.0.0.0 16-17|0.3.0 24-25|0.3.0.0 15-16|0.3.0.0.0 18-19|0.2 25-26|0.2.0.2 23-24|0.2.0.2.0 2-3|0.0 36-37|0.3.1.0.0.1+0.3.1.0.0.1.0 17-18|0.2.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.421
+# ::node	0	collaborate-01	4-5
+# ::node	0.0	nation	2-3
+# ::node	0.0.0	world-region	27-29
+# ::node	0.0.0.0	name	27-29
+# ::node	0.0.0.0.0	"Southeast"	27-29
+# ::node	0.0.0.0.1	"Asia"	27-29
+# ::node	0.1	organization	7-9
+# ::node	0.1.0	name	7-9
+# ::node	0.1.0.0	"European"	7-9
+# ::node	0.1.0.1	"Union"	7-9
+# ::node	0.2	program	18-19
+# ::node	0.2.0	cooperate-01	17-18
+# ::node	0.2.0.0	organization	11-13
+# ::node	0.2.0.0.0	name	11-13
+# ::node	0.2.0.0.0.0	"European"	11-13
+# ::node	0.2.0.0.0.1	"Commission"	11-13
+# ::node	0.2.0.1	organization	14-15
+# ::node	0.2.0.1.0	name	14-15
+# ::node	0.2.0.1.0.0	"ASEAN"	14-15
+# ::node	0.2.0.2	rights	25-26
+# ::node	0.2.0.2.0	intellectual	23-24
+# ::node	0.3	strengthen-01	22-23
+# ::node	0.3.0	rights	16-17
+# ::node	0.3.0.0	property	24-25
+# ::node	0.3.0.0.0	intellectual	15-16
+# ::node	0.3.1	strengthen-01	33-34
+# ::node	0.3.1.0	confidence	37-38
+# ::node	0.3.1.0.0	and	35-36
+# ::node	0.3.1.0.0.0	business	34-35
+# ::node	0.3.1.0.0.1	person	36-37
+# ::node	0.3.1.0.0.1.0	invest-01	36-37
+# ::root	0	collaborate-01
+# ::edge	and	op1	business	0.3.1.0.0	0.3.1.0.0.0	
+# ::edge	and	op2	person	0.3.1.0.0	0.3.1.0.0.1	
+# ::edge	collaborate-01	ARG0	nation	0	0.0	
+# ::edge	collaborate-01	ARG1	organization	0	0.1	
+# ::edge	collaborate-01	ARG2	program	0	0.2	
+# ::edge	collaborate-01	purpose	strengthen-01	0	0.3	
+# ::edge	confidence	poss	and	0.3.1.0	0.3.1.0.0	
+# ::edge	cooperate-01	ARG0	organization	0.2.0	0.2.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.2.0	0.2.0.1	
+# ::edge	cooperate-01	ARG2	rights	0.2.0	0.2.0.2	
+# ::edge	name	op1	"ASEAN"	0.2.0.1.0	0.2.0.1.0.0	
+# ::edge	name	op1	"European"	0.1.0	0.1.0.0	
+# ::edge	name	op1	"European"	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op2	"Asia"	0.0.0.0	0.0.0.0.1	
+# ::edge	name	op2	"Commission"	0.2.0.0.0	0.2.0.0.0.1	
+# ::edge	name	op2	"Union"	0.1.0	0.1.0.1	
+# ::edge	nation	location	world-region	0.0	0.0.0	
+# ::edge	organization	name	name	0.1	0.1.0	
+# ::edge	organization	name	name	0.2.0.0	0.2.0.0.0	
+# ::edge	organization	name	name	0.2.0.1	0.2.0.1.0	
+# ::edge	person	ARG0-of	invest-01	0.3.1.0.0.1	0.3.1.0.0.1.0	
+# ::edge	program	topic	cooperate-01	0.2	0.2.0	
+# ::edge	property	mod	intellectual	0.3.0.0	0.3.0.0.0	
+# ::edge	rights	mod	intellectual	0.2.0.2	0.2.0.2.0	
+# ::edge	rights	mod	property	0.3.0	0.3.0.0	
+# ::edge	strengthen-01	ARG1	confidence	0.3.1	0.3.1.0	
+# ::edge	strengthen-01	ARG1	rights	0.3	0.3.0	
+# ::edge	strengthen-01	location	world-region	0.3	0.0.0	
+# ::edge	strengthen-01	purpose	strengthen-01	0.3	0.3.1	
+# ::edge	world-region	name	name	0.0.0	0.0.0.0	
+(c / collaborate-01
+      :ARG0 (n / nation
+            :location (w / world-region :name (n2 / name :op1 "Southeast" :op2 "Asia")))
+      :ARG1 (o / organization :name (n3 / name :op1 "European" :op2 "Union"))
+      :ARG2 (p / program
+            :topic (c2 / cooperate-01
+                  :ARG0 (o2 / organization :name (n4 / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o3 / organization :name (n5 / name :op1 "ASEAN"))
+                  :ARG2 (r / rights
+                        :mod (i / intellectual))))
+      :purpose (s / strengthen-01
+            :ARG1 (r2 / rights
+                  :mod (p2 / property
+                        :mod (i2 / intellectual)))
+            :location w
+            :purpose (s2 / strengthen-01
+                  :ARG1 (c3 / confidence
+                        :poss (a / and
+                              :op1 (b / business)
+                              :op2 (p3 / person
+                                    :ARG0-of (i3 / invest-01)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.5 ::date 2013-05-29T16:00:49 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European Union officials stated on April 22, 2002 that Southeast Asians would boost their trade and investment prospects by introducing stricter intellectual property rights.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_5.txt
+# ::tok European Union officials stated on April 22 , 2002 that Southeast Asians would boost their trade and investment prospects by introducing stricter intellectual property rights .
+# ::alignments 0-2|0.0.0.0+0.0.0.0.0+0.0.0.0.0.0+0.0.0.0.0.1 10-12|0.1.0+0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1 5-9|0.2+0.2.0+0.2.1+0.2.2 3-4|0 13-14|0.1 20-21|0.1.2 24-25|0.1.2.0 21-22|0.1.2.0.1 23-24|0.1.2.0.0 22-23|0.1.2.0.0.0 18-19|0.1.1 15-16|0.1.1.0 2-3|0.0+0.0.0+0.0.0.1 17-18|0.1.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.620
+# ::node	0	state-01	3-4
+# ::node	0.0	person	2-3
+# ::node	0.0.0	have-org-role-91	2-3
+# ::node	0.0.0.0	organization	0-2
+# ::node	0.0.0.0.0	name	0-2
+# ::node	0.0.0.0.0.0	"European"	0-2
+# ::node	0.0.0.0.0.1	"Union"	0-2
+# ::node	0.0.0.1	official	2-3
+# ::node	0.1	boost-01	13-14
+# ::node	0.1.0	person	10-12
+# ::node	0.1.0.0	world-region	10-12
+# ::node	0.1.0.0.0	name	10-12
+# ::node	0.1.0.0.0.0	"Southeast"	10-12
+# ::node	0.1.0.0.0.1	"Asia"	10-12
+# ::node	0.1.1	prospect	18-19
+# ::node	0.1.1.0	trade-01	15-16
+# ::node	0.1.1.1	invest-01	17-18
+# ::node	0.1.2	introduce-02	20-21
+# ::node	0.1.2.0	rights	24-25
+# ::node	0.1.2.0.0	property	23-24
+# ::node	0.1.2.0.0.0	intellectual	22-23
+# ::node	0.1.2.0.1	strict	21-22
+# ::node	0.1.2.0.1.0	more	
+# ::node	0.2	date-entity	5-9
+# ::node	0.2.0	2002	5-9
+# ::node	0.2.1	4	5-9
+# ::node	0.2.2	22	5-9
+# ::root	0	state-01
+# ::edge	boost-01	ARG0	person	0.1	0.1.0	
+# ::edge	boost-01	ARG1	prospect	0.1	0.1.1	
+# ::edge	boost-01	manner	introduce-02	0.1	0.1.2	
+# ::edge	date-entity	day	22	0.2	0.2.2	
+# ::edge	date-entity	month	4	0.2	0.2.1	
+# ::edge	date-entity	year	2002	0.2	0.2.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.0	0.0.0.0	
+# ::edge	have-org-role-91	ARG2	official	0.0.0	0.0.0.1	
+# ::edge	introduce-02	ARG0	person	0.1.2	0.1.0	
+# ::edge	introduce-02	ARG1	rights	0.1.2	0.1.2.0	
+# ::edge	name	op1	"European"	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	name	op2	"Union"	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	organization	name	name	0.0.0.0	0.0.0.0.0	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.0	
+# ::edge	person	mod	world-region	0.1.0	0.1.0.0	
+# ::edge	property	mod	intellectual	0.1.2.0.0	0.1.2.0.0.0	
+# ::edge	prospect	mod	invest-01	0.1.1	0.1.1.1	
+# ::edge	prospect	mod	trade-01	0.1.1	0.1.1.0	
+# ::edge	prospect	poss	person	0.1.1	0.1.0	
+# ::edge	rights	mod	property	0.1.2.0	0.1.2.0.0	
+# ::edge	rights	mod	strict	0.1.2.0	0.1.2.0.1	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	boost-01	0	0.1	
+# ::edge	state-01	time	date-entity	0	0.2	
+# ::edge	strict	degree	more	0.1.2.0.1	0.1.2.0.1.0	
+# ::edge	world-region	name	name	0.1.0.0	0.1.0.0.0	
+(s / state-01
+      :ARG0 (p4 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o2 / organization :name (n / name :op1 "European" :op2 "Union"))
+                  :ARG2 (o / official)))
+      :ARG1 (b / boost-01
+            :ARG0 (p / person
+                  :mod (w / world-region :name (n2 / name :op1 "Southeast" :op2 "Asia")))
+            :ARG1 (p2 / prospect
+                  :poss p
+                  :mod (t / trade-01)
+                  :mod (i / invest-01))
+            :manner (i2 / introduce-02
+                  :ARG0 p
+                  :ARG1 (r / rights
+                        :mod (p3 / property
+                              :mod (i3 / intellectual))
+                        :mod (s2 / strict
+                              :degree (m / more)))))
+      :time (d / date-entity :year 2002 :month 4 :day 22))
+
+# ::id PROXY_AFP_ENG_20020422_0296.6 ::date 2013-05-29T16:06:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European Union officers and the Association of Southeast Asian Nations started negotiating how to strengthen intellectual property rights.
+# ::save-date Wed Dec 11, 2013 ::file PROXY_AFP_ENG_20020422_0296_6.txt
+# ::tok European Union officers and the Association of Southeast Asian Nations started negotiating how to strengthen intellectual property rights .
+# ::alignments 0-2|0.0.0.0+0.0.0.0.0+0.0.0.0.0.0+0.0.0.0.0.0.0+0.0.0.0.0.0.1 5-10|0.0.1+0.0.1.0+0.0.1.0.0+0.0.1.0.1+0.0.1.0.2+0.0.1.0.3+0.0.1.0.4 10-11|0 11-12|0.1 14-15|0.1.0+0.1.0.0 16-17|0.1.0.0.0.0 15-16|0.1.0.0.0.0.0 3-4|0.0 2-3|0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.747
+# ::node	0	start-01	10-11
+# ::node	0.0	and	3-4
+# ::node	0.0.0	officer	2-3
+# ::node	0.0.0.0	have-org-role-91	0-2
+# ::node	0.0.0.0.0	organization	0-2
+# ::node	0.0.0.0.0.0	name	0-2
+# ::node	0.0.0.0.0.0.0	"European"	0-2
+# ::node	0.0.0.0.0.0.1	"Union"	0-2
+# ::node	0.0.1	organization	5-10
+# ::node	0.0.1.0	name	5-10
+# ::node	0.0.1.0.0	"Association"	5-10
+# ::node	0.0.1.0.1	"of"	5-10
+# ::node	0.0.1.0.2	"Southeast"	5-10
+# ::node	0.0.1.0.3	"Asian"	5-10
+# ::node	0.0.1.0.4	"Nations"	5-10
+# ::node	0.1	negotiate-01	11-12
+# ::node	0.1.0	thing	14-15
+# ::node	0.1.0.0	strengthen-01	14-15
+# ::node	0.1.0.0.0	entitle-01	
+# ::node	0.1.0.0.0.0	property	16-17
+# ::node	0.1.0.0.0.0.0	intellectual	15-16
+# ::root	0	start-01
+# ::edge	and	op1	officer	0.0	0.0.0	
+# ::edge	and	op2	organization	0.0	0.0.1	
+# ::edge	entitle-01	ARG1	property	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	"Association"	0.0.1.0	0.0.1.0.0	
+# ::edge	name	op1	"European"	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	name	op2	"Union"	0.0.0.0.0.0	0.0.0.0.0.0.1	
+# ::edge	name	op2	"of"	0.0.1.0	0.0.1.0.1	
+# ::edge	name	op3	"Southeast"	0.0.1.0	0.0.1.0.2	
+# ::edge	name	op4	"Asian"	0.0.1.0	0.0.1.0.3	
+# ::edge	name	op5	"Nations"	0.0.1.0	0.0.1.0.4	
+# ::edge	negotiate-01	ARG0	officer	0.1	0.0.0	
+# ::edge	negotiate-01	ARG1	organization	0.1	0.0.1	
+# ::edge	negotiate-01	ARG2	thing	0.1	0.1.0	
+# ::edge	officer	ARG0-of	have-org-role-91	0.0.0	0.0.0.0	
+# ::edge	organization	name	name	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	organization	name	name	0.0.1	0.0.1.0	
+# ::edge	property	mod	intellectual	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	start-01	ARG0	and	0	0.0	
+# ::edge	start-01	ARG1	negotiate-01	0	0.1	
+# ::edge	strengthen-01	ARG1	entitle-01	0.1.0.0	0.1.0.0.0	
+# ::edge	thing	manner-of	strengthen-01	0.1.0	0.1.0.0	
+(s / start-01
+      :ARG0 (a / and
+            :op1 (o / officer
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (o2 / organization :name (n / name :op1 "European" :op2 "Union"))))
+            :op2 (o3 / organization :name (n2 / name :op1 "Association" :op2 "of" :op3 "Southeast" :op4 "Asian" :op5 "Nations")))
+      :ARG1 (n3 / negotiate-01
+            :ARG0 o
+            :ARG1 o3
+            :ARG2 (t / thing
+                  :manner-of (s2 / strengthen-01
+                        :ARG1 (e / entitle-01
+                              :ARG1 (p / property
+                                    :mod (i / intellectual)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.7 ::date 2013-05-29T16:15:17 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The negotiation began with a two-day workshop in Bangkok on April 22, 2002.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20020422_0296_7.txt
+# ::tok The negotiation began with a two - day workshop in Bangkok on April 22 , 2002 .
+# ::alignments 10-11|0.1.1+0.1.1.0+0.1.1.0.0 12-16|0.2+0.2.0+0.2.1+0.2.2 2-3|0 8-9|0.1 5-6|0.1.0.0 7-8|0.1.0+0.1.0.1 1-2|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.813
+# ::node	0	begin-01	2-3
+# ::node	0.0	negotiate-01	1-2
+# ::node	0.1	workshop	8-9
+# ::node	0.1.0	temporal-quantity	7-8
+# ::node	0.1.0.0	2	5-6
+# ::node	0.1.0.1	day	7-8
+# ::node	0.1.1	city	10-11
+# ::node	0.1.1.0	name	10-11
+# ::node	0.1.1.0.0	"Bangkok"	10-11
+# ::node	0.2	date-entity	12-16
+# ::node	0.2.0	2002	12-16
+# ::node	0.2.1	4	12-16
+# ::node	0.2.2	22	12-16
+# ::root	0	begin-01
+# ::edge	begin-01	ARG1	negotiate-01	0	0.0	
+# ::edge	begin-01	ARG2	workshop	0	0.1	
+# ::edge	begin-01	time	date-entity	0	0.2	
+# ::edge	city	name	name	0.1.1	0.1.1.0	
+# ::edge	date-entity	day	22	0.2	0.2.2	
+# ::edge	date-entity	month	4	0.2	0.2.1	
+# ::edge	date-entity	year	2002	0.2	0.2.0	
+# ::edge	name	op1	"Bangkok"	0.1.1.0	0.1.1.0.0	
+# ::edge	temporal-quantity	quant	2	0.1.0	0.1.0.0	
+# ::edge	temporal-quantity	unit	day	0.1.0	0.1.0.1	
+# ::edge	workshop	duration	temporal-quantity	0.1	0.1.0	
+# ::edge	workshop	location	city	0.1	0.1.1	
+(b / begin-01
+      :ARG1 (n / negotiate-01)
+      :ARG2 (w / workshop
+            :duration (t / temporal-quantity :quant 2
+                  :unit (d / day))
+            :location (c / city :name (n2 / name :op1 "Bangkok")))
+      :time (d2 / date-entity :year 2002 :month 4 :day 22))
+
+# ::id PROXY_AFP_ENG_20020422_0296.8 ::date 2013-05-29T16:18:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The negotiation was organized under the new European Commission-ASEAN intellectual property rights cooperation program.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_8.txt
+# ::tok The negotiation was organized under the new European Commission - ASEAN intellectual property rights cooperation program .
+# ::alignments 7-9|0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1 10-11|0.1.0.1+0.1.0.1.0+0.1.0.1.0.0 3-4|0 15-16|0.1 6-7|0.1.1 12-13|0.1.0.2.0 11-12|0.1.0.2.0.0 14-15|0.1.0 1-2|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:51.882
+# ::node	0	organize-01	3-4
+# ::node	0.0	negotiate-01	1-2
+# ::node	0.1	program	15-16
+# ::node	0.1.0	cooperate-01	14-15
+# ::node	0.1.0.0	organization	7-9
+# ::node	0.1.0.0.0	name	7-9
+# ::node	0.1.0.0.0.0	"European"	7-9
+# ::node	0.1.0.0.0.1	"Commission"	7-9
+# ::node	0.1.0.1	organization	10-11
+# ::node	0.1.0.1.0	name	10-11
+# ::node	0.1.0.1.0.0	"ASEAN"	10-11
+# ::node	0.1.0.2	entitle-01	
+# ::node	0.1.0.2.0	property	12-13
+# ::node	0.1.0.2.0.0	intellectual	11-12
+# ::node	0.1.1	new	6-7
+# ::root	0	organize-01
+# ::edge	cooperate-01	ARG0	organization	0.1.0	0.1.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.1.0	0.1.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.1.0	0.1.0.2	
+# ::edge	entitle-01	ARG1	property	0.1.0.2	0.1.0.2.0	
+# ::edge	name	op1	"ASEAN"	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	name	op1	"European"	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	name	op2	"Commission"	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	organization	name	name	0.1.0.0	0.1.0.0.0	
+# ::edge	organization	name	name	0.1.0.1	0.1.0.1.0	
+# ::edge	organize-01	ARG1	negotiate-01	0	0.0	
+# ::edge	organize-01	prep-under	program	0	0.1	
+# ::edge	program	mod	new	0.1	0.1.1	
+# ::edge	program	topic	cooperate-01	0.1	0.1.0	
+# ::edge	property	mod	intellectual	0.1.0.2.0	0.1.0.2.0.0	
+(o / organize-01
+      :ARG1 (n / negotiate-01)
+      :prep-under (p / program
+            :topic (c / cooperate-01
+                  :ARG0 (o2 / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o3 / organization :name (n3 / name :op1 "ASEAN"))
+                  :ARG2 (e / entitle-01
+                        :ARG1 (p2 / property
+                              :mod (i / intellectual))))
+            :mod (n4 / new)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.9 ::date 2013-05-29T16:24:40 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Head of the delegation of the European Commission in Bangkok Klauspeter schmallenbach stated that the ability to comply with intellectual property rights rules would help developing nations take part in global trade.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_9.txt
+# ::tok Head of the delegation of the European Commission in Bangkok Klauspeter schmallenbach stated that the ability to comply with intellectual property rights rules would help developing nations take part in global trade .
+# ::alignments 10-12|0.0+0.0.0+0.0.0.0+0.0.0.1 6-8|0.0.1.0.0+0.0.1.0.0.0+0.0.1.0.0.0.0+0.0.1.0.0.0.1 9-10|0.0.1.0.1+0.0.1.0.1.0+0.0.1.0.1.0.0 12-13|0 24-25|0.1 31-32|0.1.1.0 17-18|0.1.0.0 22-23|0.1.0.0.1 20-21|0.1.0.0.1.0.0 19-20|0.1.0.0.1.0.0.0 26-27|0.1.0.0.0 25-26|0.1.0.0.0.0 0-1|0.0.1 3-4|0.0.1.0 28-29|0.1.1 30-31|0.1.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.033
+# ::node	0	state-01	12-13
+# ::node	0.0	person	10-12
+# ::node	0.0.0	name	10-12
+# ::node	0.0.0.0	"Klauspeter"	10-12
+# ::node	0.0.0.1	"Schmallenbach"	10-12
+# ::node	0.0.1	head-01	0-1
+# ::node	0.0.1.0	delegation	3-4
+# ::node	0.0.1.0.0	organization	6-8
+# ::node	0.0.1.0.0.0	name	6-8
+# ::node	0.0.1.0.0.0.0	"European"	6-8
+# ::node	0.0.1.0.0.0.1	"Commission"	6-8
+# ::node	0.0.1.0.1	city	9-10
+# ::node	0.0.1.0.1.0	name	9-10
+# ::node	0.0.1.0.1.0.0	"Bangkok"	9-10
+# ::node	0.1	help-01	24-25
+# ::node	0.1.0	capable-41	
+# ::node	0.1.0.0	comply-01	17-18
+# ::node	0.1.0.0.0	nation	26-27
+# ::node	0.1.0.0.0.0	develop-02	25-26
+# ::node	0.1.0.0.1	rule	22-23
+# ::node	0.1.0.0.1.0	entitle-01	
+# ::node	0.1.0.0.1.0.0	property	20-21
+# ::node	0.1.0.0.1.0.0.0	intellectual	19-20
+# ::node	0.1.1	participate-01	28-29
+# ::node	0.1.1.0	trade-01	31-32
+# ::node	0.1.1.0.0	globe	30-31
+# ::root	0	state-01
+# ::edge	capable-41	ARG2	comply-01	0.1.0	0.1.0.0	
+# ::edge	city	name	name	0.0.1.0.1	0.0.1.0.1.0	
+# ::edge	comply-01	ARG0	nation	0.1.0.0	0.1.0.0.0	
+# ::edge	comply-01	ARG1	rule	0.1.0.0	0.1.0.0.1	
+# ::edge	delegation	location	city	0.0.1.0	0.0.1.0.1	
+# ::edge	delegation	part-of	organization	0.0.1.0	0.0.1.0.0	
+# ::edge	entitle-01	ARG1	property	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	head-01	ARG1	delegation	0.0.1	0.0.1.0	
+# ::edge	help-01	ARG0	capable-41	0.1	0.1.0	
+# ::edge	help-01	ARG1	participate-01	0.1	0.1.1	
+# ::edge	help-01	ARG2	nation	0.1	0.1.0.0.0	
+# ::edge	name	op1	"Bangkok"	0.0.1.0.1.0	0.0.1.0.1.0.0	
+# ::edge	name	op1	"European"	0.0.1.0.0.0	0.0.1.0.0.0.0	
+# ::edge	name	op1	"Klauspeter"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Commission"	0.0.1.0.0.0	0.0.1.0.0.0.1	
+# ::edge	name	op2	"Schmallenbach"	0.0.0	0.0.0.1	
+# ::edge	nation	ARG1-of	develop-02	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	organization	name	name	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	participate-01	ARG0	nation	0.1.1	0.1.0.0.0	
+# ::edge	participate-01	ARG1	trade-01	0.1.1	0.1.1.0	
+# ::edge	person	ARG0-of	head-01	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0.1.0.0	0.1.0.0.1.0.0.0	
+# ::edge	rule	topic	entitle-01	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	help-01	0	0.1	
+# ::edge	trade-01	location	globe	0.1.1.0	0.1.1.0.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach")
+            :ARG0-of (h / head-01
+                  :ARG1 (d / delegation
+                        :part-of (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :location (c / city :name (n3 / name :op1 "Bangkok")))))
+      :ARG1 (h2 / help-01
+            :ARG0 (c3 / capable-41
+                  :ARG2 (c2 / comply-01
+                        :ARG0 (n4 / nation
+                              :ARG1-of (d2 / develop-02))
+                        :ARG1 (r / rule
+                              :topic (e / entitle-01
+                                    :ARG1 (p3 / property
+                                          :mod (i / intellectual))))))
+            :ARG1 (p4 / participate-01
+                  :ARG0 n4
+                  :ARG1 (t / trade-01
+                        :location (g / globe)))
+            :ARG2 n4))
+
+# ::id PROXY_AFP_ENG_20020422_0296.10 ::date 2013-05-29T16:38:22 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated intellectual property rights form one of the basic pillars upon which business and investor confidence are based.
+# ::save-date Fri Jan 24, 2014 ::file PROXY_AFP_ENG_20020422_0296_10.txt
+# ::tok Klauspeter schmallenbach stated intellectual property rights form one of the basic pillars upon which business and investor confidence are based .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 2-3|0 6-7|0.1 7-8|0.1.1 11-12|0.1.1.0 19-20|0.1.1.0.1 17-18|0.1.1.0.1.0 14-15|0.1.1.0.1.0.0 10-11|0.1.1.0.0 4-5|0.1.0.0 3-4|0.1.0.0.0 16-17|0.1.1.0.1.0.1+0.1.1.0.1.0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.095
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Klauspeter"	0-2
+# ::node	0.0.0.1	"Schmallenbach"	0-2
+# ::node	0.1	form-02	6-7
+# ::node	0.1.0	entitle-01	
+# ::node	0.1.0.0	property	4-5
+# ::node	0.1.0.0.0	intellectual	3-4
+# ::node	0.1.1	one	7-8
+# ::node	0.1.1.0	pillar	11-12
+# ::node	0.1.1.0.0	basic	10-11
+# ::node	0.1.1.0.1	base-02	19-20
+# ::node	0.1.1.0.1.0	confidence	17-18
+# ::node	0.1.1.0.1.0.0	business	14-15
+# ::node	0.1.1.0.1.0.1	person	16-17
+# ::node	0.1.1.0.1.0.1.0	invest-01	16-17
+# ::root	0	state-01
+# ::edge	base-02	ARG1	confidence	0.1.1.0.1	0.1.1.0.1.0	
+# ::edge	confidence	mod	business	0.1.1.0.1.0	0.1.1.0.1.0.0	
+# ::edge	confidence	mod	person	0.1.1.0.1.0	0.1.1.0.1.0.1	
+# ::edge	entitle-01	ARG1	property	0.1.0	0.1.0.0	
+# ::edge	form-02	ARG0	entitle-01	0.1	0.1.0	
+# ::edge	form-02	ARG1	one	0.1	0.1.1	
+# ::edge	name	op1	"Klauspeter"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Schmallenbach"	0.0.0	0.0.0.1	
+# ::edge	one	subset-of	pillar	0.1.1	0.1.1.0	
+# ::edge	person	ARG0-of	invest-01	0.1.1.0.1.0.1	0.1.1.0.1.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	pillar	ARG2-of	base-02	0.1.1.0	0.1.1.0.1	
+# ::edge	pillar	mod	basic	0.1.1.0	0.1.1.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0	0.1.0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	form-02	0	0.1	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (f / form-02
+            :ARG0 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :ARG1 (o / one
+                  :subset-of (p3 / pillar
+                        :mod (b / basic)
+                        :ARG2-of (b2 / base-02
+                              :ARG1 (c / confidence
+                                    :mod (b3 / business)
+                                    :mod (p4 / person
+                                          :ARG0-of (i2 / invest-01))))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.11 ::date 2013-05-29T16:52:40 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach also stated that the intellectual property rights for essential for any country's economic development.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_11.txt
+# ::tok Klauspeter schmallenbach also stated that the intellectual property rights for essential for any country 's economic development .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 3-4|0 2-3|0.2 10-11|0.1 13-14|0.1.1.0.0 12-13|0.1.1.0.0.0 7-8|0.1.0.0 6-7|0.1.0.0.0 16-17|0.1.1 15-16|0.1.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.143
+# ::node	0	state-01	3-4
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Klauspeter"	0-2
+# ::node	0.0.0.1	"Schmallenbach"	0-2
+# ::node	0.1	essential	10-11
+# ::node	0.1.0	entitle-01	
+# ::node	0.1.0.0	property	7-8
+# ::node	0.1.0.0.0	intellectual	6-7
+# ::node	0.1.1	develop-02	16-17
+# ::node	0.1.1.0	economy	15-16
+# ::node	0.1.1.0.0	country	13-14
+# ::node	0.1.1.0.0.0	any	12-13
+# ::node	0.2	also	2-3
+# ::root	0	state-01
+# ::edge	country	mod	any	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	develop-02	ARG1	economy	0.1.1	0.1.1.0	
+# ::edge	economy	poss	country	0.1.1.0	0.1.1.0.0	
+# ::edge	entitle-01	ARG1	property	0.1.0	0.1.0.0	
+# ::edge	essential	domain	entitle-01	0.1	0.1.0	
+# ::edge	essential	purpose	develop-02	0.1	0.1.1	
+# ::edge	name	op1	"Klauspeter"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Schmallenbach"	0.0.0	0.0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0	0.1.0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	essential	0	0.1	
+# ::edge	state-01	mod	also	0	0.2	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (e / essential
+            :domain (e3 / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :purpose (d / develop-02
+                  :ARG1 (e2 / economy
+                        :poss (c / country
+                              :mod (a2 / any)))))
+      :mod (a / also))
+
+# ::id PROXY_AFP_ENG_20020422_0296.12 ::date 2013-05-29T16:56:45 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated that intellectual property rights may help boost European investment in Southeast Asia to pre-crisis levels.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_12.txt
+# ::tok Klauspeter schmallenbach stated that intellectual property rights may help boost European investment in Southeast Asia to pre - crisis levels .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 13-15|0.1.0.1.0.1+0.1.0.1.0.1.0+0.1.0.1.0.1.0.0+0.1.0.1.0.1.0.1 10-11|0.1.0.1.0.0+0.1.0.1.0.0.0+0.1.0.1.0.0.0.0 2-3|0 7-8|0.1 8-9|0.1.0 9-10|0.1.0.1 19-20|0.1.0.1.1 5-6|0.1.0.0.0 4-5|0.1.0.0.0.0 11-12|0.1.0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.312
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Klauspeter"	0-2
+# ::node	0.0.0.1	"Schmallenbach"	0-2
+# ::node	0.1	possible	7-8
+# ::node	0.1.0	help-01	8-9
+# ::node	0.1.0.0	entitle-01	
+# ::node	0.1.0.0.0	property	5-6
+# ::node	0.1.0.0.0.0	intellectual	4-5
+# ::node	0.1.0.1	boost-01	9-10
+# ::node	0.1.0.1.0	invest-01	11-12
+# ::node	0.1.0.1.0.0	continent	10-11
+# ::node	0.1.0.1.0.0.0	name	10-11
+# ::node	0.1.0.1.0.0.0.0	"Europe"	10-11
+# ::node	0.1.0.1.0.1	world-region	13-15
+# ::node	0.1.0.1.0.1.0	name	13-15
+# ::node	0.1.0.1.0.1.0.0	"Southeast"	13-15
+# ::node	0.1.0.1.0.1.0.1	"Asia"	13-15
+# ::node	0.1.0.1.1	level	19-20
+# ::node	0.1.0.1.1.0	pre-crisis	
+# ::root	0	state-01
+# ::edge	boost-01	ARG1	invest-01	0.1.0.1	0.1.0.1.0	
+# ::edge	boost-01	ARG4	level	0.1.0.1	0.1.0.1.1	
+# ::edge	continent	name	name	0.1.0.1.0.0	0.1.0.1.0.0.0	
+# ::edge	entitle-01	ARG1	property	0.1.0.0	0.1.0.0.0	
+# ::edge	help-01	ARG0	entitle-01	0.1.0	0.1.0.0	
+# ::edge	help-01	ARG1	boost-01	0.1.0	0.1.0.1	
+# ::edge	invest-01	ARG0	continent	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	invest-01	ARG2	world-region	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	level	time	pre-crisis	0.1.0.1.1	0.1.0.1.1.0	
+# ::edge	name	op1	"Europe"	0.1.0.1.0.0.0	0.1.0.1.0.0.0.0	
+# ::edge	name	op1	"Klauspeter"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.0.1.0.1.0	0.1.0.1.0.1.0.0	
+# ::edge	name	op2	"Asia"	0.1.0.1.0.1.0	0.1.0.1.0.1.0.1	
+# ::edge	name	op2	"Schmallenbach"	0.0.0	0.0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	possible	domain	help-01	0.1	0.1.0	
+# ::edge	property	mod	intellectual	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	possible	0	0.1	
+# ::edge	world-region	name	name	0.1.0.1.0.1	0.1.0.1.0.1.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (p2 / possible
+            :domain (h / help-01
+                  :ARG0 (e / entitle-01
+                        :ARG1 (p3 / property
+                              :mod (i / intellectual)))
+                  :ARG1 (b / boost-01
+                        :ARG1 (i2 / invest-01
+                              :ARG0 (c / continent :name (n2 / name :op1 "Europe"))
+                              :ARG2 (w / world-region :name (n3 / name :op1 "Southeast" :op2 "Asia")))
+                        :ARG4 (l / level
+                              :time (p4 / pre-crisis))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.13 ::date 2013-05-29T17:01:29 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt European patents office President Ingo Kober said that it was vital that Southeast Asian Nations introduced proper legal and technical infrastructure to defend trademarks.
+# ::save-date Wed Jan 22, 2014 ::file PROXY_AFP_ENG_20020422_0296_13.txt
+# ::tok European patents office President Ingo Kober said that it was vital that Southeast Asian Nations introduced proper legal and technical infrastructure to defend trademarks .
+# ::alignments 4-6|0.0+0.0.0+0.0.0.0+0.0.0.1 0-3|0.0.1.0+0.0.1.0.0+0.0.1.0.0.0+0.0.1.0.0.1+0.0.1.0.0.2 12-14|0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.0.0+0.1.0.0.0.0.1 6-7|0 10-11|0.1 15-16|0.1.0 22-23|0.1.0.2 23-24|0.1.0.2.0 18-19|0.1.0.1 20-21|0.1.0.1.1 19-20|0.1.0.1.1.1 16-17|0.1.0.1.1.0 17-18|0.1.0.1.0.1 14-15|0.1.0.0 3-4|0.0.1+0.0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.459
+# ::node	0	say-01	6-7
+# ::node	0.0	person	4-6
+# ::node	0.0.0	name	4-6
+# ::node	0.0.0.0	"Ingo"	4-6
+# ::node	0.0.0.1	"Kober"	4-6
+# ::node	0.0.1	have-org-role-91	3-4
+# ::node	0.0.1.0	organization	0-3
+# ::node	0.0.1.0.0	name	0-3
+# ::node	0.0.1.0.0.0	"European"	0-3
+# ::node	0.0.1.0.0.1	"Patent"	0-3
+# ::node	0.0.1.0.0.2	"Office"	0-3
+# ::node	0.0.1.1	president	3-4
+# ::node	0.1	vital	10-11
+# ::node	0.1.0	introduce-02	15-16
+# ::node	0.1.0.0	nation	14-15
+# ::node	0.1.0.0.0	world-region	12-14
+# ::node	0.1.0.0.0.0	name	12-14
+# ::node	0.1.0.0.0.0.0	"Southeast"	12-14
+# ::node	0.1.0.0.0.0.1	"Asia"	12-14
+# ::node	0.1.0.1	and	18-19
+# ::node	0.1.0.1.0	infrastructure	
+# ::node	0.1.0.1.0.0	proper	
+# ::node	0.1.0.1.0.1	legal	17-18
+# ::node	0.1.0.1.1	infrastructure	20-21
+# ::node	0.1.0.1.1.0	proper	16-17
+# ::node	0.1.0.1.1.1	technical	19-20
+# ::node	0.1.0.2	defend-01	22-23
+# ::node	0.1.0.2.0	trademark-01	23-24
+# ::root	0	say-01
+# ::edge	and	op1	infrastructure	0.1.0.1	0.1.0.1.0	
+# ::edge	and	op2	infrastructure	0.1.0.1	0.1.0.1.1	
+# ::edge	defend-01	ARG1	trademark-01	0.1.0.2	0.1.0.2.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	president	0.0.1	0.0.1.1	
+# ::edge	infrastructure	mod	legal	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	infrastructure	mod	proper	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	infrastructure	mod	proper	0.1.0.1.1	0.1.0.1.1.0	
+# ::edge	infrastructure	mod	technical	0.1.0.1.1	0.1.0.1.1.1	
+# ::edge	introduce-02	ARG0	nation	0.1.0	0.1.0.0	
+# ::edge	introduce-02	ARG1	and	0.1.0	0.1.0.1	
+# ::edge	introduce-02	purpose	defend-01	0.1.0	0.1.0.2	
+# ::edge	name	op1	"European"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	name	op2	"Patent"	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	name	op3	"Office"	0.0.1.0.0	0.0.1.0.0.2	
+# ::edge	nation	location	world-region	0.1.0.0	0.1.0.0.0	
+# ::edge	organization	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	vital	0	0.1	
+# ::edge	vital	domain	introduce-02	0.1	0.1.0	
+# ::edge	world-region	name	name	0.1.0.0.0	0.1.0.0.0.0	
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :name (n2 / name :op1 "European" :op2 "Patent" :op3 "Office"))
+                  :ARG2 (p3 / president)))
+      :ARG1 (v / vital
+            :domain (i / introduce-02
+                  :ARG0 (n3 / nation
+                        :location (w / world-region :name (n4 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (a / and
+                        :op1 (i2 / infrastructure
+                              :mod (p2 / proper)
+                              :mod (l / legal))
+                        :op2 (i3 / infrastructure
+                              :mod (p4 / proper)
+                              :mod (t / technical)))
+                  :purpose (d / defend-01
+                        :ARG1 (t2 / trademark-01)))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.14 ::date 2013-05-29T17:08:08 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that intellectual property rights are currently developing in Southeast Asian nations.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_14.txt
+# ::tok Ingo Kober stated that intellectual property rights are currently developing in Southeast Asian nations .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 11-13|0.1.2.0+0.1.2.0.0+0.1.2.0.0.0+0.1.2.0.0.1 2-3|0 9-10|0.1 13-14|0.1.2 5-6|0.1.0.0 4-5|0.1.0.0.0 8-9|0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.606
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	develop-02	9-10
+# ::node	0.1.0	entitle-01	
+# ::node	0.1.0.0	property	5-6
+# ::node	0.1.0.0.0	intellectual	4-5
+# ::node	0.1.1	current	8-9
+# ::node	0.1.2	nation	13-14
+# ::node	0.1.2.0	world-region	11-13
+# ::node	0.1.2.0.0	name	11-13
+# ::node	0.1.2.0.0.0	"Southeast"	11-13
+# ::node	0.1.2.0.0.1	"Asia"	11-13
+# ::root	0	state-01
+# ::edge	develop-02	ARG1	entitle-01	0.1	0.1.0	
+# ::edge	develop-02	location	nation	0.1	0.1.2	
+# ::edge	develop-02	time	current	0.1	0.1.1	
+# ::edge	entitle-01	ARG1	property	0.1.0	0.1.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.2.0.0	0.1.2.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.2.0.0	0.1.2.0.0.1	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	nation	location	world-region	0.1.2	0.1.2.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0	0.1.0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	develop-02	0	0.1	
+# ::edge	world-region	name	name	0.1.2.0	0.1.2.0.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (d / develop-02
+            :ARG1 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual)))
+            :time (c / current)
+            :location (n2 / nation
+                  :location (w / world-region :name (n3 / name :op1 "Southeast" :op2 "Asia")))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.15 ::date 2013-05-29T17:10:04 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated there is larger interest in intellectual property rights now than 20 or 30 years ago.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_15.txt
+# ::tok Ingo Kober stated there is larger interest in intellectual property rights now than 20 or 30 years ago .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 2-3|0 6-7|0.1 11-12|0.1.2 5-6|0.1.1 14-15|0.1.1.1.1 15-16|0.1.1.1.1.1.0 16-17|0.1.1.1.1.1+0.1.1.1.1.1.1 13-14|0.1.1.1.1.0.0 9-10|0.1.0.0 8-9|0.1.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.671
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	interest-01	6-7
+# ::node	0.1.0	entitle-01	
+# ::node	0.1.0.0	property	9-10
+# ::node	0.1.0.0.0	intellectual	8-9
+# ::node	0.1.1	large	5-6
+# ::node	0.1.1.0	more	
+# ::node	0.1.1.1	before	
+# ::node	0.1.1.1.0	now	
+# ::node	0.1.1.1.1	or	14-15
+# ::node	0.1.1.1.1.0	temporal-quantity	
+# ::node	0.1.1.1.1.0.0	20	13-14
+# ::node	0.1.1.1.1.0.1	year	
+# ::node	0.1.1.1.1.1	temporal-quantity	16-17
+# ::node	0.1.1.1.1.1.0	30	15-16
+# ::node	0.1.1.1.1.1.1	year	16-17
+# ::node	0.1.2	now	11-12
+# ::root	0	state-01
+# ::edge	before	op1	now	0.1.1.1	0.1.1.1.0	
+# ::edge	before	quant	or	0.1.1.1	0.1.1.1.1	
+# ::edge	entitle-01	ARG1	property	0.1.0	0.1.0.0	
+# ::edge	interest-01	ARG2	entitle-01	0.1	0.1.0	
+# ::edge	interest-01	mod	large	0.1	0.1.1	
+# ::edge	interest-01	time	now	0.1	0.1.2	
+# ::edge	large	compared-to	before	0.1.1	0.1.1.1	
+# ::edge	large	degree	more	0.1.1	0.1.1.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	or	op1	temporal-quantity	0.1.1.1.1	0.1.1.1.1.0	
+# ::edge	or	op2	temporal-quantity	0.1.1.1.1	0.1.1.1.1.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0	0.1.0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	interest-01	0	0.1	
+# ::edge	temporal-quantity	quant	20	0.1.1.1.1.0	0.1.1.1.1.0.0	
+# ::edge	temporal-quantity	quant	30	0.1.1.1.1.1	0.1.1.1.1.1.0	
+# ::edge	temporal-quantity	unit	year	0.1.1.1.1.0	0.1.1.1.1.0.1	
+# ::edge	temporal-quantity	unit	year	0.1.1.1.1.1	0.1.1.1.1.1.1	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (i / interest-01
+            :ARG2 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i2 / intellectual)))
+            :mod (l / large
+                  :degree (m / more)
+                  :compared-to (b / before
+                        :op1 (n3 / now)
+                        :quant (o2 / or
+                              :op1 (t / temporal-quantity :quant 20
+                                    :unit (y / year))
+                              :op2 (t2 / temporal-quantity :quant 30
+                                    :unit (y2 / year)))))
+            :time (n2 / now)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.16 ::date 2013-05-29T17:17:02 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that some nations had stronger intellectual property rights than others.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_16.txt
+# ::tok Ingo Kober stated that some nations had stronger intellectual property rights than others .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 2-3|0 6-7|0.1 9-10|0.1.1.0 8-9|0.1.1.0.0 7-8|0.1.1.1 5-6|0.1.1.1.0.0 12-13|0.1.1.1.0.0.0 4-5|0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.769
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	have-03	6-7
+# ::node	0.1.0	nation	
+# ::node	0.1.0.0	some	4-5
+# ::node	0.1.1	entitle-01	
+# ::node	0.1.1.0	property	9-10
+# ::node	0.1.1.0.0	intellectual	8-9
+# ::node	0.1.1.1	strong	7-8
+# ::node	0.1.1.1.0	more	
+# ::node	0.1.1.1.0.0	nation	5-6
+# ::node	0.1.1.1.0.0.0	other	12-13
+# ::root	0	state-01
+# ::edge	entitle-01	ARG1	property	0.1.1	0.1.1.0	
+# ::edge	entitle-01	mod	strong	0.1.1	0.1.1.1	
+# ::edge	have-03	ARG0	nation	0.1	0.1.0	
+# ::edge	have-03	ARG1	entitle-01	0.1	0.1.1	
+# ::edge	more	compared-to	nation	0.1.1.1.0	0.1.1.1.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	nation	mod	other	0.1.1.1.0.0	0.1.1.1.0.0.0	
+# ::edge	nation	quant	some	0.1.0	0.1.0.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.1.0	0.1.1.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	have-03	0	0.1	
+# ::edge	strong	degree	more	0.1.1.1	0.1.1.1.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (h / have-03
+            :ARG0 (n2 / nation
+                  :quant (s2 / some))
+            :ARG1 (e / entitle-01
+                  :ARG1 (p2 / property
+                        :mod (i / intellectual))
+                  :mod (s3 / strong
+                        :degree (m / more
+                              :compared-to (n3 / nation
+                                    :mod (o / other)))))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.17 ::date 2013-05-29T17:21:48 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober also stated that one should not tell the countries that are lagging in intellectual property rights that they are lagging in intellectual property rights.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_17.txt
+# ::tok Ingo Kober also stated that one should not tell the countries that are lagging in intellectual property rights that they are lagging in intellectual property rights .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 3-4|0 2-3|0.2 6-7|0.1 8-9|0.1.1 10-11|0.1.1.2 13-14|0.1.1.2.0 16-17|0.1.1.2.0.0.0 15-16|0.1.1.2.0.0.0.0 21-22|0.1.1.1 5-6|0.1.1.0 7-8|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.824
+# ::node	0	state-01	3-4
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	recommend-01	6-7
+# ::node	0.1.0	-	7-8
+# ::node	0.1.1	tell-01	8-9
+# ::node	0.1.1.0	one	5-6
+# ::node	0.1.1.1	lag-01	21-22
+# ::node	0.1.1.2	country	10-11
+# ::node	0.1.1.2.0	lag-01	13-14
+# ::node	0.1.1.2.0.0	entitle-01	
+# ::node	0.1.1.2.0.0.0	property	16-17
+# ::node	0.1.1.2.0.0.0.0	intellectual	15-16
+# ::node	0.2	also	2-3
+# ::root	0	state-01
+# ::edge	country	ARG0-of	lag-01	0.1.1.2	0.1.1.2.0	
+# ::edge	entitle-01	ARG1	property	0.1.1.2.0.0	0.1.1.2.0.0.0	
+# ::edge	lag-01	ARG0	country	0.1.1.1	0.1.1.2	
+# ::edge	lag-01	topic	entitle-01	0.1.1.1	0.1.1.2.0.0	
+# ::edge	lag-01	topic	entitle-01	0.1.1.2.0	0.1.1.2.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.1.1.2.0.0.0	0.1.1.2.0.0.0.0	
+# ::edge	recommend-01	ARG1	tell-01	0.1	0.1.1	
+# ::edge	recommend-01	polarity	-	0.1	0.1.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	recommend-01	0	0.1	
+# ::edge	state-01	mod	also	0	0.2	
+# ::edge	tell-01	ARG0	one	0.1.1	0.1.1.0	
+# ::edge	tell-01	ARG1	lag-01	0.1.1	0.1.1.1	
+# ::edge	tell-01	ARG2	country	0.1.1	0.1.1.2	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (r / recommend-01 :polarity -
+            :ARG1 (t / tell-01
+                  :ARG0 (o / one)
+                  :ARG1 (l2 / lag-01
+                        :ARG0 c
+                        :topic e)
+                  :ARG2 (c / country
+                        :ARG0-of (l / lag-01
+                              :topic (e / entitle-01
+                                    :ARG1 (p2 / property
+                                          :mod (i / intellectual)))))))
+      :mod (a / also))
+
+# ::id PROXY_AFP_ENG_20020422_0296.18 ::date 2013-05-30T08:01:47 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Director General of Thailand's Department of intellectual property yanyong phuangranch stated that Southeast Asian nations had to work together to ensure trademarks were protected.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_18.txt
+# ::tok Director General of Thailand 's Department of intellectual property yanyong phuangranch stated that Southeast Asian nations had to work together to ensure trademarks were protected .
+# ::alignments 9-11|0.0+0.0.0+0.0.0.0+0.0.0.1 5-9|0.0.1.0+0.0.1.0.0+0.0.1.0.0.0+0.0.1.0.0.1+0.0.1.0.0.2+0.0.1.0.0.3 3-4|0.0.1.0.1+0.0.1.0.1.0+0.0.1.0.1.0.0 13-15|0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.0.0+0.1.0.0.0.0.1 11-12|0 18-19|0.1.0 19-20|0.1.0.2 21-22|0.1.0.1 24-25|0.1.0.1.0 22-23|0.1.0.1.0.0 15-16|0.1.0.0 0-1|0.0.1+0.0.1.1 1-2|0.0.1.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.891
+# ::node	0	state-01	11-12
+# ::node	0.0	person	9-11
+# ::node	0.0.0	name	9-11
+# ::node	0.0.0.0	"Yanyong"	9-11
+# ::node	0.0.0.1	"Phuangranch"	9-11
+# ::node	0.0.1	have-org-role-91	0-1
+# ::node	0.0.1.0	government-organization	5-9
+# ::node	0.0.1.0.0	name	5-9
+# ::node	0.0.1.0.0.0	"Department"	5-9
+# ::node	0.0.1.0.0.1	"of"	5-9
+# ::node	0.0.1.0.0.2	"Intellectual"	5-9
+# ::node	0.0.1.0.0.3	"Property"	5-9
+# ::node	0.0.1.0.1	country	3-4
+# ::node	0.0.1.0.1.0	name	3-4
+# ::node	0.0.1.0.1.0.0	"Thailand"	3-4
+# ::node	0.0.1.1	director	0-1
+# ::node	0.0.1.1.0	general	1-2
+# ::node	0.1	obligate-01	
+# ::node	0.1.0	work-01	18-19
+# ::node	0.1.0.0	nation	15-16
+# ::node	0.1.0.0.0	world-region	13-15
+# ::node	0.1.0.0.0.0	name	13-15
+# ::node	0.1.0.0.0.0.0	"Southeast"	13-15
+# ::node	0.1.0.0.0.0.1	"Asia"	13-15
+# ::node	0.1.0.1	ensure-01	21-22
+# ::node	0.1.0.1.0	protect-01	24-25
+# ::node	0.1.0.1.0.0	trademark-01	22-23
+# ::node	0.1.0.2	together	19-20
+# ::root	0	state-01
+# ::edge	country	name	name	0.0.1.0.1	0.0.1.0.1.0	
+# ::edge	director	mod	general	0.0.1.1	0.0.1.1.0	
+# ::edge	ensure-01	ARG0	nation	0.1.0.1	0.1.0.0	
+# ::edge	ensure-01	ARG1	protect-01	0.1.0.1	0.1.0.1.0	
+# ::edge	government-organization	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	government-organization	poss	country	0.0.1.0	0.0.1.0.1	
+# ::edge	have-org-role-91	ARG1	government-organization	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	director	0.0.1	0.0.1.1	
+# ::edge	name	op1	"Department"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	name	op1	"Thailand"	0.0.1.0.1.0	0.0.1.0.1.0.0	
+# ::edge	name	op1	"Yanyong"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op2	"Phuangranch"	0.0.0	0.0.0.1	
+# ::edge	name	op2	"of"	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	name	op3	"Intellectual"	0.0.1.0.0	0.0.1.0.0.2	
+# ::edge	name	op4	"Property"	0.0.1.0.0	0.0.1.0.0.3	
+# ::edge	nation	location	world-region	0.1.0.0	0.1.0.0.0	
+# ::edge	obligate-01	ARG2	work-01	0.1	0.1.0	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	protect-01	ARG1	trademark-01	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	obligate-01	0	0.1	
+# ::edge	work-01	ARG0	nation	0.1.0	0.1.0.0	
+# ::edge	work-01	ARG1	ensure-01	0.1.0	0.1.0.1	
+# ::edge	work-01	ARG3	nation	0.1.0	0.1.0.0	
+# ::edge	work-01	mod	together	0.1.0	0.1.0.2	
+# ::edge	world-region	name	name	0.1.0.0.0	0.1.0.0.0.0	
+(s / state-01
+      :ARG0 (p2 / person :name (n / name :op1 "Yanyong" :op2 "Phuangranch")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (g2 / government-organization :name (n2 / name :op1 "Department" :op2 "of" :op3 "Intellectual" :op4 "Property")
+                        :poss (c / country :name (n3 / name :op1 "Thailand")))
+                  :ARG2 (d / director
+                        :mod (g / general))))
+      :ARG1 (o / obligate-01
+            :ARG2 (w / work-01
+                  :ARG0 (n4 / nation
+                        :location (w2 / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (e / ensure-01
+                        :ARG0 n4
+                        :ARG1 (p / protect-01
+                              :ARG1 (t / trademark-01)))
+                  :ARG3 n4
+                  :mod (t2 / together))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.19 ::date 2013-05-30T08:12:43 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt The European Commission-ASEAN intellectual property rights cooperation program fosters trade, investment and technology transfer between the European Union and Southeast Asian nations.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_19.txt
+# ::tok The European Commission - ASEAN intellectual property rights cooperation program fosters trade , investment and technology transfer between the European Union and Southeast Asian nations .
+# ::alignments 1-3|0.0.0.0+0.0.0.0.0+0.0.0.0.0.0+0.0.0.0.0.1 4-5|0.0.0.1+0.0.0.1.0+0.0.0.1.0.0 19-21|0.1.2+0.1.2.0+0.1.2.0.0+0.1.2.0.1 22-24|0.1.1.0+0.1.1.0.0+0.1.1.0.0.0+0.1.1.0.0.1 10-11|0 16-17|0.1 24-25|0.1.1 14-15|0.1.0 15-16|0.1.0.2 11-12|0.1.0.0 9-10|0.0 6-7|0.0.0.2.0 5-6|0.0.0.2.0.0 13-14|0.1.0.1 8-9|0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:52.953
+# ::node	0	foster-01	10-11
+# ::node	0.0	program	9-10
+# ::node	0.0.0	cooperate-01	8-9
+# ::node	0.0.0.0	organization	1-3
+# ::node	0.0.0.0.0	name	1-3
+# ::node	0.0.0.0.0.0	"European"	1-3
+# ::node	0.0.0.0.0.1	"Commission"	1-3
+# ::node	0.0.0.1	organization	4-5
+# ::node	0.0.0.1.0	name	4-5
+# ::node	0.0.0.1.0.0	"ASEAN"	4-5
+# ::node	0.0.0.2	entitle-01	
+# ::node	0.0.0.2.0	property	6-7
+# ::node	0.0.0.2.0.0	intellectual	5-6
+# ::node	0.1	transfer-01	16-17
+# ::node	0.1.0	and	14-15
+# ::node	0.1.0.0	trade-01	11-12
+# ::node	0.1.0.1	invest-01	13-14
+# ::node	0.1.0.2	technology	15-16
+# ::node	0.1.1	nation	24-25
+# ::node	0.1.1.0	world-region	22-24
+# ::node	0.1.1.0.0	name	22-24
+# ::node	0.1.1.0.0.0	"Southeast"	22-24
+# ::node	0.1.1.0.0.1	"Asia"	22-24
+# ::node	0.1.2	organization	19-21
+# ::node	0.1.2.0	name	19-21
+# ::node	0.1.2.0.0	"European"	19-21
+# ::node	0.1.2.0.1	"Union"	19-21
+# ::root	0	foster-01
+# ::edge	and	op1	trade-01	0.1.0	0.1.0.0	
+# ::edge	and	op2	invest-01	0.1.0	0.1.0.1	
+# ::edge	and	op3	technology	0.1.0	0.1.0.2	
+# ::edge	cooperate-01	ARG0	organization	0.0.0	0.0.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.0.0	0.0.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.0.0	0.0.0.2	
+# ::edge	entitle-01	ARG1	property	0.0.0.2	0.0.0.2.0	
+# ::edge	foster-01	ARG0	program	0	0.0	
+# ::edge	foster-01	ARG1	transfer-01	0	0.1	
+# ::edge	name	op1	"ASEAN"	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	name	op1	"European"	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	name	op1	"European"	0.1.2.0	0.1.2.0.0	
+# ::edge	name	op1	"Southeast"	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.1.0.0	0.1.1.0.0.1	
+# ::edge	name	op2	"Commission"	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	name	op2	"Union"	0.1.2.0	0.1.2.0.1	
+# ::edge	nation	location	world-region	0.1.1	0.1.1.0	
+# ::edge	organization	name	name	0.0.0.0	0.0.0.0.0	
+# ::edge	organization	name	name	0.0.0.1	0.0.0.1.0	
+# ::edge	organization	name	name	0.1.2	0.1.2.0	
+# ::edge	program	topic	cooperate-01	0.0	0.0.0	
+# ::edge	property	mod	intellectual	0.0.0.2.0	0.0.0.2.0.0	
+# ::edge	transfer-01	ARG1	and	0.1	0.1.0	
+# ::edge	transfer-01	ARG2	nation	0.1	0.1.1	
+# ::edge	transfer-01	ARG3	organization	0.1	0.1.2	
+# ::edge	world-region	name	name	0.1.1.0	0.1.1.0.0	
+(f / foster-01
+      :ARG0 (p / program
+            :topic (c / cooperate-01
+                  :ARG0 (o / organization :name (n / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o2 / organization :name (n2 / name :op1 "ASEAN"))
+                  :ARG2 (e / entitle-01
+                        :ARG1 (p2 / property
+                              :mod (i / intellectual)))))
+      :ARG1 (t / transfer-01
+            :ARG1 (a / and
+                  :op1 (t2 / trade-01)
+                  :op2 (i2 / invest-01)
+                  :op3 (t3 / technology))
+            :ARG2 (n4 / nation
+                  :location (w / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+            :ARG3 (o3 / organization :name (n3 / name :op1 "European" :op2 "Union"))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.20 ::date 2013-05-30T08:21:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Klauspeter schmallenbach stated that the European Commission-ASEAN intellectual property rights cooperation program would help Southeast Asian Nations draw on European expertise in how to protect and enforce intellectual property rights in compliance with World Trade Organization rules.
+# ::save-date Fri Dec 13, 2013 ::file PROXY_AFP_ENG_20020422_0296_20.txt
+# ::tok Klauspeter schmallenbach stated that the European Commission - ASEAN intellectual property rights cooperation program would help Southeast Asian Nations draw on European expertise in how to protect and enforce intellectual property rights in compliance with World Trade Organization rules .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 5-7|0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.0.0+0.1.0.0.0.0.1 8-9|0.1.0.0.1+0.1.0.0.1.0+0.1.0.0.1.0.0 35-38|0.1.1.1.0.0.2.0.0+0.1.1.1.0.0.2.0.0.0+0.1.1.1.0.0.2.0.0.0.0+0.1.1.1.0.0.2.0.0.0.1+0.1.1.1.0.0.2.0.0.0.2 16-18|0.1.1.0.0+0.1.1.0.0.0+0.1.1.0.0.0.0+0.1.1.0.0.0.1 21-22|0.1.1.2+0.1.1.2.0+0.1.1.2.0.0 2-3|0 15-16|0.1 19-20|0.1.1 27-28|0.1.1.1.0+0.1.1.1.0.0 38-39|0.1.1.1.0.0.2.0 28-29|0.1.1.1.0.0.1 26-27|0.1.1.1.0.0.0 18-19|0.1.1.0 13-14|0.1.0 10-11|0.1.0.0.2.0 9-10|0.1.0.0.2.0.0 22-23|0.1.1.1 33-34|0.1.1.1.0.0.2 12-13|0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.064
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Klauspeter"	0-2
+# ::node	0.0.0.1	"Schmallenbach"	0-2
+# ::node	0.1	help-01	15-16
+# ::node	0.1.0	program	13-14
+# ::node	0.1.0.0	cooperate-01	12-13
+# ::node	0.1.0.0.0	organization	5-7
+# ::node	0.1.0.0.0.0	name	5-7
+# ::node	0.1.0.0.0.0.0	"European"	5-7
+# ::node	0.1.0.0.0.0.1	"Commission"	5-7
+# ::node	0.1.0.0.1	organization	8-9
+# ::node	0.1.0.0.1.0	name	8-9
+# ::node	0.1.0.0.1.0.0	"ASEAN"	8-9
+# ::node	0.1.0.0.2	entitle-01	
+# ::node	0.1.0.0.2.0	property	10-11
+# ::node	0.1.0.0.2.0.0	intellectual	9-10
+# ::node	0.1.1	draw-02	19-20
+# ::node	0.1.1.0	nation	18-19
+# ::node	0.1.1.0.0	world-region	16-18
+# ::node	0.1.1.0.0.0	name	16-18
+# ::node	0.1.1.0.0.0.0	"Southeast"	16-18
+# ::node	0.1.1.0.0.0.1	"Asia"	16-18
+# ::node	0.1.1.1	expert-41	22-23
+# ::node	0.1.1.1.0	thing	27-28
+# ::node	0.1.1.1.0.0	and	27-28
+# ::node	0.1.1.1.0.0.0	protect-01	26-27
+# ::node	0.1.1.1.0.0.1	enforce-01	28-29
+# ::node	0.1.1.1.0.0.2	comply-01	33-34
+# ::node	0.1.1.1.0.0.2.0	rule	38-39
+# ::node	0.1.1.1.0.0.2.0.0	organization	35-38
+# ::node	0.1.1.1.0.0.2.0.0.0	name	35-38
+# ::node	0.1.1.1.0.0.2.0.0.0.0	"World"	35-38
+# ::node	0.1.1.1.0.0.2.0.0.0.1	"Trade"	35-38
+# ::node	0.1.1.1.0.0.2.0.0.0.2	"Organization"	35-38
+# ::node	0.1.1.2	continent	21-22
+# ::node	0.1.1.2.0	name	21-22
+# ::node	0.1.1.2.0.0	"Europe"	21-22
+# ::root	0	state-01
+# ::edge	and	ARG0-of	comply-01	0.1.1.1.0.0	0.1.1.1.0.0.2	
+# ::edge	and	op1	protect-01	0.1.1.1.0.0	0.1.1.1.0.0.0	
+# ::edge	and	op2	enforce-01	0.1.1.1.0.0	0.1.1.1.0.0.1	
+# ::edge	comply-01	ARG1	rule	0.1.1.1.0.0.2	0.1.1.1.0.0.2.0	
+# ::edge	continent	name	name	0.1.1.2	0.1.1.2.0	
+# ::edge	cooperate-01	ARG0	organization	0.1.0.0	0.1.0.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.1.0.0	0.1.0.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.1.0.0	0.1.0.0.2	
+# ::edge	draw-02	ARG0	nation	0.1.1	0.1.1.0	
+# ::edge	draw-02	ARG1	expert-41	0.1.1	0.1.1.1	
+# ::edge	draw-02	ARG2	continent	0.1.1	0.1.1.2	
+# ::edge	enforce-01	ARG1	entitle-01	0.1.1.1.0.0.1	0.1.0.0.2	
+# ::edge	entitle-01	ARG1	property	0.1.0.0.2	0.1.0.0.2.0	
+# ::edge	expert-41	ARG1	continent	0.1.1.1	0.1.1.2	
+# ::edge	expert-41	ARG2	thing	0.1.1.1	0.1.1.1.0	
+# ::edge	help-01	ARG0	program	0.1	0.1.0	
+# ::edge	help-01	ARG1	draw-02	0.1	0.1.1	
+# ::edge	name	op1	"ASEAN"	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	name	op1	"Europe"	0.1.1.2.0	0.1.1.2.0.0	
+# ::edge	name	op1	"European"	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	name	op1	"Klauspeter"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Southeast"	0.1.1.0.0.0	0.1.1.0.0.0.0	
+# ::edge	name	op1	"World"	0.1.1.1.0.0.2.0.0.0	0.1.1.1.0.0.2.0.0.0.0	
+# ::edge	name	op2	"Asia"	0.1.1.0.0.0	0.1.1.0.0.0.1	
+# ::edge	name	op2	"Commission"	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op2	"Schmallenbach"	0.0.0	0.0.0.1	
+# ::edge	name	op2	"Trade"	0.1.1.1.0.0.2.0.0.0	0.1.1.1.0.0.2.0.0.0.1	
+# ::edge	name	op3	"Organization"	0.1.1.1.0.0.2.0.0.0	0.1.1.1.0.0.2.0.0.0.2	
+# ::edge	nation	location	world-region	0.1.1.0	0.1.1.0.0	
+# ::edge	organization	name	name	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	organization	name	name	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	organization	name	name	0.1.1.1.0.0.2.0.0	0.1.1.1.0.0.2.0.0.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	program	topic	cooperate-01	0.1.0	0.1.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0.2.0	0.1.0.0.2.0.0	
+# ::edge	rule	poss	organization	0.1.1.1.0.0.2.0	0.1.1.1.0.0.2.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	help-01	0	0.1	
+# ::edge	thing	manner-of	and	0.1.1.1.0	0.1.1.1.0.0	
+# ::edge	world-region	name	name	0.1.1.0.0	0.1.1.0.0.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Klauspeter" :op2 "Schmallenbach"))
+      :ARG1 (h / help-01
+            :ARG0 (p2 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e3 / entitle-01
+                              :ARG1 (p3 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (d / draw-02
+                  :ARG0 (n4 / nation
+                        :location (w / world-region :name (n5 / name :op1 "Southeast" :op2 "Asia")))
+                  :ARG1 (e / expert-41
+                        :ARG1 c2
+                        :ARG2 (t / thing
+                              :manner-of (a / and
+                                    :op1 (p4 / protect-01)
+                                    :op2 (e2 / enforce-01
+                                          :ARG1 e3)
+                                    :ARG0-of (c3 / comply-01
+                                          :ARG1 (r2 / rule
+                                                :poss (o3 / organization :name (n7 / name :op1 "World" :op2 "Trade" :op3 "Organization")))))))
+                  :ARG2 (c2 / continent :name (n6 / name :op1 "Europe")))))
+
+# ::id PROXY_AFP_ENG_20020422_0296.21 ::date 2013-05-30T08:29:38 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt 50 experts in intellectual property rights attended the European Commission-ASEAN intellectual property rights cooperation program.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_21.txt
+# ::tok 50 experts in intellectual property rights attended the European Commission - ASEAN intellectual property rights cooperation program .
+# ::alignments 8-10|0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1 11-12|0.1.0.1+0.1.0.1.0+0.1.0.1.0.0 6-7|0 16-17|0.1 0-1|0.0.0 1-2|0.0+0.0.1 4-5|0.0.1.0.0 3-4|0.0.1.0.0.0 15-16|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.107
+# ::node	0	attend-01	6-7
+# ::node	0.0	person	1-2
+# ::node	0.0.0	50	0-1
+# ::node	0.0.1	expert-41	1-2
+# ::node	0.0.1.0	entitle-01	
+# ::node	0.0.1.0.0	property	4-5
+# ::node	0.0.1.0.0.0	intellectual	3-4
+# ::node	0.1	program	16-17
+# ::node	0.1.0	cooperate-01	15-16
+# ::node	0.1.0.0	organization	8-10
+# ::node	0.1.0.0.0	name	8-10
+# ::node	0.1.0.0.0.0	"European"	8-10
+# ::node	0.1.0.0.0.1	"Commission"	8-10
+# ::node	0.1.0.1	organization	11-12
+# ::node	0.1.0.1.0	name	11-12
+# ::node	0.1.0.1.0.0	"ASEAN"	11-12
+# ::root	0	attend-01
+# ::edge	attend-01	ARG0	person	0	0.0	
+# ::edge	attend-01	ARG1	program	0	0.1	
+# ::edge	cooperate-01	ARG0	organization	0.1.0	0.1.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.1.0	0.1.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.1.0	0.0.1.0	
+# ::edge	entitle-01	mod	property	0.0.1.0	0.0.1.0.0	
+# ::edge	expert-41	ARG2	entitle-01	0.0.1	0.0.1.0	
+# ::edge	name	op1	"ASEAN"	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	name	op1	"European"	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	name	op2	"Commission"	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	organization	name	name	0.1.0.0	0.1.0.0.0	
+# ::edge	organization	name	name	0.1.0.1	0.1.0.1.0	
+# ::edge	person	ARG1-of	expert-41	0.0	0.0.1	
+# ::edge	person	quant	50	0.0	0.0.0	
+# ::edge	program	topic	cooperate-01	0.1	0.1.0	
+# ::edge	property	mod	intellectual	0.0.1.0.0	0.0.1.0.0.0	
+(a / attend-01
+      :ARG0 (p / person :quant 50
+            :ARG1-of (e / expert-41
+                  :ARG2 (e2 / entitle-01
+                        :mod (p2 / property
+                              :mod (i / intellectual)))))
+      :ARG1 (p3 / program
+            :topic (c / cooperate-01
+                  :ARG0 (o / organization :name (n / name :op1 "European" :op2 "Commission"))
+                  :ARG1 (o2 / organization :name (n2 / name :op1 "ASEAN"))
+                  :ARG2 e2)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.22 ::date 2013-06-03T07:37:06 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober stated that the European Commission-ASEAN intellectual property rights cooperation program is further proof of the growing importance of intellectual property rights protection to world trade.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_22.txt
+# ::tok Ingo Kober stated that the European Commission - ASEAN intellectual property rights cooperation program is further proof of the growing importance of intellectual property rights protection to world trade .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 5-7|0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.0.0+0.1.0.0.0.0.1 8-9|0.1.0.0.1+0.1.0.0.1.0+0.1.0.0.1.0.0 2-3|0 13-14|0.1.0 10-11|0.1.0.0.2.0 9-10|0.1.0.0.2.0.0 19-20|0.1.1 28-29|0.1.1.0.0.0 27-28|0.1.1.0.0.0.0 15-16|0.1.2 12-13|0.1.0.0 20-21|0.1.1.0 25-26|0.1.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.166
+# ::node	0	state-01	2-3
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	prove-01	
+# ::node	0.1.0	program	13-14
+# ::node	0.1.0.0	cooperate-01	12-13
+# ::node	0.1.0.0.0	organization	5-7
+# ::node	0.1.0.0.0.0	name	5-7
+# ::node	0.1.0.0.0.0.0	"European"	5-7
+# ::node	0.1.0.0.0.0.1	"Commission"	5-7
+# ::node	0.1.0.0.1	organization	8-9
+# ::node	0.1.0.0.1.0	name	8-9
+# ::node	0.1.0.0.1.0.0	"ASEAN"	8-9
+# ::node	0.1.0.0.2	entitle-01	
+# ::node	0.1.0.0.2.0	property	10-11
+# ::node	0.1.0.0.2.0.0	intellectual	9-10
+# ::node	0.1.1	grow-01	19-20
+# ::node	0.1.1.0	important	20-21
+# ::node	0.1.1.0.0	protect-01	25-26
+# ::node	0.1.1.0.0.0	trade-01	28-29
+# ::node	0.1.1.0.0.0.0	world	27-28
+# ::node	0.1.2	further	15-16
+# ::root	0	state-01
+# ::edge	cooperate-01	ARG0	organization	0.1.0.0	0.1.0.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.1.0.0	0.1.0.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.1.0.0	0.1.0.0.2	
+# ::edge	entitle-01	ARG1	property	0.1.0.0.2	0.1.0.0.2.0	
+# ::edge	grow-01	ARG1	important	0.1.1	0.1.1.0	
+# ::edge	important	domain	protect-01	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"ASEAN"	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	name	op1	"European"	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Commission"	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	organization	name	name	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	organization	name	name	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	program	topic	cooperate-01	0.1.0	0.1.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0.2.0	0.1.0.0.2.0.0	
+# ::edge	protect-01	ARG0	entitle-01	0.1.1.0.0	0.1.0.0.2	
+# ::edge	protect-01	ARG1	trade-01	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	prove-01	ARG0	program	0.1	0.1.0	
+# ::edge	prove-01	ARG1	grow-01	0.1	0.1.1	
+# ::edge	prove-01	mod	further	0.1	0.1.2	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	prove-01	0	0.1	
+# ::edge	trade-01	ARG0	world	0.1.1.0.0.0	0.1.1.0.0.0.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (p2 / prove-01
+            :ARG0 (p3 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e / entitle-01
+                              :ARG1 (p4 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (g / grow-01
+                  :ARG1 (i2 / important
+                        :domain (p5 / protect-01
+                              :ARG0 e
+                              :ARG1 (t / trade-01
+                                    :ARG0 (w / world)))))
+            :mod (f / further)))
+
+# ::id PROXY_AFP_ENG_20020422_0296.23 ::date 2013-06-03T07:47:28 ::snt-type body ::annotator LDC-AMR-14 ::preferred
+# ::snt Ingo Kober also stated that the European Commission-ASEAN intellectual property rights cooperation program marks the latest stage in a successful initiative to develop effective systems for protecting patents, trademarks, designs, and copyrights in the region.
+# ::save-date Wed Jul 10, 2013 ::file PROXY_AFP_ENG_20020422_0296_23.txt
+# ::tok Ingo Kober also stated that the European Commission - ASEAN intellectual property rights cooperation program marks the latest stage in a successful initiative to develop effective systems for protecting patents , trademarks , designs , and copyrights in the region .
+# ::alignments 0-2|0.0+0.0.0+0.0.0.0+0.0.0.1 6-8|0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.0.0+0.1.0.0.0.0.1 9-10|0.1.0.0.1+0.1.0.0.1.0+0.1.0.0.1.0.0 3-4|0 2-3|0.2 15-16|0.1 18-19|0.1.1 22-23|0.1.1.1 24-25|0.1.1.1.1 26-27|0.1.1.1.1.0 25-26|0.1.1.1.1.0.1 28-29|0.1.1.1.1.0.0 39-40|0.1.1.1.1.0.0.1 35-36|0.1.1.1.1.0.0.0 36-37|0.1.1.1.1.0.0.0.3 33-34|0.1.1.1.1.0.0.0.2 31-32|0.1.1.1.1.0.0.0.1 29-30|0.1.1.1.1.0.0.0.0 21-22|0.1.1.1.0 17-18|0.1.1.0+0.1.1.0.0 14-15|0.1.0 11-12|0.1.0.0.2.0 10-11|0.1.0.0.2.0.0 13-14|0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.248
+# ::node	0	state-01	3-4
+# ::node	0.0	person	0-2
+# ::node	0.0.0	name	0-2
+# ::node	0.0.0.0	"Ingo"	0-2
+# ::node	0.0.0.1	"Kober"	0-2
+# ::node	0.1	mark-01	15-16
+# ::node	0.1.0	program	14-15
+# ::node	0.1.0.0	cooperate-01	13-14
+# ::node	0.1.0.0.0	organization	6-8
+# ::node	0.1.0.0.0.0	name	6-8
+# ::node	0.1.0.0.0.0.0	"European"	6-8
+# ::node	0.1.0.0.0.0.1	"Commission"	6-8
+# ::node	0.1.0.0.1	organization	9-10
+# ::node	0.1.0.0.1.0	name	9-10
+# ::node	0.1.0.0.1.0.0	"ASEAN"	9-10
+# ::node	0.1.0.0.2	entitle-01	
+# ::node	0.1.0.0.2.0	property	11-12
+# ::node	0.1.0.0.2.0.0	intellectual	10-11
+# ::node	0.1.1	stage	18-19
+# ::node	0.1.1.0	late	17-18
+# ::node	0.1.1.0.0	most	17-18
+# ::node	0.1.1.1	initiative	22-23
+# ::node	0.1.1.1.0	successful	21-22
+# ::node	0.1.1.1.1	develop-02	24-25
+# ::node	0.1.1.1.1.0	system	26-27
+# ::node	0.1.1.1.1.0.0	protect-01	28-29
+# ::node	0.1.1.1.1.0.0.0	and	35-36
+# ::node	0.1.1.1.1.0.0.0.0	patent-01	29-30
+# ::node	0.1.1.1.1.0.0.0.1	trademark-01	31-32
+# ::node	0.1.1.1.1.0.0.0.2	design-01	33-34
+# ::node	0.1.1.1.1.0.0.0.3	copyright-01	36-37
+# ::node	0.1.1.1.1.0.0.1	region	39-40
+# ::node	0.1.1.1.1.0.1	effective	25-26
+# ::node	0.2	also	2-3
+# ::root	0	state-01
+# ::edge	and	op1	patent-01	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.0	
+# ::edge	and	op2	trademark-01	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.1	
+# ::edge	and	op3	design-01	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.2	
+# ::edge	and	op4	copyright-01	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.3	
+# ::edge	cooperate-01	ARG0	organization	0.1.0.0	0.1.0.0.0	
+# ::edge	cooperate-01	ARG1	organization	0.1.0.0	0.1.0.0.1	
+# ::edge	cooperate-01	ARG2	entitle-01	0.1.0.0	0.1.0.0.2	
+# ::edge	develop-02	ARG1	system	0.1.1.1.1	0.1.1.1.1.0	
+# ::edge	entitle-01	ARG1	property	0.1.0.0.2	0.1.0.0.2.0	
+# ::edge	initiative	mod	successful	0.1.1.1	0.1.1.1.0	
+# ::edge	initiative	purpose	develop-02	0.1.1.1	0.1.1.1.1	
+# ::edge	late	degree	most	0.1.1.0	0.1.1.0.0	
+# ::edge	mark-01	ARG0	program	0.1	0.1.0	
+# ::edge	mark-01	ARG1	stage	0.1	0.1.1	
+# ::edge	name	op1	"ASEAN"	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	name	op1	"European"	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	name	op1	"Ingo"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Commission"	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op2	"Kober"	0.0.0	0.0.0.1	
+# ::edge	organization	name	name	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	organization	name	name	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	program	topic	cooperate-01	0.1.0	0.1.0.0	
+# ::edge	property	mod	intellectual	0.1.0.0.2.0	0.1.0.0.2.0.0	
+# ::edge	protect-01	ARG1	and	0.1.1.1.1.0.0	0.1.1.1.1.0.0.0	
+# ::edge	protect-01	location	region	0.1.1.1.1.0.0	0.1.1.1.1.0.0.1	
+# ::edge	stage	frequency	late	0.1.1	0.1.1.0	
+# ::edge	stage	part-of	initiative	0.1.1	0.1.1.1	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	mark-01	0	0.1	
+# ::edge	state-01	mod	also	0	0.2	
+# ::edge	system	mod	effective	0.1.1.1.1.0	0.1.1.1.1.0.1	
+# ::edge	system	purpose	protect-01	0.1.1.1.1.0	0.1.1.1.1.0.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Ingo" :op2 "Kober"))
+      :ARG1 (m / mark-01
+            :ARG0 (p2 / program
+                  :topic (c / cooperate-01
+                        :ARG0 (o / organization :name (n2 / name :op1 "European" :op2 "Commission"))
+                        :ARG1 (o2 / organization :name (n3 / name :op1 "ASEAN"))
+                        :ARG2 (e / entitle-01
+                              :ARG1 (p3 / property
+                                    :mod (i / intellectual)))))
+            :ARG1 (s2 / stage
+                  :frequency (l / late
+                        :degree (m2 / most))
+                  :part-of (i2 / initiative
+                        :mod (s3 / successful)
+                        :purpose (d / develop-02
+                              :ARG1 (s4 / system
+                                    :purpose (p4 / protect-01
+                                          :ARG1 (a / and
+                                                :op1 (p5 / patent-01)
+                                                :op2 (t / trademark-01)
+                                                :op3 (d2 / design-01)
+                                                :op4 (c2 / copyright-01))
+                                          :location (r2 / region))
+                                    :mod (e2 / effective))))))
+      :mod (a2 / also))
+
+# ::id PROXY_AFP_ENG_20021112_0467.1 ::date 2013-05-25T12:21:39 ::snt-type date ::annotator UCO-AMR-05 ::preferred
+# ::snt 2002-11-12
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_1.txt
+# ::tok 2002-11-12
+# ::alignments 0-1|0+0.0+0.1+0.2 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.258
+# ::node	0	date-entity	0-1
+# ::node	0.0	2002	0-1
+# ::node	0.1	11	0-1
+# ::node	0.2	12	0-1
+# ::root	0	date-entity
+# ::edge	date-entity	day	12	0	0.2	
+# ::edge	date-entity	month	11	0	0.1	
+# ::edge	date-entity	year	2002	0	0.0	
+(d / date-entity :year 2002 :month 11 :day 12)
+
+# ::id PROXY_AFP_ENG_20021112_0467.2 ::date 2013-05-25T12:23:26 ::snt-type country ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzania (tz)
+# ::save-date Sat Jun 8, 2013 ::file PROXY_AFP_ENG_20021112_0467_2.txt
+# ::tok Tanzania ( tz )
+# ::alignments 0-1|0+0.0+0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.268
+# ::node	0	country	0-1
+# ::node	0.0	name	0-1
+# ::node	0.0.0	"Tanzania"	0-1
+# ::root	0	country
+# ::edge	country	name	name	0	0.0	
+# ::edge	name	op1	"Tanzania"	0.0	0.0.0	
+(c2 / country :name (n / name :op1 "Tanzania"))
+
+# ::id PROXY_AFP_ENG_20021112_0467.3 ::date 2013-05-25T12:33:41 ::snt-type topic ::annotator UCO-AMR-05 ::preferred
+# ::snt International; health
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_3.txt
+# ::tok International ; health
+# ::alignments 1-2|0 2-3|0.1 0-1|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.276
+# ::node	0	and	1-2
+# ::node	0.0	international	0-1
+# ::node	0.1	health	2-3
+# ::root	0	and
+# ::edge	and	op1	international	0	0.0	
+# ::edge	and	op2	health	0	0.1	
+(a / and
+      :op1 (i / international)
+      :op2 (h / health))
+
+# ::id PROXY_AFP_ENG_20021112_0467.4 ::date 2013-05-25T12:34:04 ::snt-type summary ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzanian Vice President Ali Mohamed Sheni said on November 12, 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_4.txt
+# ::tok Tanzanian Vice President Ali Mohamed Sheni said on November 12 , 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent .
+# ::alignments 3-6|0.0+0.0.0+0.0.0.0+0.0.0.1+0.0.0.2 13-14|0.1.0.0+0.1.0.0.0 0-1|0.0.1.0+0.0.1.0.0+0.0.1.0.0.0 8-12|0.2+0.2.0+0.2.1+0.2.2 6-7|0 14-15|0.1 18-19|0.1.1 16-17|0.1.1.2 20-21|0.1.1.1 22-23|0.1.1.1.0 25-26|0.1.1.1.0.1 26-27|0.1.1.1.0.1.0 21-22|0.1.1.1.0.0 17-18|0.1.1.0 29-30|0.1.0 2-3|0.0.1+0.0.1.1 1-2|0.0.1.1.0 24-25|0.1.1.1.0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.339
+# ::node	0	say-01	6-7
+# ::node	0.0	person	3-6
+# ::node	0.0.0	name	3-6
+# ::node	0.0.0.0	"Ali"	3-6
+# ::node	0.0.0.1	"Mohamed"	3-6
+# ::node	0.0.0.2	"Sheni"	3-6
+# ::node	0.0.1	have-org-role-91	2-3
+# ::node	0.0.1.0	country	0-1
+# ::node	0.0.1.0.0	name	0-1
+# ::node	0.0.1.0.0.0	"Tanzania"	0-1
+# ::node	0.0.1.1	president	2-3
+# ::node	0.0.1.1.0	vice	1-2
+# ::node	0.1	need-01	14-15
+# ::node	0.1.0	continent	29-30
+# ::node	0.1.0.0	name	13-14
+# ::node	0.1.0.0.0	"Africa"	13-14
+# ::node	0.1.1	forum	18-19
+# ::node	0.1.1.0	health	17-18
+# ::node	0.1.1.1	create-01	20-21
+# ::node	0.1.1.1.0	priority	22-23
+# ::node	0.1.1.1.0.0	research	21-22
+# ::node	0.1.1.1.0.1	combat-01	25-26
+# ::node	0.1.1.1.0.1.0	disease	26-27
+# ::node	0.1.1.1.0.1.1	effective	24-25
+# ::node	0.1.1.2	own	16-17
+# ::node	0.2	date-entity	8-12
+# ::node	0.2.0	11	8-12
+# ::node	0.2.1	12	8-12
+# ::node	0.2.2	2002	8-12
+# ::root	0	say-01
+# ::edge	combat-01	ARG1	disease	0.1.1.1.0.1	0.1.1.1.0.1.0	
+# ::edge	combat-01	manner	effective	0.1.1.1.0.1	0.1.1.1.0.1.1	
+# ::edge	continent	name	name	0.1.0	0.1.0.0	
+# ::edge	country	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	create-01	ARG1	priority	0.1.1.1	0.1.1.1.0	
+# ::edge	date-entity	day	12	0.2	0.2.1	
+# ::edge	date-entity	month	11	0.2	0.2.0	
+# ::edge	date-entity	year	2002	0.2	0.2.2	
+# ::edge	disease	location	continent	0.1.1.1.0.1.0	0.1.0	
+# ::edge	forum	mod	own	0.1.1	0.1.1.2	
+# ::edge	forum	poss	continent	0.1.1	0.1.0	
+# ::edge	forum	purpose	create-01	0.1.1	0.1.1.1	
+# ::edge	forum	topic	health	0.1.1	0.1.1.0	
+# ::edge	have-org-role-91	ARG1	country	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	president	0.0.1	0.0.1.1	
+# ::edge	name	op1	"Africa"	0.1.0.0	0.1.0.0.0	
+# ::edge	name	op1	"Ali"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Tanzania"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op2	"Mohamed"	0.0.0	0.0.0.1	
+# ::edge	name	op3	"Sheni"	0.0.0	0.0.0.2	
+# ::edge	need-01	ARG0	continent	0.1	0.1.0	
+# ::edge	need-01	ARG1	forum	0.1	0.1.1	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	president	mod	vice	0.0.1.1	0.0.1.1.0	
+# ::edge	priority	mod	research	0.1.1.1.0	0.1.1.1.0.0	
+# ::edge	priority	purpose	combat-01	0.1.1.1.0	0.1.1.1.0.1	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	need-01	0	0.1	
+# ::edge	say-01	time	date-entity	0	0.2	
+(s / say-01
+      :ARG0 (p2 / person :name (n / name :op1 "Ali" :op2 "Mohamed" :op3 "Sheni")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "Tanzania"))
+                  :ARG2 (p3 / president
+                        :mod (v / vice))))
+      :ARG1 (n3 / need-01
+            :ARG0 (c2 / continent :name (n4 / name :op1 "Africa"))
+            :ARG1 (f / forum
+                  :topic (h / health)
+                  :poss c2
+                  :purpose (c3 / create-01
+                        :ARG1 (p / priority
+                              :mod (r / research)
+                              :purpose (c4 / combat-01
+                                    :ARG1 (d2 / disease
+                                          :location c2)
+                                    :manner (e / effective))))
+                  :mod (o / own)))
+      :time (d / date-entity :month 11 :day 12 :year 2002))
+
+# ::id PROXY_AFP_ENG_20021112_0467.5 ::date 2013-05-25T12:36:37 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Tanzanian Vice President Ali Mohamed Sheni said on November 12, 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_5.txt
+# ::tok Tanzanian Vice President Ali Mohamed Sheni said on November 12 , 2002 that Africa needs its own health forum to create research priorities to effectively combat disease on the continent .
+# ::alignments 3-6|0.0+0.0.0+0.0.0.0+0.0.0.1+0.0.0.2 13-14|0.1.0.0+0.1.0.0.0 0-1|0.0.1.0+0.0.1.0.0+0.0.1.0.0.0 8-12|0.2+0.2.0+0.2.1+0.2.2 6-7|0 14-15|0.1 18-19|0.1.1 16-17|0.1.1.2 20-21|0.1.1.1 22-23|0.1.1.1.0 25-26|0.1.1.1.0.1 26-27|0.1.1.1.0.1.0 21-22|0.1.1.1.0.0 17-18|0.1.1.0 29-30|0.1.0 2-3|0.0.1+0.0.1.1 1-2|0.0.1.1.0 24-25|0.1.1.1.0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.406
+# ::node	0	say-01	6-7
+# ::node	0.0	person	3-6
+# ::node	0.0.0	name	3-6
+# ::node	0.0.0.0	"Ali"	3-6
+# ::node	0.0.0.1	"Mohamed"	3-6
+# ::node	0.0.0.2	"Sheni"	3-6
+# ::node	0.0.1	have-org-role-91	2-3
+# ::node	0.0.1.0	country	0-1
+# ::node	0.0.1.0.0	name	0-1
+# ::node	0.0.1.0.0.0	"Tanzania"	0-1
+# ::node	0.0.1.1	president	2-3
+# ::node	0.0.1.1.0	vice	1-2
+# ::node	0.1	need-01	14-15
+# ::node	0.1.0	continent	29-30
+# ::node	0.1.0.0	name	13-14
+# ::node	0.1.0.0.0	"Africa"	13-14
+# ::node	0.1.1	forum	18-19
+# ::node	0.1.1.0	health	17-18
+# ::node	0.1.1.1	create-01	20-21
+# ::node	0.1.1.1.0	priority	22-23
+# ::node	0.1.1.1.0.0	research	21-22
+# ::node	0.1.1.1.0.1	combat-01	25-26
+# ::node	0.1.1.1.0.1.0	disease	26-27
+# ::node	0.1.1.1.0.1.1	effective	24-25
+# ::node	0.1.1.2	own	16-17
+# ::node	0.2	date-entity	8-12
+# ::node	0.2.0	2002	8-12
+# ::node	0.2.1	11	8-12
+# ::node	0.2.2	12	8-12
+# ::root	0	say-01
+# ::edge	combat-01	ARG1	disease	0.1.1.1.0.1	0.1.1.1.0.1.0	
+# ::edge	combat-01	manner	effective	0.1.1.1.0.1	0.1.1.1.0.1.1	
+# ::edge	continent	name	name	0.1.0	0.1.0.0	
+# ::edge	country	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	create-01	ARG1	priority	0.1.1.1	0.1.1.1.0	
+# ::edge	date-entity	day	12	0.2	0.2.2	
+# ::edge	date-entity	month	11	0.2	0.2.1	
+# ::edge	date-entity	year	2002	0.2	0.2.0	
+# ::edge	disease	location	continent	0.1.1.1.0.1.0	0.1.0	
+# ::edge	forum	mod	own	0.1.1	0.1.1.2	
+# ::edge	forum	poss	continent	0.1.1	0.1.0	
+# ::edge	forum	purpose	create-01	0.1.1	0.1.1.1	
+# ::edge	forum	topic	health	0.1.1	0.1.1.0	
+# ::edge	have-org-role-91	ARG1	country	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	president	0.0.1	0.0.1.1	
+# ::edge	name	op1	"Africa"	0.1.0.0	0.1.0.0.0	
+# ::edge	name	op1	"Ali"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Tanzania"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op2	"Mohamed"	0.0.0	0.0.0.1	
+# ::edge	name	op3	"Sheni"	0.0.0	0.0.0.2	
+# ::edge	need-01	ARG0	continent	0.1	0.1.0	
+# ::edge	need-01	ARG1	forum	0.1	0.1.1	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	president	mod	vice	0.0.1.1	0.0.1.1.0	
+# ::edge	priority	mod	research	0.1.1.1.0	0.1.1.1.0.0	
+# ::edge	priority	purpose	combat-01	0.1.1.1.0	0.1.1.1.0.1	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	need-01	0	0.1	
+# ::edge	say-01	time	date-entity	0	0.2	
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Ali" :op2 "Mohamed" :op3 "Sheni")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c / country :name (n2 / name :op1 "Tanzania"))
+                  :ARG2 (p3 / president
+                        :mod (v / vice))))
+      :ARG1 (n3 / need-01
+            :ARG0 (c2 / continent :name (n4 / name :op1 "Africa"))
+            :ARG1 (f / forum
+                  :topic (h / health)
+                  :poss c2
+                  :purpose (c3 / create-01
+                        :ARG1 (p2 / priority
+                              :mod (r / research)
+                              :purpose (c4 / combat-01
+                                    :ARG1 (d2 / disease
+                                          :location c2)
+                                    :manner (e / effective))))
+                  :mod (o / own)))
+      :time (d / date-entity :year 2002 :month 11 :day 12))
+
+# ::id PROXY_AFP_ENG_20021112_0467.6 ::date 2013-05-25T12:39:47 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni stated that Africa will find it difficult to influence global research priorities in its favor without a forum.
+# ::save-date Wed Jul 24, 2013 ::file PROXY_AFP_ENG_20021112_0467_6.txt
+# ::tok Sheni stated that Africa will find it difficult to influence global research priorities in its favor without a forum .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 3-4|0.1.0+0.1.0.0+0.1.0.0.0 1-2|0 5-6|0.1 7-8|0.1.1 9-10|0.1.1.0 15-16|0.1.1.0.1 12-13|0.1.1.0.0 11-12|0.1.1.0.0.1 16-17|0.1.1.0.2 10-11|0.1.1.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.500
+# ::node	0	state-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Sheni"	0-1
+# ::node	0.1	find-02	5-6
+# ::node	0.1.0	continent	3-4
+# ::node	0.1.0.0	name	3-4
+# ::node	0.1.0.0.0	"Africa"	3-4
+# ::node	0.1.1	difficult	7-8
+# ::node	0.1.1.0	influence-01	9-10
+# ::node	0.1.1.0.0	priority	12-13
+# ::node	0.1.1.0.0.0	globe	10-11
+# ::node	0.1.1.0.0.1	research	11-12
+# ::node	0.1.1.0.1	favor	15-16
+# ::node	0.1.1.0.2	with-forum	16-17
+# ::node	0.1.1.0.2.0	-	
+# ::root	0	state-01
+# ::edge	continent	name	name	0.1.0	0.1.0.0	
+# ::edge	difficult	mod	influence-01	0.1.1	0.1.1.0	
+# ::edge	favor	poss	continent	0.1.1.0.1	0.1.0	
+# ::edge	find-02	ARG0	continent	0.1	0.1.0	
+# ::edge	find-02	ARG1	difficult	0.1	0.1.1	
+# ::edge	influence-01	ARG1	priority	0.1.1.0	0.1.1.0.0	
+# ::edge	influence-01	ARG2	favor	0.1.1.0	0.1.1.0.1	
+# ::edge	influence-01	manner	with-forum	0.1.1.0	0.1.1.0.2	
+# ::edge	name	op1	"Africa"	0.1.0.0	0.1.0.0.0	
+# ::edge	name	op1	"Sheni"	0.0.0	0.0.0.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	priority	mod	globe	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	priority	mod	research	0.1.1.0.0	0.1.1.0.0.1	
+# ::edge	state-01	ARG0	person	0	0.0	
+# ::edge	state-01	ARG1	find-02	0	0.1	
+# ::edge	with-forum	polarity	-	0.1.1.0.2	0.1.1.0.2.0	
+(s / state-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (f / find-02
+            :ARG0 (c / continent :name (n2 / name :op1 "Africa"))
+            :ARG1 (d / difficult
+                  :mod (i / influence-01
+                        :ARG1 (p2 / priority
+                              :mod (g / globe)
+                              :mod (r / research))
+                        :ARG2 (f2 / favor
+                              :poss c)
+                        :manner (w / with-forum :polarity -)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.7 ::date 2013-05-25T12:45:19 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt The continent lacks resources.
+# ::save-date Sat May 25, 2013 ::file PROXY_AFP_ENG_20021112_0467_7.txt
+# ::tok The continent lacks resources .
+# ::alignments 2-3|0 3-4|0.1 1-2|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.512
+# ::node	0	lack-01	2-3
+# ::node	0.0	continent	1-2
+# ::node	0.1	resource	3-4
+# ::root	0	lack-01
+# ::edge	lack-01	ARG0	continent	0	0.0	
+# ::edge	lack-01	ARG1	resource	0	0.1	
+(l / lack-01
+      :ARG0 (c / continent)
+      :ARG1 (r / resource))
+
+# ::id PROXY_AFP_ENG_20021112_0467.8 ::date 2013-05-25T12:45:55 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni attended a four-day meeting to discuss global health at Arusha in northern Tanzania.
+# ::save-date Mon Dec 9, 2013 ::file PROXY_AFP_ENG_20021112_0467_8.txt
+# ::tok Sheni attended a four - day meeting to discuss global health at Arusha in northern Tanzania .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 12-13|0.1.0+0.1.0.0+0.1.0.0.0 15-16|0.1.0.1.0+0.1.0.1.0.0+0.1.0.1.0.0.0 1-2|0 8-9|0.2 10-11|0.2.0 6-7|0.1 3-4|0.1.1.0 5-6|0.1.1+0.1.1.1 9-10|0.2.0.0 14-15|0.1.0.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.547
+# ::node	0	attend-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Sheni"	0-1
+# ::node	0.1	meeting	6-7
+# ::node	0.1.0	city	12-13
+# ::node	0.1.0.0	name	12-13
+# ::node	0.1.0.0.0	"Arusha"	12-13
+# ::node	0.1.0.1	north	14-15
+# ::node	0.1.0.1.0	country	15-16
+# ::node	0.1.0.1.0.0	name	15-16
+# ::node	0.1.0.1.0.0.0	"Tanzania"	15-16
+# ::node	0.1.1	temporal-quantity	5-6
+# ::node	0.1.1.0	4	3-4
+# ::node	0.1.1.1	day	5-6
+# ::node	0.2	discuss-01	8-9
+# ::node	0.2.0	health	10-11
+# ::node	0.2.0.0	globe	9-10
+# ::root	0	attend-01
+# ::edge	attend-01	ARG0	person	0	0.0	
+# ::edge	attend-01	ARG1	meeting	0	0.1	
+# ::edge	attend-01	purpose	discuss-01	0	0.2	
+# ::edge	city	location	north	0.1.0	0.1.0.1	
+# ::edge	city	name	name	0.1.0	0.1.0.0	
+# ::edge	country	name	name	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	discuss-01	ARG1	health	0.2	0.2.0	
+# ::edge	health	mod	globe	0.2.0	0.2.0.0	
+# ::edge	meeting	duration	temporal-quantity	0.1	0.1.1	
+# ::edge	meeting	location	city	0.1	0.1.0	
+# ::edge	name	op1	"Arusha"	0.1.0.0	0.1.0.0.0	
+# ::edge	name	op1	"Sheni"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Tanzania"	0.1.0.1.0.0	0.1.0.1.0.0.0	
+# ::edge	north	part-of	country	0.1.0.1	0.1.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	temporal-quantity	quant	4	0.1.1	0.1.1.0	
+# ::edge	temporal-quantity	unit	day	0.1.1	0.1.1.1	
+(a / attend-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (m / meeting
+            :location (c / city :name (n2 / name :op1 "Arusha")
+                  :location (n4 / north
+                        :part-of (c2 / country :name (n3 / name :op1 "Tanzania"))))
+            :duration (t / temporal-quantity :quant 4
+                  :unit (d / day)))
+      :purpose (d2 / discuss-01
+            :ARG1 (h / health
+                  :mod (g / globe))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.9 ::date 2013-05-25T12:49:17 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni addressed more than 700 public health specialists from 100 countries.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20021112_0467_9.txt
+# ::tok Sheni addressed more than 700 public health specialists from 100 countries .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 6-7|0.1.0.0 5-6|0.1.0.0.0 4-5|0.1.1.0 10-11|0.1.2 9-10|0.1.2.0 7-8|0.1+0.1.0 2-3|0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.582
+# ::node	0	address-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Sheni"	0-1
+# ::node	0.1	person	7-8
+# ::node	0.1.0	specialize-01	7-8
+# ::node	0.1.0.0	health	6-7
+# ::node	0.1.0.0.0	public	5-6
+# ::node	0.1.1	more-than	2-3
+# ::node	0.1.1.0	700	4-5
+# ::node	0.1.2	country	10-11
+# ::node	0.1.2.0	100	9-10
+# ::root	0	address-01
+# ::edge	address-01	ARG0	person	0	0.0	
+# ::edge	address-01	ARG2	person	0	0.1	
+# ::edge	country	quant	100	0.1.2	0.1.2.0	
+# ::edge	health	mod	public	0.1.0.0	0.1.0.0.0	
+# ::edge	more-than	op1	700	0.1.1	0.1.1.0	
+# ::edge	name	op1	"Sheni"	0.0.0	0.0.0.0	
+# ::edge	person	ARG0-of	specialize-01	0.1	0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	person	quant	more-than	0.1	0.1.1	
+# ::edge	person	source	country	0.1	0.1.2	
+# ::edge	specialize-01	ARG1	health	0.1.0	0.1.0.0	
+(a / address-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG2 (p3 / person
+            :ARG0-of (s2 / specialize-01
+                  :ARG1 (h / health
+                        :mod (p2 / public)))
+            :quant (m / more-than :op1 700)
+            :source (c / country :quant 100)))
+
+# ::id PROXY_AFP_ENG_20021112_0467.10 ::date 2013-05-25T12:52:32 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni told delegates at the Global Forum for Health Research's annual meeting that less than 10 percent of the global health research budget of 70 billion dollars went to Africa.
+# ::save-date Mon Dec 9, 2013 ::file PROXY_AFP_ENG_20021112_0467_10.txt
+# ::tok Sheni told delegates at the Global Forum for Health Research 's annual meeting that less than 10 percent of the global health research budget of 70 billion dollars went to Africa .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 30-31|0.1.1+0.1.1.0+0.1.1.0.0 5-10|0.3.0+0.3.0.0+0.3.0.0.0+0.3.0.0.1+0.3.0.0.2+0.3.0.0.3+0.3.0.0.4 1-2|0 12-13|0.3 2-3|0.2 28-29|0.1 18-19|0.1.0.0.0 16-17|0.1.0.0.0.1.0 27-28|0.1.0.0.0.0+0.1.0.0.0.0.1 23-24|0.1.0.0.0.0.2 22-23|0.1.0.0.0.0.2.0 21-22|0.1.0.0.0.0.2.0.0 14-15|0.1.0 17-18|0.1.0.0.0.1 20-21|0.1.0.0.0.0.2.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.655
+# ::node	0	tell-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Sheni"	0-1
+# ::node	0.1	go-01	28-29
+# ::node	0.1.0	less-than	14-15
+# ::node	0.1.0.0	monetary-quantity	
+# ::node	0.1.0.0.0	include-91	18-19
+# ::node	0.1.0.0.0.0	monetary-quantity	27-28
+# ::node	0.1.0.0.0.0.0	70000000000	
+# ::node	0.1.0.0.0.0.1	dollar	27-28
+# ::node	0.1.0.0.0.0.2	budget-01	23-24
+# ::node	0.1.0.0.0.0.2.0	research-01	22-23
+# ::node	0.1.0.0.0.0.2.0.0	health	21-22
+# ::node	0.1.0.0.0.0.2.0.0.0	globe	20-21
+# ::node	0.1.0.0.0.1	percentage-entity	17-18
+# ::node	0.1.0.0.0.1.0	10	16-17
+# ::node	0.1.1	continent	30-31
+# ::node	0.1.1.0	name	30-31
+# ::node	0.1.1.0.0	"Africa"	30-31
+# ::node	0.2	delegate	2-3
+# ::node	0.3	meet-03	12-13
+# ::node	0.3.0	organization	5-10
+# ::node	0.3.0.0	name	5-10
+# ::node	0.3.0.0.0	"Global"	5-10
+# ::node	0.3.0.0.1	"Forum"	5-10
+# ::node	0.3.0.0.2	"for"	5-10
+# ::node	0.3.0.0.3	"Health"	5-10
+# ::node	0.3.0.0.4	"Research"	5-10
+# ::node	0.3.1	rate-entity-91	
+# ::node	0.3.1.0	temporal-quantity	
+# ::node	0.3.1.0.0	1	
+# ::node	0.3.1.0.1	year	
+# ::root	0	tell-01
+# ::edge	budget-01	purpose	research-01	0.1.0.0.0.0.2	0.1.0.0.0.0.2.0	
+# ::edge	continent	name	name	0.1.1	0.1.1.0	
+# ::edge	go-01	ARG1	less-than	0.1	0.1.0	
+# ::edge	go-01	ARG4	continent	0.1	0.1.1	
+# ::edge	health	mod	globe	0.1.0.0.0.0.2.0.0	0.1.0.0.0.0.2.0.0.0	
+# ::edge	include-91	ARG1	monetary-quantity	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	include-91	ARG3	percentage-entity	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	less-than	op1	monetary-quantity	0.1.0	0.1.0.0	
+# ::edge	meet-03	ARG0	organization	0.3	0.3.0	
+# ::edge	meet-03	frequency	rate-entity-91	0.3	0.3.1	
+# ::edge	monetary-quantity	ARG1-of	budget-01	0.1.0.0.0.0	0.1.0.0.0.0.2	
+# ::edge	monetary-quantity	ARG2-of	include-91	0.1.0.0	0.1.0.0.0	
+# ::edge	monetary-quantity	quant	70000000000	0.1.0.0.0.0	0.1.0.0.0.0.0	
+# ::edge	monetary-quantity	unit	dollar	0.1.0.0.0.0	0.1.0.0.0.0.1	
+# ::edge	name	op1	"Africa"	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"Global"	0.3.0.0	0.3.0.0.0	
+# ::edge	name	op1	"Sheni"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Forum"	0.3.0.0	0.3.0.0.1	
+# ::edge	name	op3	"for"	0.3.0.0	0.3.0.0.2	
+# ::edge	name	op4	"Health"	0.3.0.0	0.3.0.0.3	
+# ::edge	name	op5	"Research"	0.3.0.0	0.3.0.0.4	
+# ::edge	organization	name	name	0.3.0	0.3.0.0	
+# ::edge	percentage-entity	value	10	0.1.0.0.0.1	0.1.0.0.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	rate-entity-91	ARG3	temporal-quantity	0.3.1	0.3.1.0	
+# ::edge	research-01	ARG1	health	0.1.0.0.0.0.2.0	0.1.0.0.0.0.2.0.0	
+# ::edge	tell-01	ARG0	person	0	0.0	
+# ::edge	tell-01	ARG1	go-01	0	0.1	
+# ::edge	tell-01	ARG2	delegate	0	0.2	
+# ::edge	tell-01	location	meet-03	0	0.3	
+# ::edge	temporal-quantity	quant	1	0.3.1.0	0.3.1.0.0	
+# ::edge	temporal-quantity	unit	year	0.3.1.0	0.3.1.0.1	
+(t / tell-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (g / go-01
+            :ARG1 (l2 / less-than
+                  :op1 (m5 / monetary-quantity
+                        :ARG2-of (i2 / include-91
+                              :ARG1 (m3 / monetary-quantity :quant 70000000000
+                                    :unit (d / dollar)
+                                    :ARG1-of (b2 / budget-01
+                                          :purpose (r2 / research-01
+                                                :ARG1 (h / health
+                                                      :mod (g2 / globe)))))
+                              :ARG3 (p2 / percentage-entity :value 10))))
+            :ARG4 (c / continent :name (n3 / name :op1 "Africa")))
+      :ARG2 (d3 / delegate)
+      :location (m / meet-03
+            :ARG0 (o / organization :name (n2 / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+            :frequency (r / rate-entity-91
+                  :ARG3 (t2 / temporal-quantity :quant 1
+                        :unit (y / year)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.11 ::date 2013-05-25T12:58:24 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Africa has 90 percent of the global diseases.
+# ::save-date Wed May 29, 2013 ::file PROXY_AFP_ENG_20021112_0467_11.txt
+# ::tok Africa has 90 percent of the global diseases .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 7-8|0.1 2-3|0.1.0.0 4-5|0.1.0.1 3-4|0.1.0 6-7|0.1.0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.675
+# ::node	0	have-03	1-2
+# ::node	0.0	continent	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Africa"	0-1
+# ::node	0.1	disease	7-8
+# ::node	0.1.0	percentage-entity	3-4
+# ::node	0.1.0.0	90	2-3
+# ::node	0.1.0.1	include-91	4-5
+# ::node	0.1.0.1.0	disease	
+# ::node	0.1.0.1.0.0	globe	6-7
+# ::root	0	have-03
+# ::edge	continent	name	name	0.0	0.0.0	
+# ::edge	disease	mod	globe	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	disease	quant	percentage-entity	0.1	0.1.0	
+# ::edge	have-03	ARG0	continent	0	0.0	
+# ::edge	have-03	ARG1	disease	0	0.1	
+# ::edge	include-91	ARG1	disease	0.1.0.1	0.1	
+# ::edge	include-91	ARG2	disease	0.1.0.1	0.1.0.1.0	
+# ::edge	name	op1	"Africa"	0.0.0	0.0.0.0	
+# ::edge	percentage-entity	ARG3-of	include-91	0.1.0	0.1.0.1	
+# ::edge	percentage-entity	value	90	0.1.0	0.1.0.0	
+(h / have-03
+      :ARG0 (c / continent :name (n / name :op1 "Africa"))
+      :ARG1 (d2 / disease
+            :quant (p / percentage-entity :value 90
+                  :ARG3-of (i2 / include-91
+                        :ARG1 d2
+                        :ARG2 (d / disease
+                              :mod (g / globe))))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.12 ::date 2013-05-25T13:01:57 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Sheni said the formation of the Asian and Pacific Health Research Forum and the Latin American Health Research Forum are steps in the right direction.
+# ::save-date Sat Jun 8, 2013 ::file PROXY_AFP_ENG_20021112_0467_12.txt
+# ::tok Sheni said the formation of the Asian and Pacific Health Research Forum and the Latin American Health Research Forum are steps in the right direction .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 6-12|0.1.0.0+0.1.0.0.0+0.1.0.0.0.0+0.1.0.0.0.1+0.1.0.0.0.2+0.1.0.0.0.3+0.1.0.0.0.4+0.1.0.0.0.5 14-19|0.1.0.1+0.1.0.1.0+0.1.0.1.0.0+0.1.0.1.0.1+0.1.0.1.0.2+0.1.0.1.0.3+0.1.0.1.0.4 1-2|0 12-13|0.1.0 20-21|0.1.1 23-24|0.1.1.0 3-4|0.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.730
+# ::node	0	say-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Sheni"	0-1
+# ::node	0.1	form-01	3-4
+# ::node	0.1.0	and	12-13
+# ::node	0.1.0.0	organization	6-12
+# ::node	0.1.0.0.0	name	6-12
+# ::node	0.1.0.0.0.0	"Asian"	6-12
+# ::node	0.1.0.0.0.1	"and"	6-12
+# ::node	0.1.0.0.0.2	"Pacific"	6-12
+# ::node	0.1.0.0.0.3	"Health"	6-12
+# ::node	0.1.0.0.0.4	"Research"	6-12
+# ::node	0.1.0.0.0.5	"Forum"	6-12
+# ::node	0.1.0.1	organization	14-19
+# ::node	0.1.0.1.0	name	14-19
+# ::node	0.1.0.1.0.0	"Latin"	14-19
+# ::node	0.1.0.1.0.1	"American"	14-19
+# ::node	0.1.0.1.0.2	"Health"	14-19
+# ::node	0.1.0.1.0.3	"Research"	14-19
+# ::node	0.1.0.1.0.4	"Forum"	14-19
+# ::node	0.1.1	step-01	20-21
+# ::node	0.1.1.0	right	23-24
+# ::root	0	say-01
+# ::edge	and	op1	organization	0.1.0	0.1.0.0	
+# ::edge	and	op2	organization	0.1.0	0.1.0.1	
+# ::edge	form-01	ARG1	and	0.1	0.1.0	
+# ::edge	form-01	mod	step-01	0.1	0.1.1	
+# ::edge	name	op1	"Asian"	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	name	op1	"Latin"	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	name	op1	"Sheni"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"American"	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	name	op2	"and"	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	name	op3	"Health"	0.1.0.1.0	0.1.0.1.0.2	
+# ::edge	name	op3	"Pacific"	0.1.0.0.0	0.1.0.0.0.2	
+# ::edge	name	op4	"Health"	0.1.0.0.0	0.1.0.0.0.3	
+# ::edge	name	op4	"Research"	0.1.0.1.0	0.1.0.1.0.3	
+# ::edge	name	op5	"Forum"	0.1.0.1.0	0.1.0.1.0.4	
+# ::edge	name	op5	"Research"	0.1.0.0.0	0.1.0.0.0.4	
+# ::edge	name	op6	"Forum"	0.1.0.0.0	0.1.0.0.0.5	
+# ::edge	organization	name	name	0.1.0.0	0.1.0.0.0	
+# ::edge	organization	name	name	0.1.0.1	0.1.0.1.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	form-01	0	0.1	
+# ::edge	step-01	direction	right	0.1.1	0.1.1.0	
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Sheni"))
+      :ARG1 (f / form-01
+            :ARG1 (a / and
+                  :op1 (o / organization :name (n2 / name :op1 "Asian" :op2 "and" :op3 "Pacific" :op4 "Health" :op5 "Research" :op6 "Forum"))
+                  :op2 (o2 / organization :name (n3 / name :op1 "Latin" :op2 "American" :op3 "Health" :op4 "Research" :op5 "Forum")))
+            :mod (s2 / step-01
+                  :direction (r / right))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.13 ::date 2013-05-25T13:04:19 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Global Forum for Health Research Chairman Richard Feachem said it was unfair for poor countries to be allocated meager sums of research funding.
+# ::save-date Tue Sep 17, 2013 ::file PROXY_AFP_ENG_20021112_0467_13.txt
+# ::tok Global Forum for Health Research Chairman Richard Feachem said it was unfair for poor countries to be allocated meager sums of research funding .
+# ::alignments 6-8|0.0+0.0.0+0.0.0.0+0.0.0.1 0-5|0.0.1.0+0.0.1.0.0+0.0.1.0.0.0+0.0.1.0.0.1+0.0.1.0.0.2+0.0.1.0.0.3+0.0.1.0.0.4 8-9|0 11-12|0.1 17-18|0.1.0 14-15|0.1.0.1 13-14|0.1.0.1.0 19-20|0.1.0.0 22-23|0.1.0.0.1 21-22|0.1.0.0.1.0 18-19|0.1.0.0.0 5-6|0.0.1+0.0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.775
+# ::node	0	say-01	8-9
+# ::node	0.0	person	6-8
+# ::node	0.0.0	name	6-8
+# ::node	0.0.0.0	"Richard"	6-8
+# ::node	0.0.0.1	"Feachem"	6-8
+# ::node	0.0.1	have-org-role-91	5-6
+# ::node	0.0.1.0	organization	0-5
+# ::node	0.0.1.0.0	name	0-5
+# ::node	0.0.1.0.0.0	"Global"	0-5
+# ::node	0.0.1.0.0.1	"Forum"	0-5
+# ::node	0.0.1.0.0.2	"for"	0-5
+# ::node	0.0.1.0.0.3	"Health"	0-5
+# ::node	0.0.1.0.0.4	"Research"	0-5
+# ::node	0.0.1.1	chairman	5-6
+# ::node	0.1	unfair	11-12
+# ::node	0.1.0	allocate-01	17-18
+# ::node	0.1.0.0	sum	19-20
+# ::node	0.1.0.0.0	meager	18-19
+# ::node	0.1.0.0.1	fund-01	22-23
+# ::node	0.1.0.0.1.0	research-01	21-22
+# ::node	0.1.0.1	country	14-15
+# ::node	0.1.0.1.0	poor	13-14
+# ::root	0	say-01
+# ::edge	allocate-01	ARG1	sum	0.1.0	0.1.0.0	
+# ::edge	allocate-01	ARG2	country	0.1.0	0.1.0.1	
+# ::edge	country	mod	poor	0.1.0.1	0.1.0.1.0	
+# ::edge	fund-01	ARG1	research-01	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	have-org-role-91	ARG1	organization	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	chairman	0.0.1	0.0.1.1	
+# ::edge	name	op1	"Global"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op1	"Richard"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Feachem"	0.0.0	0.0.0.1	
+# ::edge	name	op2	"Forum"	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	name	op3	"for"	0.0.1.0.0	0.0.1.0.0.2	
+# ::edge	name	op4	"Health"	0.0.1.0.0	0.0.1.0.0.3	
+# ::edge	name	op5	"Research"	0.0.1.0.0	0.0.1.0.0.4	
+# ::edge	organization	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	unfair	0	0.1	
+# ::edge	sum	ARG2-of	fund-01	0.1.0.0	0.1.0.0.1	
+# ::edge	sum	mod	meager	0.1.0.0	0.1.0.0.0	
+# ::edge	unfair	domain	allocate-01	0.1	0.1.0	
+(s / say-01
+      :ARG0 (p2 / person :name (n / name :op1 "Richard" :op2 "Feachem")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :name (n2 / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+                  :ARG2 (c / chairman)))
+      :ARG1 (u2 / unfair
+            :domain (a / allocate-01
+                  :ARG1 (s2 / sum
+                        :mod (m / meager)
+                        :ARG2-of (f2 / fund-01
+                              :ARG1 (r / research-01)))
+                  :ARG2 (c2 / country
+                        :mod (p / poor)))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.14 ::date 2013-05-25T13:11:39 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt Feachem said the majority of the poor are getting little health research funding compared to the wealthy few.
+# ::save-date Thu Jan 23, 2014 ::file PROXY_AFP_ENG_20021112_0467_14.txt
+# ::tok Feachem said the majority of the poor are getting little health research funding compared to the wealthy few .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 8-9|0.1 12-13|0.1.1 9-10|0.1.1.1.0 13-14|0.1.1.1.1 17-18|0.1.1.1.1.0.0.0.1 11-12|0.1.1.0 10-11|0.1.1.0.0 3-4|0.1.0 4-5|0.1.0.0 6-7|0.1.0.0.0+0.1.0.0.0.0 16-17|0.1.1.1.1.0.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.811
+# ::node	0	say-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Feachem"	0-1
+# ::node	0.1	get-01	8-9
+# ::node	0.1.0	majority	3-4
+# ::node	0.1.0.0	include-91	4-5
+# ::node	0.1.0.0.0	person	6-7
+# ::node	0.1.0.0.0.0	poor	6-7
+# ::node	0.1.1	fund-01	12-13
+# ::node	0.1.1.0	research-01	11-12
+# ::node	0.1.1.0.0	health	10-11
+# ::node	0.1.1.1	monetary-quantity	
+# ::node	0.1.1.1.0	little	9-10
+# ::node	0.1.1.1.1	compare-01	13-14
+# ::node	0.1.1.1.1.0	monetary-quantity	
+# ::node	0.1.1.1.1.0.0	fund-01	
+# ::node	0.1.1.1.1.0.0.0	person	
+# ::node	0.1.1.1.1.0.0.0.0	wealth	16-17
+# ::node	0.1.1.1.1.0.0.0.1	few	17-18
+# ::root	0	say-01
+# ::edge	compare-01	ARG2	monetary-quantity	0.1.1.1.1	0.1.1.1.1.0	
+# ::edge	fund-01	ARG1	research-01	0.1.1	0.1.1.0	
+# ::edge	fund-01	ARG1	research-01	0.1.1.1.1.0.0	0.1.1.0	
+# ::edge	fund-01	ARG2	monetary-quantity	0.1.1	0.1.1.1	
+# ::edge	fund-01	beneficiary	person	0.1.1.1.1.0.0	0.1.1.1.1.0.0.0	
+# ::edge	get-01	ARG0	majority	0.1	0.1.0	
+# ::edge	get-01	ARG1	fund-01	0.1	0.1.1	
+# ::edge	include-91	ARG2	person	0.1.0.0	0.1.0.0.0	
+# ::edge	majority	ARG3-of	include-91	0.1.0	0.1.0.0	
+# ::edge	monetary-quantity	ARG1-of	compare-01	0.1.1.1	0.1.1.1.1	
+# ::edge	monetary-quantity	ARG2-of	fund-01	0.1.1.1.1.0	0.1.1.1.1.0.0	
+# ::edge	monetary-quantity	mod	little	0.1.1.1	0.1.1.1.0	
+# ::edge	name	op1	"Feachem"	0.0.0	0.0.0.0	
+# ::edge	person	mod	poor	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	person	mod	wealth	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	person	quant	few	0.1.1.1.1.0.0.0	0.1.1.1.1.0.0.0.1	
+# ::edge	research-01	ARG1	health	0.1.1.0	0.1.1.0.0	
+# ::edge	say-01	ARG0	person	0	0.0	
+# ::edge	say-01	ARG1	get-01	0	0.1	
+(s / say-01
+      :ARG0 (p / person :name (n / name :op1 "Feachem"))
+      :ARG1 (g / get-01
+            :ARG0 (m / majority
+                  :ARG3-of (i / include-91
+                        :ARG2 (p2 / person
+                              :mod (p3 / poor))))
+            :ARG1 (f / fund-01
+                  :ARG1 (r / research-01
+                        :ARG1 (h / health))
+                  :ARG2 (m2 / monetary-quantity
+                        :mod (l / little)
+                        :ARG1-of (c / compare-01
+                              :ARG2 (m3 / monetary-quantity
+                                    :ARG2-of (f3 / fund-01
+                                          :ARG1 r
+                                          :beneficiary (p4 / person
+                                                :mod (w / wealth)
+                                                :quant (f2 / few)))))))))
+
+# ::id PROXY_AFP_ENG_20021112_0467.15 ::date 2013-05-25T13:16:28 ::snt-type body ::annotator UCO-AMR-05 ::preferred
+# ::snt The Global Forum for Health Research is an independent, international foundation funded by the Rockefeller Foundation, the World Health Organization, the World Bank and the Governments of Canada, Denmark, Netherlands, Norway, Sweden and Switzerland.
+# ::save-date Wed Jul 24, 2013 ::file PROXY_AFP_ENG_20021112_0467_15.txt
+# ::tok The Global Forum for Health Research is an independent , international foundation funded by the Rockefeller Foundation , the World Health Organization , the World Bank and the Governments of Canada , Denmark , Netherlands , Norway , Sweden and Switzerland .
+# ::alignments 1-6|0.0+0.0.0+0.0.0.0+0.0.0.1+0.0.0.2+0.0.0.3+0.0.0.4 15-17|0.2.0.0+0.2.0.0.0+0.2.0.0.0.0+0.2.0.0.0.1 19-22|0.2.0.1+0.2.0.1.0+0.2.0.1.0.0+0.2.0.1.0.1+0.2.0.1.0.2 24-26|0.2.0.2+0.2.0.2.0+0.2.0.2.0.0+0.2.0.2.0.1 30-31|0.2.0.3.0.0+0.2.0.3.0.0.0+0.2.0.3.0.0.0.0 32-33|0.2.0.4.0.0+0.2.0.4.0.0.0+0.2.0.4.0.0.0.0 34-35|0.2.0.5.0.0+0.2.0.5.0.0.0+0.2.0.5.0.0.0.0 36-37|0.2.0.6.0.0+0.2.0.6.0.0.0+0.2.0.6.0.0.0.0 38-39|0.2.0.7.0.0+0.2.0.7.0.0.0+0.2.0.7.0.0.0.0 40-41|0.2.0.8.0.0+0.2.0.8.0.0.0+0.2.0.8.0.0.0.0 11-12|0 12-13|0.2 26-27|0.2.0 10-11|0.1 8-9|0.3+0.3.0 28-29|0.2.0.8+0.2.0.8.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.890
+# ::node	0	foundation	11-12
+# ::node	0.0	organization	1-6
+# ::node	0.0.0	name	1-6
+# ::node	0.0.0.0	"Global"	1-6
+# ::node	0.0.0.1	"Forum"	1-6
+# ::node	0.0.0.2	"for"	1-6
+# ::node	0.0.0.3	"Health"	1-6
+# ::node	0.0.0.4	"Research"	1-6
+# ::node	0.1	international	10-11
+# ::node	0.2	fund-01	12-13
+# ::node	0.2.0	and	26-27
+# ::node	0.2.0.0	organization	15-17
+# ::node	0.2.0.0.0	name	15-17
+# ::node	0.2.0.0.0.0	"Rockefeller"	15-17
+# ::node	0.2.0.0.0.1	"Foundation"	15-17
+# ::node	0.2.0.1	organization	19-22
+# ::node	0.2.0.1.0	name	19-22
+# ::node	0.2.0.1.0.0	"World"	19-22
+# ::node	0.2.0.1.0.1	"Health"	19-22
+# ::node	0.2.0.1.0.2	"Organization"	19-22
+# ::node	0.2.0.2	organization	24-26
+# ::node	0.2.0.2.0	name	24-26
+# ::node	0.2.0.2.0.0	"World"	24-26
+# ::node	0.2.0.2.0.1	"Bank"	24-26
+# ::node	0.2.0.3	government-organzation	
+# ::node	0.2.0.3.0	govern-01	
+# ::node	0.2.0.3.0.0	country	30-31
+# ::node	0.2.0.3.0.0.0	name	30-31
+# ::node	0.2.0.3.0.0.0.0	"Canada"	30-31
+# ::node	0.2.0.4	government-organization	
+# ::node	0.2.0.4.0	govern-01	
+# ::node	0.2.0.4.0.0	country	32-33
+# ::node	0.2.0.4.0.0.0	name	32-33
+# ::node	0.2.0.4.0.0.0.0	"Denmark"	32-33
+# ::node	0.2.0.5	government-organization	
+# ::node	0.2.0.5.0	govern-01	
+# ::node	0.2.0.5.0.0	country	34-35
+# ::node	0.2.0.5.0.0.0	name	34-35
+# ::node	0.2.0.5.0.0.0.0	"Netherlands"	34-35
+# ::node	0.2.0.6	government-organization	
+# ::node	0.2.0.6.0	govern-01	
+# ::node	0.2.0.6.0.0	country	36-37
+# ::node	0.2.0.6.0.0.0	name	36-37
+# ::node	0.2.0.6.0.0.0.0	"Norway"	36-37
+# ::node	0.2.0.7	government-organization	
+# ::node	0.2.0.7.0	govern-01	
+# ::node	0.2.0.7.0.0	country	38-39
+# ::node	0.2.0.7.0.0.0	name	38-39
+# ::node	0.2.0.7.0.0.0.0	"Sweden"	38-39
+# ::node	0.2.0.8	government-organization	28-29
+# ::node	0.2.0.8.0	govern-01	28-29
+# ::node	0.2.0.8.0.0	country	40-41
+# ::node	0.2.0.8.0.0.0	name	40-41
+# ::node	0.2.0.8.0.0.0.0	"Switzerland"	40-41
+# ::node	0.3	depend-01	8-9
+# ::node	0.3.0	-	8-9
+# ::root	0	foundation
+# ::edge	and	op1	organization	0.2.0	0.2.0.0	
+# ::edge	and	op2	organization	0.2.0	0.2.0.1	
+# ::edge	and	op3	organization	0.2.0	0.2.0.2	
+# ::edge	and	op4	government-organzation	0.2.0	0.2.0.3	
+# ::edge	and	op5	government-organization	0.2.0	0.2.0.4	
+# ::edge	and	op6	government-organization	0.2.0	0.2.0.5	
+# ::edge	and	op7	government-organization	0.2.0	0.2.0.6	
+# ::edge	and	op8	government-organization	0.2.0	0.2.0.7	
+# ::edge	and	op9	government-organization	0.2.0	0.2.0.8	
+# ::edge	country	name	name	0.2.0.3.0.0	0.2.0.3.0.0.0	
+# ::edge	country	name	name	0.2.0.4.0.0	0.2.0.4.0.0.0	
+# ::edge	country	name	name	0.2.0.5.0.0	0.2.0.5.0.0.0	
+# ::edge	country	name	name	0.2.0.6.0.0	0.2.0.6.0.0.0	
+# ::edge	country	name	name	0.2.0.7.0.0	0.2.0.7.0.0.0	
+# ::edge	country	name	name	0.2.0.8.0.0	0.2.0.8.0.0.0	
+# ::edge	depend-01	polarity	-	0.3	0.3.0	
+# ::edge	foundation	ARG0-of	depend-01	0	0.3	
+# ::edge	foundation	ARG1-of	fund-01	0	0.2	
+# ::edge	foundation	domain	organization	0	0.0	
+# ::edge	foundation	mod	international	0	0.1	
+# ::edge	fund-01	ARG0	and	0.2	0.2.0	
+# ::edge	govern-01	ARG1	country	0.2.0.3.0	0.2.0.3.0.0	
+# ::edge	govern-01	ARG1	country	0.2.0.4.0	0.2.0.4.0.0	
+# ::edge	govern-01	ARG1	country	0.2.0.5.0	0.2.0.5.0.0	
+# ::edge	govern-01	ARG1	country	0.2.0.6.0	0.2.0.6.0.0	
+# ::edge	govern-01	ARG1	country	0.2.0.7.0	0.2.0.7.0.0	
+# ::edge	govern-01	ARG1	country	0.2.0.8.0	0.2.0.8.0.0	
+# ::edge	government-organization	ARG0-of	govern-01	0.2.0.4	0.2.0.4.0	
+# ::edge	government-organization	ARG0-of	govern-01	0.2.0.5	0.2.0.5.0	
+# ::edge	government-organization	ARG0-of	govern-01	0.2.0.6	0.2.0.6.0	
+# ::edge	government-organization	ARG0-of	govern-01	0.2.0.7	0.2.0.7.0	
+# ::edge	government-organization	ARG0-of	govern-01	0.2.0.8	0.2.0.8.0	
+# ::edge	government-organzation	ARG0-of	govern-01	0.2.0.3	0.2.0.3.0	
+# ::edge	name	op1	"Canada"	0.2.0.3.0.0.0	0.2.0.3.0.0.0.0	
+# ::edge	name	op1	"Denmark"	0.2.0.4.0.0.0	0.2.0.4.0.0.0.0	
+# ::edge	name	op1	"Global"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Netherlands"	0.2.0.5.0.0.0	0.2.0.5.0.0.0.0	
+# ::edge	name	op1	"Norway"	0.2.0.6.0.0.0	0.2.0.6.0.0.0.0	
+# ::edge	name	op1	"Rockefeller"	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	name	op1	"Sweden"	0.2.0.7.0.0.0	0.2.0.7.0.0.0.0	
+# ::edge	name	op1	"Switzerland"	0.2.0.8.0.0.0	0.2.0.8.0.0.0.0	
+# ::edge	name	op1	"World"	0.2.0.1.0	0.2.0.1.0.0	
+# ::edge	name	op1	"World"	0.2.0.2.0	0.2.0.2.0.0	
+# ::edge	name	op2	"Bank"	0.2.0.2.0	0.2.0.2.0.1	
+# ::edge	name	op2	"Forum"	0.0.0	0.0.0.1	
+# ::edge	name	op2	"Foundation"	0.2.0.0.0	0.2.0.0.0.1	
+# ::edge	name	op2	"Health"	0.2.0.1.0	0.2.0.1.0.1	
+# ::edge	name	op3	"Organization"	0.2.0.1.0	0.2.0.1.0.2	
+# ::edge	name	op3	"for"	0.0.0	0.0.0.2	
+# ::edge	name	op4	"Health"	0.0.0	0.0.0.3	
+# ::edge	name	op5	"Research"	0.0.0	0.0.0.4	
+# ::edge	organization	name	name	0.0	0.0.0	
+# ::edge	organization	name	name	0.2.0.0	0.2.0.0.0	
+# ::edge	organization	name	name	0.2.0.1	0.2.0.1.0	
+# ::edge	organization	name	name	0.2.0.2	0.2.0.2.0	
+(f3 / foundation
+      :domain (o / organization :name (n / name :op1 "Global" :op2 "Forum" :op3 "for" :op4 "Health" :op5 "Research"))
+      :mod (i2 / international)
+      :ARG1-of (f2 / fund-01
+            :ARG0 (a / and
+                  :op1 (o2 / organization :name (n2 / name :op1 "Rockefeller" :op2 "Foundation"))
+                  :op2 (o3 / organization :name (n3 / name :op1 "World" :op2 "Health" :op3 "Organization"))
+                  :op3 (o4 / organization :name (n4 / name :op1 "World" :op2 "Bank"))
+                  :op4 (g / government-organzation
+                        :ARG0-of (g2 / govern-01
+                              :ARG1 (c / country :name (n5 / name :op1 "Canada"))))
+                  :op5 (g3 / government-organization
+                        :ARG0-of (g4 / govern-01
+                              :ARG1 (c2 / country :name (n6 / name :op1 "Denmark"))))
+                  :op6 (g5 / government-organization
+                        :ARG0-of (g6 / govern-01
+                              :ARG1 (c3 / country :name (n7 / name :op1 "Netherlands"))))
+                  :op7 (g7 / government-organization
+                        :ARG0-of (g8 / govern-01
+                              :ARG1 (c4 / country :name (n8 / name :op1 "Norway"))))
+                  :op8 (g9 / government-organization
+                        :ARG0-of (g10 / govern-01
+                              :ARG1 (c5 / country :name (n9 / name :op1 "Sweden"))))
+                  :op9 (g11 / government-organization
+                        :ARG0-of (g12 / govern-01
+                              :ARG1 (c6 / country :name (n10 / name :op1 "Switzerland"))))))
+      :ARG0-of (d / depend-01 :polarity -))
+
+# ::id PROXY_AFP_ENG_20040329_0408.1 ::date 2013-05-14T02:50:18 ::snt-type date ::annotator SDL-AMR-09 ::preferred
+# ::snt 2004-03-29
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_1.txt
+# ::tok 2004-03-29
+# ::alignments 0-1|0+0.0+0.1+0.2 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.899
+# ::node	0	date-entity	0-1
+# ::node	0.0	3	0-1
+# ::node	0.1	29	0-1
+# ::node	0.2	2004	0-1
+# ::root	0	date-entity
+# ::edge	date-entity	day	29	0	0.1	
+# ::edge	date-entity	month	3	0	0.0	
+# ::edge	date-entity	year	2004	0	0.2	
+(d / date-entity
+  :month 3
+  :day 29
+  :year 2004)
+
+# ::id PROXY_AFP_ENG_20040329_0408.2 ::date 2013-05-14T03:15:38 ::snt-type country ::annotator SDL-AMR-09 ::preferred
+# ::snt Korea, Republic of (KR); China (CN)
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_2.txt
+# ::tok Korea , Republic of ( KR ) ; China ( CN )
+# ::alignments 8-9|0.1+0.1.0+0.1.0.0 7-8|0 0-4|0.0+0.0.0+0.0.0.0+0.0.0.1+0.0.0.2 3-4|0.0.0.1 0-1|0.0.0.2 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.943
+# ::node	0	and	7-8
+# ::node	0.0	country	0-4
+# ::node	0.0.0	name	0-4
+# ::node	0.0.0.0	"Republic"	0-4
+# ::node	0.0.0.1	"of"	0-4
+# ::node	0.0.0.2	"Korea"	0-4
+# ::node	0.1	country	8-9
+# ::node	0.1.0	name	8-9
+# ::node	0.1.0.0	"China"	8-9
+# ::root	0	and
+# ::edge	and	op1	country	0	0.0	
+# ::edge	and	op2	country	0	0.1	
+# ::edge	country	name	name	0.0	0.0.0	
+# ::edge	country	name	name	0.1	0.1.0	
+# ::edge	name	op1	"China"	0.1.0	0.1.0.0	
+# ::edge	name	op1	"Republic"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"of"	0.0.0	0.0.0.1	
+# ::edge	name	op3	"Korea"	0.0.0	0.0.0.2	
+(a / and
+  :op1 (c / country
+         :name (n / name
+                 :op1 "Republic"
+                 :op2 "of"
+                 :op3 "Korea"))
+  :op2 (c2 / country
+         :name (n2 / name
+                 :op1 "China")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.3 ::date 2013-05-14T03:12:09 ::snt-type topic ::annotator SDL-AMR-09 ::preferred
+# ::snt International; business; technology
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_3.txt
+# ::tok International ; business ; technology
+# ::alignments 1-2|0 4-5|0.2 2-3|0.1 0-1|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:53.955
+# ::node	0	and	1-2
+# ::node	0.0	international	0-1
+# ::node	0.1	business	2-3
+# ::node	0.2	technology	4-5
+# ::root	0	and
+# ::edge	and	op1	international	0	0.0	
+# ::edge	and	op2	business	0	0.1	
+# ::edge	and	op3	technology	0	0.2	
+(a / and
+  :op1 (i / international)
+  :op2 (b / business)
+  :op3 (t / technology))
+
+# ::id PROXY_AFP_ENG_20040329_0408.4 ::date 2013-05-24T01:26:49 ::snt-type summary ::annotator SDL-AMR-09 ::preferred
+# ::snt French energy and transport company Alstom may sign a contract to build a high-speed rail link between Beijing and Shanghai.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_4.txt
+# ::tok French energy and transport company Alstom may sign a contract to build a high - speed rail link between Beijing and Shanghai .
+# ::alignments 5-6|0.0.0.0+0.0.0.0.0 19-20|0.0.1.0.0.1.0.0+0.0.1.0.0.1.0.0.0+0.0.1.0.0.1.0.0.0.0 21-22|0.0.1.0.0.1.0.1+0.0.1.0.0.1.0.1.0+0.0.1.0.0.1.0.1.0.0 6-7|0 7-8|0.0 9-10|0.0.1 11-12|0.0.1.0 16-17|0.0.1.0.0 17-18|0.0.1.0.0.1 2-3|0.0.1.0.0.1.0 15-16|0.0.1.0.0.0 13-14|0.0.1.0.0.0.0 4-5|0.0.0 3-4|0.0.0.3 1-2|0.0.0.2 0-1|0.0.0.1+0.0.0.1.0+0.0.0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.001
+# ::node	0	possible	6-7
+# ::node	0.0	sign-02	7-8
+# ::node	0.0.0	company	4-5
+# ::node	0.0.0.0	name	5-6
+# ::node	0.0.0.0.0	"Alstom"	5-6
+# ::node	0.0.0.1	country	0-1
+# ::node	0.0.0.1.0	name	0-1
+# ::node	0.0.0.1.0.0	"France"	0-1
+# ::node	0.0.0.2	energy	1-2
+# ::node	0.0.0.3	transport-01	3-4
+# ::node	0.0.1	contract-02	9-10
+# ::node	0.0.1.0	build-01	11-12
+# ::node	0.0.1.0.0	rail	16-17
+# ::node	0.0.1.0.0.0	speed	15-16
+# ::node	0.0.1.0.0.0.0	high	13-14
+# ::node	0.0.1.0.0.1	link-01	17-18
+# ::node	0.0.1.0.0.1.0	and	2-3
+# ::node	0.0.1.0.0.1.0.0	city	19-20
+# ::node	0.0.1.0.0.1.0.0.0	name	19-20
+# ::node	0.0.1.0.0.1.0.0.0.0	"Beijing"	19-20
+# ::node	0.0.1.0.0.1.0.1	city	21-22
+# ::node	0.0.1.0.0.1.0.1.0	name	21-22
+# ::node	0.0.1.0.0.1.0.1.0.0	"Shanghai"	21-22
+# ::root	0	possible
+# ::edge	and	op1	city	0.0.1.0.0.1.0	0.0.1.0.0.1.0.0	
+# ::edge	and	op2	city	0.0.1.0.0.1.0	0.0.1.0.0.1.0.1	
+# ::edge	build-01	ARG0	company	0.0.1.0	0.0.0	
+# ::edge	build-01	ARG1	rail	0.0.1.0	0.0.1.0.0	
+# ::edge	city	name	name	0.0.1.0.0.1.0.0	0.0.1.0.0.1.0.0.0	
+# ::edge	city	name	name	0.0.1.0.0.1.0.1	0.0.1.0.0.1.0.1.0	
+# ::edge	company	mod	country	0.0.0	0.0.0.1	
+# ::edge	company	mod	energy	0.0.0	0.0.0.2	
+# ::edge	company	mod	transport-01	0.0.0	0.0.0.3	
+# ::edge	company	name	name	0.0.0	0.0.0.0	
+# ::edge	contract-02	ARG1	build-01	0.0.1	0.0.1.0	
+# ::edge	country	name	name	0.0.0.1	0.0.0.1.0	
+# ::edge	link-01	ARG1	and	0.0.1.0.0.1	0.0.1.0.0.1.0	
+# ::edge	name	op1	"Alstom"	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.0.1.0.0.1.0.0.0	0.0.1.0.0.1.0.0.0.0	
+# ::edge	name	op1	"France"	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.1.0.0.1.0.1.0	0.0.1.0.0.1.0.1.0.0	
+# ::edge	possible	domain	sign-02	0	0.0	
+# ::edge	rail	ARG2-of	link-01	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	rail	mod	speed	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	sign-02	ARG0	company	0.0	0.0.0	
+# ::edge	sign-02	ARG1	contract-02	0.0	0.0.1	
+# ::edge	speed	mod	high	0.0.1.0.0.0	0.0.1.0.0.0.0	
+(p / possible
+  :domain (s / sign-02
+            :ARG0 (c / company
+                    :name (n / name
+                            :op1 "Alstom")
+                    :mod (c3 / country
+                           :name (n2 / name
+                                   :op1 "France"))
+                    :mod (e / energy)
+                    :mod (t / transport-01))
+            :ARG1 (c2 / contract-02
+                    :ARG1 (b / build-01
+                            :ARG0 c
+                            :ARG1 (r / rail
+                                    :mod (s2 / speed
+                                           :mod (h / high))
+                                    :ARG2-of (l / link-01
+                                               :ARG1 (a / and
+                                                       :op1 (c4 / city
+                                                              :name (n3 / name
+                                                                      :op1 "Beijing"))
+                                                       :op2 (c5 / city
+                                                              :name (n4 / name
+                                                                      :op1 "Shanghai")))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.5 ::date 2013-05-15T03:35:57 ::snt-type summary ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is in competition with Japanese and German countries for the contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_5.txt
+# ::tok Alstom is in competition with Japanese and German countries for the contract .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 5-6|0.1.0+0.1.0.0+0.1.0.0.0 7-8|0.1.1.0+0.1.1.0.0 6-7|0.1 8-9|0.1.1 11-12|0.2 3-4|0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.035
+# ::node	0	compete-01	3-4
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	and	6-7
+# ::node	0.1.0	country	5-6
+# ::node	0.1.0.0	name	5-6
+# ::node	0.1.0.0.0	"Japan"	5-6
+# ::node	0.1.1	country	8-9
+# ::node	0.1.1.0	name	7-8
+# ::node	0.1.1.0.0	"Germany"	7-8
+# ::node	0.2	contract-02	11-12
+# ::root	0	compete-01
+# ::edge	and	op1	country	0.1	0.1.0	
+# ::edge	and	op2	country	0.1	0.1.1	
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	compete-01	ARG0	company	0	0.0	
+# ::edge	compete-01	ARG1	and	0	0.1	
+# ::edge	compete-01	ARG2	contract-02	0	0.2	
+# ::edge	country	name	name	0.1.0	0.1.0.0	
+# ::edge	country	name	name	0.1.1	0.1.1.0	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Germany"	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"Japan"	0.1.0.0	0.1.0.0.0	
+(c / compete-01
+  :ARG0 (c2 / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (a / and
+          :op1 (c3 / country
+                 :name (n2 / name
+                         :op1 "Japan"))
+          :op2 (c4 / country
+                 :name (n3 / name
+                         :op1 "Germany")))
+  :ARG2 (c5 / contract-02))
+
+# ::id PROXY_AFP_ENG_20040329_0408.6 ::date 2013-05-15T03:45:21 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt 29 March 2004 French energy and transport company Alstom president Patrick Kron announced --
+# ::save-date Fri Sep 13, 2013 ::file PROXY_AFP_ENG_20040329_0408_6.txt
+# ::tok 29 March 2004 French energy and transport company Alstom president Patrick Kron announced --
+# ::alignments 10-12|0.0+0.0.0+0.0.0.0+0.0.0.1 8-9|0.0.1.0.0+0.0.1.0.0.0 0-3|0.1+0.1.0+0.1.1+0.1.2 12-13|0 7-8|0.0.1.0 6-7|0.0.1.0.3 3-4|0.0.1.0.2+0.0.1.0.2.0+0.0.1.0.2.0.0 4-5|0.0.1.0.1 9-10|0.0.1+0.0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.063
+# ::node	0	announce-01	12-13
+# ::node	0.0	person	10-12
+# ::node	0.0.0	name	10-12
+# ::node	0.0.0.0	"Patrick"	10-12
+# ::node	0.0.0.1	"Kron"	10-12
+# ::node	0.0.1	have-org-role-91	9-10
+# ::node	0.0.1.0	company	7-8
+# ::node	0.0.1.0.0	name	8-9
+# ::node	0.0.1.0.0.0	"Alstom"	8-9
+# ::node	0.0.1.0.1	energy	4-5
+# ::node	0.0.1.0.2	country	3-4
+# ::node	0.0.1.0.2.0	name	3-4
+# ::node	0.0.1.0.2.0.0	"France"	3-4
+# ::node	0.0.1.0.3	transport-01	6-7
+# ::node	0.0.1.1	president	9-10
+# ::node	0.1	date-entity	0-3
+# ::node	0.1.0	3	0-3
+# ::node	0.1.1	29	0-3
+# ::node	0.1.2	2004	0-3
+# ::root	0	announce-01
+# ::edge	announce-01	ARG0	person	0	0.0	
+# ::edge	announce-01	time	date-entity	0	0.1	
+# ::edge	company	mod	country	0.0.1.0	0.0.1.0.2	
+# ::edge	company	mod	energy	0.0.1.0	0.0.1.0.1	
+# ::edge	company	mod	transport-01	0.0.1.0	0.0.1.0.3	
+# ::edge	company	name	name	0.0.1.0	0.0.1.0.0	
+# ::edge	country	name	name	0.0.1.0.2	0.0.1.0.2.0	
+# ::edge	date-entity	day	29	0.1	0.1.1	
+# ::edge	date-entity	month	3	0.1	0.1.0	
+# ::edge	date-entity	year	2004	0.1	0.1.2	
+# ::edge	have-org-role-91	ARG1	company	0.0.1	0.0.1.0	
+# ::edge	have-org-role-91	ARG2	president	0.0.1	0.0.1.1	
+# ::edge	name	op1	"Alstom"	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	name	op1	"France"	0.0.1.0.2.0	0.0.1.0.2.0.0	
+# ::edge	name	op1	"Patrick"	0.0.0	0.0.0.0	
+# ::edge	name	op2	"Kron"	0.0.0	0.0.0.1	
+# ::edge	person	ARG0-of	have-org-role-91	0.0	0.0.1	
+# ::edge	person	name	name	0.0	0.0.0	
+(a / announce-01
+      :ARG0 (p2 / person :name (n / name :op1 "Patrick" :op2 "Kron")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / company :name (n2 / name :op1 "Alstom")
+                        :mod (e / energy)
+                        :mod (c2 / country :name (n3 / name :op1 "France"))
+                        :mod (t / transport-01))
+                  :ARG2 (p / president)))
+      :time (d / date-entity :month 3 :day 29 :year 2004))
+
+# ::id PROXY_AFP_ENG_20040329_0408.7 ::date 2013-05-24T01:39:59 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom may sign a contract to build a high-speed rail link between Beijing and Shanghai.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_7.txt
+# ::tok Alstom may sign a contract to build a high - speed rail link between Beijing and Shanghai .
+# ::alignments 0-1|0.0.0+0.0.0.0+0.0.0.0.0 14-15|0.0.1.0.0.1.0.0+0.0.1.0.0.1.0.0.0+0.0.1.0.0.1.0.0.0.0 16-17|0.0.1.0.0.1.0.1+0.0.1.0.0.1.0.1.0+0.0.1.0.0.1.0.1.0.0 1-2|0 2-3|0.0 4-5|0.0.1 6-7|0.0.1.0 11-12|0.0.1.0.0 12-13|0.0.1.0.0.1 15-16|0.0.1.0.0.1.0 10-11|0.0.1.0.0.0 8-9|0.0.1.0.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.090
+# ::node	0	possible	1-2
+# ::node	0.0	sign-02	2-3
+# ::node	0.0.0	company	0-1
+# ::node	0.0.0.0	name	0-1
+# ::node	0.0.0.0.0	"Alstom"	0-1
+# ::node	0.0.1	contract-02	4-5
+# ::node	0.0.1.0	build-01	6-7
+# ::node	0.0.1.0.0	rail	11-12
+# ::node	0.0.1.0.0.0	speed	10-11
+# ::node	0.0.1.0.0.0.0	high	8-9
+# ::node	0.0.1.0.0.1	link-01	12-13
+# ::node	0.0.1.0.0.1.0	and	15-16
+# ::node	0.0.1.0.0.1.0.0	city	14-15
+# ::node	0.0.1.0.0.1.0.0.0	name	14-15
+# ::node	0.0.1.0.0.1.0.0.0.0	"Beijing"	14-15
+# ::node	0.0.1.0.0.1.0.1	city	16-17
+# ::node	0.0.1.0.0.1.0.1.0	name	16-17
+# ::node	0.0.1.0.0.1.0.1.0.0	"Shanghai"	16-17
+# ::root	0	possible
+# ::edge	and	op1	city	0.0.1.0.0.1.0	0.0.1.0.0.1.0.0	
+# ::edge	and	op2	city	0.0.1.0.0.1.0	0.0.1.0.0.1.0.1	
+# ::edge	build-01	ARG0	company	0.0.1.0	0.0.0	
+# ::edge	build-01	ARG1	rail	0.0.1.0	0.0.1.0.0	
+# ::edge	city	name	name	0.0.1.0.0.1.0.0	0.0.1.0.0.1.0.0.0	
+# ::edge	city	name	name	0.0.1.0.0.1.0.1	0.0.1.0.0.1.0.1.0	
+# ::edge	company	name	name	0.0.0	0.0.0.0	
+# ::edge	contract-02	ARG1	build-01	0.0.1	0.0.1.0	
+# ::edge	link-01	ARG1	and	0.0.1.0.0.1	0.0.1.0.0.1.0	
+# ::edge	name	op1	"Alstom"	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.0.1.0.0.1.0.0.0	0.0.1.0.0.1.0.0.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.1.0.0.1.0.1.0	0.0.1.0.0.1.0.1.0.0	
+# ::edge	possible	domain	sign-02	0	0.0	
+# ::edge	rail	ARG2-of	link-01	0.0.1.0.0	0.0.1.0.0.1	
+# ::edge	rail	mod	speed	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	sign-02	ARG0	company	0.0	0.0.0	
+# ::edge	sign-02	ARG1	contract-02	0.0	0.0.1	
+# ::edge	speed	mod	high	0.0.1.0.0.0	0.0.1.0.0.0.0	
+(p / possible
+  :domain (s / sign-02
+            :ARG0 (c / company
+                    :name (n / name
+                            :op1 "Alstom"))
+            :ARG1 (c2 / contract-02
+                    :ARG1 (b / build-01
+                            :ARG0 c
+                            :ARG1 (r / rail
+                                    :mod (s2 / speed
+                                           :mod (h2 / high))
+                                    :ARG2-of (l / link-01
+                                               :ARG1 (a / and
+                                                       :op1 (c3 / city
+                                                              :name (n2 / name
+                                                                      :op1 "Beijing"))
+                                                       :op2 (c4 / city
+                                                              :name (n3 / name
+                                                                      :op1 "Shanghai")))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.8 ::date 2013-05-15T04:06:47 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is competing against Japanese company Shinkansen and German company ice for the contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_8.txt
+# ::tok Alstom is competing against Japanese company Shinkansen and German company ice for the contract .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 6-7|0.1.0.0+0.1.0.0.0 10-11|0.1.1.0+0.1.1.0.0 4-5|0.1.0.1+0.1.0.1.0+0.1.0.1.0.0 8-9|0.1.1.1+0.1.1.1.0+0.1.1.1.0.0 2-3|0 13-14|0.2 7-8|0.1 5-6|0.1.1 9-10|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.119
+# ::node	0	compete-01	2-3
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	and	7-8
+# ::node	0.1.0	company	9-10
+# ::node	0.1.0.0	name	6-7
+# ::node	0.1.0.0.0	"Shinkansen"	6-7
+# ::node	0.1.0.1	country	4-5
+# ::node	0.1.0.1.0	name	4-5
+# ::node	0.1.0.1.0.0	"Japan"	4-5
+# ::node	0.1.1	company	5-6
+# ::node	0.1.1.0	name	10-11
+# ::node	0.1.1.0.0	"Ice"	10-11
+# ::node	0.1.1.1	country	8-9
+# ::node	0.1.1.1.0	name	8-9
+# ::node	0.1.1.1.0.0	"Germany"	8-9
+# ::node	0.2	contract-02	13-14
+# ::root	0	compete-01
+# ::edge	and	op1	company	0.1	0.1.0	
+# ::edge	and	op2	company	0.1	0.1.1	
+# ::edge	company	mod	country	0.1.0	0.1.0.1	
+# ::edge	company	mod	country	0.1.1	0.1.1.1	
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	company	name	name	0.1.0	0.1.0.0	
+# ::edge	company	name	name	0.1.1	0.1.1.0	
+# ::edge	compete-01	ARG0	company	0	0.0	
+# ::edge	compete-01	ARG1	and	0	0.1	
+# ::edge	compete-01	ARG2	contract-02	0	0.2	
+# ::edge	country	name	name	0.1.0.1	0.1.0.1.0	
+# ::edge	country	name	name	0.1.1.1	0.1.1.1.0	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Germany"	0.1.1.1.0	0.1.1.1.0.0	
+# ::edge	name	op1	"Ice"	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"Japan"	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	name	op1	"Shinkansen"	0.1.0.0	0.1.0.0.0	
+(c / compete-01
+  :ARG0 (c2 / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (a / and
+          :op1 (c3 / company
+                 :name (n2 / name
+                         :op1 "Shinkansen")
+                 :mod (c5 / country
+                        :name (n4 / name
+                                :op1 "Japan")))
+          :op2 (c4 / company
+                 :name (n3 / name
+                         :op1 "Ice")
+                 :mod (c6 / country
+                        :name (n5 / name
+                                :op1 "Germany"))))
+  :ARG2 (c7 / contract-02))
+
+# ::id PROXY_AFP_ENG_20040329_0408.9 ::date 2013-05-15T04:12:02 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt The tender has not been announced by Chinese authorities.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_9.txt
+# ::tok The tender has not been announced by Chinese authorities .
+# ::alignments 7-8|0.0.0+0.0.0.0+0.0.0.0.0 5-6|0 1-2|0.1 8-9|0.0 3-4|0.2 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.150
+# ::node	0	announce-01	5-6
+# ::node	0.0	authority	8-9
+# ::node	0.0.0	country	7-8
+# ::node	0.0.0.0	name	7-8
+# ::node	0.0.0.0.0	"China"	7-8
+# ::node	0.1	tender-01	1-2
+# ::node	0.2	-	3-4
+# ::root	0	announce-01
+# ::edge	announce-01	ARG0	authority	0	0.0	
+# ::edge	announce-01	ARG1	tender-01	0	0.1	
+# ::edge	announce-01	polarity	-	0	0.2	
+# ::edge	authority	mod	country	0.0	0.0.0	
+# ::edge	country	name	name	0.0.0	0.0.0.0	
+# ::edge	name	op1	"China"	0.0.0.0	0.0.0.0.0	
+(a / announce-01
+  :ARG0 (a2 / authority
+          :mod (c / country
+                 :name (n / name
+                         :op1 "China")))
+  :ARG1 (t / tender-01)
+  :polarity -)
+
+# ::id PROXY_AFP_ENG_20040329_0408.10 ::date 2013-05-15T04:18:06 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom seeks to develop further business in Asia.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_10.txt
+# ::tok Alstom seeks to develop further business in Asia .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 7-8|0.1.1+0.1.1.0+0.1.1.0.0 1-2|0 3-4|0.1 5-6|0.1.0 4-5|0.1.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.168
+# ::node	0	seek-01	1-2
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	develop-02	3-4
+# ::node	0.1.0	business	5-6
+# ::node	0.1.0.0	further	4-5
+# ::node	0.1.1	continent	7-8
+# ::node	0.1.1.0	name	7-8
+# ::node	0.1.1.0.0	"Asia"	7-8
+# ::root	0	seek-01
+# ::edge	business	mod	further	0.1.0	0.1.0.0	
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	continent	name	name	0.1.1	0.1.1.0	
+# ::edge	develop-02	ARG0	company	0.1	0.0	
+# ::edge	develop-02	ARG1	business	0.1	0.1.0	
+# ::edge	develop-02	location	continent	0.1	0.1.1	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Asia"	0.1.1.0	0.1.1.0.0	
+# ::edge	seek-01	ARG0	company	0	0.0	
+# ::edge	seek-01	ARG1	develop-02	0	0.1	
+(s / seek-01
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (d / develop-02
+          :ARG0 c
+          :ARG1 (b / business
+                  :mod (f / further))
+          :location (c2 / continent
+                      :name (n2 / name
+                              :op1 "Asia"))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.11 ::date 2013-05-24T01:50:43 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is well-placed to receive the Beijing-Shanghai rail link contract.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_11.txt
+# ::tok Alstom is well - placed to receive the Beijing - Shanghai rail link contract .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 8-9|0.2.0.0.0.0.0+0.2.0.0.0.0.0.0+0.2.0.0.0.0.0.0.0 10-11|0.2.0.0.0.0.1+0.2.0.0.0.0.1.0+0.2.0.0.0.0.1.0.0 4-5|0 6-7|0.2 13-14|0.2.0 11-12|0.2.0.0 12-13|0.2.0.0.0 2-3|0.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.191
+# ::node	0	place-01	4-5
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	good	2-3
+# ::node	0.2	receive-01	6-7
+# ::node	0.2.0	contract-02	13-14
+# ::node	0.2.0.0	rail	11-12
+# ::node	0.2.0.0.0	link-01	12-13
+# ::node	0.2.0.0.0.0	and	
+# ::node	0.2.0.0.0.0.0	city	8-9
+# ::node	0.2.0.0.0.0.0.0	name	8-9
+# ::node	0.2.0.0.0.0.0.0.0	"Beijing"	8-9
+# ::node	0.2.0.0.0.0.1	city	10-11
+# ::node	0.2.0.0.0.0.1.0	name	10-11
+# ::node	0.2.0.0.0.0.1.0.0	"Shanghai"	10-11
+# ::root	0	place-01
+# ::edge	and	op1	city	0.2.0.0.0.0	0.2.0.0.0.0.0	
+# ::edge	and	op2	city	0.2.0.0.0.0	0.2.0.0.0.0.1	
+# ::edge	city	name	name	0.2.0.0.0.0.0	0.2.0.0.0.0.0.0	
+# ::edge	city	name	name	0.2.0.0.0.0.1	0.2.0.0.0.0.1.0	
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	contract-02	ARG1	rail	0.2.0	0.2.0.0	
+# ::edge	link-01	ARG1	and	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.2.0.0.0.0.0.0	0.2.0.0.0.0.0.0.0	
+# ::edge	name	op1	"Shanghai"	0.2.0.0.0.0.1.0	0.2.0.0.0.0.1.0.0	
+# ::edge	place-01	ARG1	company	0	0.0	
+# ::edge	place-01	manner	good	0	0.1	
+# ::edge	place-01	purpose	receive-01	0	0.2	
+# ::edge	rail	ARG2-of	link-01	0.2.0.0	0.2.0.0.0	
+# ::edge	receive-01	ARG0	company	0.2	0.0	
+# ::edge	receive-01	ARG1	contract-02	0.2	0.2.0	
+(p / place-01
+  :ARG1 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :manner (g / good)
+  :purpose (r / receive-01
+             :ARG0 c
+             :ARG1 (c2 / contract-02
+                     :ARG1 (r3 / rail
+                             :ARG2-of (l / link-01
+                                        :ARG1 (a / and
+                                                :op1 (c3 / city
+                                                       :name (n2 / name
+                                                               :op1 "Beijing"))
+                                                :op2 (c4 / city
+                                                       :name (n3 / name
+                                                               :op1 "Shanghai"))))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.12 ::date 2013-05-24T02:00:13 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt 23 March 2004 the high-speed ktx train launched in Seoul.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_12.txt
+# ::tok 23 March 2004 the high - speed ktx train launched in Seoul .
+# ::alignments 7-8|0.0.0+0.0.0.0 11-12|0.2+0.2.0+0.2.0.0 0-3|0.1+0.1.0+0.1.1+0.1.2 9-10|0 8-9|0.0 6-7|0.0.1 4-5|0.0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.218
+# ::node	0	launch-01	9-10
+# ::node	0.0	train	8-9
+# ::node	0.0.0	name	7-8
+# ::node	0.0.0.0	"KTX"	7-8
+# ::node	0.0.1	speed	6-7
+# ::node	0.0.1.0	high	4-5
+# ::node	0.1	date-entity	0-3
+# ::node	0.1.0	3	0-3
+# ::node	0.1.1	23	0-3
+# ::node	0.1.2	2004	0-3
+# ::node	0.2	city	11-12
+# ::node	0.2.0	name	11-12
+# ::node	0.2.0.0	"Seoul"	11-12
+# ::root	0	launch-01
+# ::edge	city	name	name	0.2	0.2.0	
+# ::edge	date-entity	day	23	0.1	0.1.1	
+# ::edge	date-entity	month	3	0.1	0.1.0	
+# ::edge	date-entity	year	2004	0.1	0.1.2	
+# ::edge	launch-01	ARG1	train	0	0.0	
+# ::edge	launch-01	location	city	0	0.2	
+# ::edge	launch-01	time	date-entity	0	0.1	
+# ::edge	name	op1	"KTX"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Seoul"	0.2.0	0.2.0.0	
+# ::edge	speed	mod	high	0.0.1	0.0.1.0	
+# ::edge	train	mod	speed	0.0	0.0.1	
+# ::edge	train	name	name	0.0	0.0.0	
+(l / launch-01
+  :ARG1 (t2 / train
+          :name (n2 / name
+                  :op1 "KTX")
+          :mod (s / speed
+                 :mod (h / high)))
+  :time (d / date-entity
+          :month 3
+          :day 23
+          :year 2004)
+  :location (c / city
+              :name (n / name
+                      :op1 "Seoul")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.13 ::date 2013-05-26T03:15:06 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The ktx was manufactured in South Korea using technology transferred by Alstom.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_13.txt
+# ::tok The ktx was manufactured in South Korea using technology transferred by Alstom .
+# ::alignments 1-2|0.0+0.0.0+0.0.0.0 5-7|0.1+0.1.0+0.1.0.0+0.1.0.1 11-12|0.2.0.0.0+0.2.0.0.0.0+0.2.0.0.0.0.0 3-4|0 7-8|0.2 8-9|0.2.0 9-10|0.2.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.243
+# ::node	0	manufacture-01	3-4
+# ::node	0.0	railway-line	1-2
+# ::node	0.0.0	name	1-2
+# ::node	0.0.0.0	"KTX"	1-2
+# ::node	0.1	country	5-7
+# ::node	0.1.0	name	5-7
+# ::node	0.1.0.0	"South"	5-7
+# ::node	0.1.0.1	"Korea"	5-7
+# ::node	0.2	use-01	7-8
+# ::node	0.2.0	technology	8-9
+# ::node	0.2.0.0	transfer-01	9-10
+# ::node	0.2.0.0.0	company	11-12
+# ::node	0.2.0.0.0.0	name	11-12
+# ::node	0.2.0.0.0.0.0	"Alstom"	11-12
+# ::root	0	manufacture-01
+# ::edge	company	name	name	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	country	name	name	0.1	0.1.0	
+# ::edge	manufacture-01	ARG1	railway-line	0	0.0	
+# ::edge	manufacture-01	ARG2-of	use-01	0	0.2	
+# ::edge	manufacture-01	location	country	0	0.1	
+# ::edge	name	op1	"Alstom"	0.2.0.0.0.0	0.2.0.0.0.0.0	
+# ::edge	name	op1	"KTX"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"South"	0.1.0	0.1.0.0	
+# ::edge	name	op2	"Korea"	0.1.0	0.1.0.1	
+# ::edge	railway-line	name	name	0.0	0.0.0	
+# ::edge	technology	ARG1-of	transfer-01	0.2.0	0.2.0.0	
+# ::edge	transfer-01	ARG0	company	0.2.0.0	0.2.0.0.0	
+# ::edge	use-01	ARG1	technology	0.2	0.2.0	
+(m / manufacture-01
+  :ARG1 (r / railway-line
+          :name (n / name
+                  :op1 "KTX"))
+  :location (c / country
+              :name (n2 / name
+                      :op1 "South"
+                      :op2 "Korea"))
+  :ARG2-of (u / use-01
+             :ARG1 (t2 / technology
+                     :ARG1-of (t3 / transfer-01
+                                :ARG0 (c2 / company
+                                        :name (n3 / name
+                                                :op1 "Alstom"))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.14 ::date 2013-05-14T03:19:02 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Kron stated --
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_14.txt
+# ::tok Kron stated --
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.252
+# ::node	0	state-01	1-2
+# ::node	0.0	person	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Kron"	0-1
+# ::root	0	state-01
+# ::edge	name	op1	"Kron"	0.0.0	0.0.0.0	
+# ::edge	person	name	name	0.0	0.0.0	
+# ::edge	state-01	ARG0	person	0	0.0	
+(s / state-01
+  :ARG0 (p / person
+          :name (n / name
+                  :op1 "Kron")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.15 ::date 2013-05-14T13:12:08 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is willing to negotiate a technology transfer deal in China.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_15.txt
+# ::tok Alstom is willing to negotiate a technology transfer deal in China .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 10-11|0.1.0.0.1+0.1.0.0.1.0+0.1.0.0.1.0.0 2-3|0 4-5|0.1 8-9|0.1.0 7-8|0.1.0.0 6-7|0.1.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.272
+# ::node	0	will-02	2-3
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	negotiate-01	4-5
+# ::node	0.1.0	deal-01	8-9
+# ::node	0.1.0.0	transfer-01	7-8
+# ::node	0.1.0.0.0	technology	6-7
+# ::node	0.1.0.0.1	country	10-11
+# ::node	0.1.0.0.1.0	name	10-11
+# ::node	0.1.0.0.1.0.0	"China"	10-11
+# ::root	0	will-02
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	country	name	name	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	deal-01	ARG1	transfer-01	0.1.0	0.1.0.0	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"China"	0.1.0.0.1.0	0.1.0.0.1.0.0	
+# ::edge	negotiate-01	ARG2	deal-01	0.1	0.1.0	
+# ::edge	transfer-01	ARG1	technology	0.1.0.0	0.1.0.0.0	
+# ::edge	transfer-01	ARG2	country	0.1.0.0	0.1.0.0.1	
+# ::edge	will-02	ARG0	company	0	0.0	
+# ::edge	will-02	ARG1	negotiate-01	0	0.1	
+(w / will-02
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (n2 / negotiate-01
+          :ARG2 (d / deal-01
+                  :ARG1 (t / transfer-01
+                          :ARG1 (t2 / technology)
+                          :ARG2 (c2 / country
+                                  :name (n3 / name
+                                          :op1 "China"))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.16 ::date 2013-05-26T03:29:31 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt A similar technology transfer deal was signed in 1994 for the ktx.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_16.txt
+# ::tok A similar technology transfer deal was signed in 1994 for the ktx .
+# ::alignments 11-12|0.2+0.2.0+0.2.0.0 8-9|0.1+0.1.0 6-7|0 4-5|0.0 1-2|0.0.1 3-4|0.0.0 2-3|0.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.296
+# ::node	0	sign-02	6-7
+# ::node	0.0	deal-01	4-5
+# ::node	0.0.0	transfer-01	3-4
+# ::node	0.0.0.0	technology	2-3
+# ::node	0.0.1	resemble-01	1-2
+# ::node	0.1	date-entity	8-9
+# ::node	0.1.0	1994	8-9
+# ::node	0.2	railway-line	11-12
+# ::node	0.2.0	name	11-12
+# ::node	0.2.0.0	"KTX"	11-12
+# ::root	0	sign-02
+# ::edge	date-entity	year	1994	0.1	0.1.0	
+# ::edge	deal-01	ARG1	transfer-01	0.0	0.0.0	
+# ::edge	deal-01	ARG1-of	resemble-01	0.0	0.0.1	
+# ::edge	name	op1	"KTX"	0.2.0	0.2.0.0	
+# ::edge	railway-line	name	name	0.2	0.2.0	
+# ::edge	sign-02	ARG1	deal-01	0	0.0	
+# ::edge	sign-02	purpose	railway-line	0	0.2	
+# ::edge	sign-02	time	date-entity	0	0.1	
+# ::edge	transfer-01	ARG1	technology	0.0.0	0.0.0.0	
+(s / sign-02
+  :ARG1 (d / deal-01
+          :ARG1 (t2 / transfer-01
+                  :ARG1 (t3 / technology))
+          :ARG1-of (r / resemble-01))
+  :time (d2 / date-entity
+          :year 1994)
+  :purpose (r2 / railway-line
+             :name (n / name
+                     :op1 "KTX")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.17 ::date 2013-05-26T03:36:51 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Technology transfer was Alstom's entry-ticket to Asia.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_17.txt
+# ::tok Technology transfer was Alstom 's entry - ticket to Asia .
+# ::alignments 3-4|0.0.0+0.0.0.0+0.0.0.0.0 9-10|0.0.1+0.0.1.0+0.0.1.0.0 7-8|0 1-2|0.1 0-1|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.317
+# ::node	0	ticket	7-8
+# ::node	0.0	enter-01	
+# ::node	0.0.0	company	3-4
+# ::node	0.0.0.0	name	3-4
+# ::node	0.0.0.0.0	"Alstom"	3-4
+# ::node	0.0.1	continent	9-10
+# ::node	0.0.1.0	name	9-10
+# ::node	0.0.1.0.0	"Asia"	9-10
+# ::node	0.1	transfer-01	1-2
+# ::node	0.1.0	technology	0-1
+# ::root	0	ticket
+# ::edge	company	name	name	0.0.0	0.0.0.0	
+# ::edge	continent	name	name	0.0.1	0.0.1.0	
+# ::edge	enter-01	ARG0	company	0.0	0.0.0	
+# ::edge	enter-01	ARG1	continent	0.0	0.0.1	
+# ::edge	name	op1	"Alstom"	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	"Asia"	0.0.1.0	0.0.1.0.0	
+# ::edge	ticket	domain	transfer-01	0	0.1	
+# ::edge	ticket	instrument-of	enter-01	0	0.0	
+# ::edge	transfer-01	ARG1	technology	0.1	0.1.0	
+(t3 / ticket
+  :instrument-of (e / enter-01
+                   :ARG0 (c / company
+                           :name (n / name
+                                   :op1 "Alstom"))
+                   :ARG1 (c2 / continent
+                           :name (n2 / name
+                                   :op1 "Asia")))
+  :domain (t / transfer-01
+            :ARG1 (t2 / technology)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.18 ::date 2013-05-26T05:26:39 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom wishes to develop local partnerships to reduce costs.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_18.txt
+# ::tok Alstom wishes to develop local partnerships to reduce costs .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 1-2|0 3-4|0.1 7-8|0.1.1 8-9|0.1.1.0+0.1.1.0.0 4-5|0.1.0.0 5-6|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.338
+# ::node	0	wish-01	1-2
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	develop-02	3-4
+# ::node	0.1.0	partner-01	5-6
+# ::node	0.1.0.0	local	4-5
+# ::node	0.1.1	reduce-01	7-8
+# ::node	0.1.1.0	thing	8-9
+# ::node	0.1.1.0.0	cost-01	8-9
+# ::root	0	wish-01
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	develop-02	ARG0	company	0.1	0.0	
+# ::edge	develop-02	ARG1	partner-01	0.1	0.1.0	
+# ::edge	develop-02	ARG4	reduce-01	0.1	0.1.1	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	partner-01	ARG0	company	0.1.0	0.0	
+# ::edge	partner-01	mod	local	0.1.0	0.1.0.0	
+# ::edge	reduce-01	ARG1	thing	0.1.1	0.1.1.0	
+# ::edge	thing	ARG2-of	cost-01	0.1.1.0	0.1.1.0.0	
+# ::edge	wish-01	ARG0	company	0	0.0	
+# ::edge	wish-01	ARG1	develop-02	0	0.1	
+(w / wish-01
+  :ARG0 (c / company
+          :name (n / name
+                  :op1 "Alstom"))
+  :ARG1 (d / develop-02
+          :ARG0 c
+          :ARG1 (p / partner-01
+                  :ARG0 c
+                  :mod (l / local))
+          :ARG4 (r / reduce-01
+                  :ARG1 (t / thing
+                          :ARG2-of (c2 / cost-01)))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.19 ::date 2013-05-26T05:51:11 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt Beijing-Shanghai rail link represents China's potential for development in transport including freight, subways and energy.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_19.txt
+# ::tok Beijing - Shanghai rail link represents China 's potential for development in transport including freight , subways and energy .
+# ::alignments 0-1|0.0.0.0.0+0.0.0.0.0.0+0.0.0.0.0.0.0 2-3|0.0.0.0.1+0.0.0.0.1.0+0.0.0.0.1.0.0 6-7|0.1.1+0.1.1.0+0.1.1.0.0 5-6|0 8-9|0.1 12-13|0.1.0.0 13-14|0.1.0.1 17-18|0.1.0.1.0 18-19|0.1.0.1.0.2 16-17|0.1.0.1.0.1 14-15|0.1.0.1.0.0 3-4|0.0 4-5|0.0.0 10-11|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.371
+# ::node	0	represent-01	5-6
+# ::node	0.0	rail	3-4
+# ::node	0.0.0	link-01	4-5
+# ::node	0.0.0.0	and	
+# ::node	0.0.0.0.0	city	0-1
+# ::node	0.0.0.0.0.0	name	0-1
+# ::node	0.0.0.0.0.0.0	"Beijing"	0-1
+# ::node	0.0.0.0.1	city	2-3
+# ::node	0.0.0.0.1.0	name	2-3
+# ::node	0.0.0.0.1.0.0	"Shanghai"	2-3
+# ::node	0.1	potential	8-9
+# ::node	0.1.0	develop-02	10-11
+# ::node	0.1.0.0	transport-01	12-13
+# ::node	0.1.0.1	include-01	13-14
+# ::node	0.1.0.1.0	and	17-18
+# ::node	0.1.0.1.0.0	freight	14-15
+# ::node	0.1.0.1.0.1	subway	16-17
+# ::node	0.1.0.1.0.2	energy	18-19
+# ::node	0.1.1	country	6-7
+# ::node	0.1.1.0	name	6-7
+# ::node	0.1.1.0.0	"China"	6-7
+# ::root	0	represent-01
+# ::edge	and	op1	city	0.0.0.0	0.0.0.0.0	
+# ::edge	and	op1	freight	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	and	op2	city	0.0.0.0	0.0.0.0.1	
+# ::edge	and	op2	subway	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	and	op3	energy	0.1.0.1.0	0.1.0.1.0.2	
+# ::edge	city	name	name	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	city	name	name	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	country	name	name	0.1.1	0.1.1.0	
+# ::edge	develop-02	ARG1	transport-01	0.1.0	0.1.0.0	
+# ::edge	develop-02	ARG2-of	include-01	0.1.0	0.1.0.1	
+# ::edge	include-01	ARG1	and	0.1.0.1	0.1.0.1.0	
+# ::edge	link-01	ARG1	and	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	name	op1	"China"	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.0.0.1.0	0.0.0.0.1.0.0	
+# ::edge	potential	poss	country	0.1	0.1.1	
+# ::edge	potential	prep-for	develop-02	0.1	0.1.0	
+# ::edge	rail	ARG2-of	link-01	0.0	0.0.0	
+# ::edge	represent-01	ARG0	rail	0	0.0	
+# ::edge	represent-01	ARG1	potential	0	0.1	
+(r / represent-01
+  :ARG0 (r2 / rail
+          :ARG2-of (l / link-01
+                     :ARG1 (a / and
+                             :op1 (c / city
+                                    :name (n / name
+                                            :op1 "Beijing"))
+                             :op2 (c2 / city
+                                    :name (n2 / name
+                                            :op1 "Shanghai")))))
+  :ARG1 (p2 / potential
+          :prep-for (d / develop-02
+                      :ARG1 (t / transport-01)
+                      :ARG2-of (i / include-01
+                                 :ARG1 (a2 / and
+                                         :op1 (f / freight)
+                                         :op2 (s / subway)
+                                         :op3 (e / energy))))
+          :poss (c3 / country
+                  :name (n3 / name
+                          :op1 "China"))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.20 ::date 2013-05-26T06:02:02 ::snt-type body subordinate ::annotator SDL-AMR-09 ::preferred
+# ::snt In 2003 China ordered as much energy equipment as the rest of the world in total.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_20.txt
+# ::tok In 2003 China ordered as much energy equipment as the rest of the world in total .
+# ::alignments 2-3|0.0+0.0.0+0.0.0.0 1-2|0.2+0.2.0 3-4|0 7-8|0.1 10-11|0.1.1.0.0.0 13-14|0.1.1.0.0.0.0 6-7|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.400
+# ::node	0	order-02	3-4
+# ::node	0.0	country	2-3
+# ::node	0.0.0	name	2-3
+# ::node	0.0.0.0	"China"	2-3
+# ::node	0.1	equipment	7-8
+# ::node	0.1.0	energy	6-7
+# ::node	0.1.1	equal-01	
+# ::node	0.1.1.0	equipment	
+# ::node	0.1.1.0.0	order-02	
+# ::node	0.1.1.0.0.0	rest	10-11
+# ::node	0.1.1.0.0.0.0	world	13-14
+# ::node	0.2	date-entity	1-2
+# ::node	0.2.0	2003	1-2
+# ::root	0	order-02
+# ::edge	country	name	name	0.0	0.0.0	
+# ::edge	date-entity	year	2003	0.2	0.2.0	
+# ::edge	equal-01	ARG2	equipment	0.1.1	0.1.1.0	
+# ::edge	equipment	ARG1-of	equal-01	0.1	0.1.1	
+# ::edge	equipment	ARG1-of	order-02	0.1.1.0	0.1.1.0.0	
+# ::edge	equipment	mod	energy	0.1	0.1.0	
+# ::edge	name	op1	"China"	0.0.0	0.0.0.0	
+# ::edge	order-02	ARG0	country	0	0.0	
+# ::edge	order-02	ARG0	rest	0.1.1.0.0	0.1.1.0.0.0	
+# ::edge	order-02	ARG1	equipment	0	0.1	
+# ::edge	order-02	time	date-entity	0	0.2	
+# ::edge	rest	part-of	world	0.1.1.0.0.0	0.1.1.0.0.0.0	
+(o / order-02
+  :ARG0 (c / country
+          :name (n / name
+                  :op1 "China"))
+  :ARG1 (e / equipment
+          :mod (e2 / energy)
+          :ARG1-of (e4 / equal-01
+                     :ARG2 (e3 / equipment
+                             :ARG1-of (o2 / order-02
+                                        :ARG0 (r / rest
+                                                :part-of (w / world))))))
+  :time (d / date-entity
+          :year 2003))
+
+# ::id PROXY_AFP_ENG_20040329_0408.21 ::date 2013-05-26T08:06:24 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The Beijing-Shanghai rail link would be 1,000-kilometres (620-miles) long.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_21.txt
+# ::tok The Beijing - Shanghai rail link would be 1,000 - kilometres ( 620 - miles ) long .
+# ::alignments 1-2|0.0.0.0.0.0+0.0.0.0.0.0.0+0.0.0.0.0.0.0.0 3-4|0.0.0.0.0.1+0.0.0.0.0.1.0+0.0.0.0.0.1.0.0 4-5|0.0.0 5-6|0.0.0.0 10-11|0.1+0.1.1 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.424
+# ::node	0	equal-01	
+# ::node	0.0	length	
+# ::node	0.0.0	rail	4-5
+# ::node	0.0.0.0	link-01	5-6
+# ::node	0.0.0.0.0	and	
+# ::node	0.0.0.0.0.0	city	1-2
+# ::node	0.0.0.0.0.0.0	name	1-2
+# ::node	0.0.0.0.0.0.0.0	"Beijing"	1-2
+# ::node	0.0.0.0.0.1	city	3-4
+# ::node	0.0.0.0.0.1.0	name	3-4
+# ::node	0.0.0.0.0.1.0.0	"Shanghai"	3-4
+# ::node	0.1	distance-quantity	10-11
+# ::node	0.1.0	1000	
+# ::node	0.1.1	kilometer	10-11
+# ::root	0	equal-01
+# ::edge	and	op1	city	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	and	op2	city	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	city	name	name	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	city	name	name	0.0.0.0.0.1	0.0.0.0.0.1.0	
+# ::edge	distance-quantity	quant	1000	0.1	0.1.0	
+# ::edge	distance-quantity	unit	kilometer	0.1	0.1.1	
+# ::edge	equal-01	ARG1	length	0	0.0	
+# ::edge	equal-01	ARG2	distance-quantity	0	0.1	
+# ::edge	length	poss	rail	0.0	0.0.0	
+# ::edge	link-01	ARG1	and	0.0.0.0	0.0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.0.0.0.0.0.0	0.0.0.0.0.0.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.0.0.0.1.0	0.0.0.0.0.1.0.0	
+# ::edge	rail	ARG2-of	link-01	0.0.0	0.0.0.0	
+(e / equal-01
+  :ARG1 (l2 / length
+          :poss (r2 / rail
+                  :ARG2-of (l3 / link-01
+                             :ARG1 (a / and
+                                     :op1 (c / city
+                                            :name (n2 / name
+                                                    :op1 "Beijing"))
+                                     :op2 (c2 / city
+                                            :name (n3 / name
+                                                    :op1 "Shanghai"))))))
+  :ARG2 (d / distance-quantity
+          :quant 1000
+          :unit (k / kilometer)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.22 ::date 2013-05-26T08:37:28 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Building the Beijing-Shanghai rail link would cost an estimated 100 million yuan (12 million dollars).
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_22.txt
+# ::tok Building the Beijing - Shanghai rail link would cost an estimated 100 million yuan ( 12 million dollars ) .
+# ::alignments 2-3|0.0.0.0.0.0+0.0.0.0.0.0.0+0.0.0.0.0.0.0.0 4-5|0.0.0.0.0.1+0.0.0.0.0.1.0+0.0.0.0.0.1.0.0 8-9|0 13-14|0.1+0.1.1 10-11|0.1.2 0-1|0.0 5-6|0.0.0 6-7|0.0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.481
+# ::node	0	cost-01	8-9
+# ::node	0.0	build-01	0-1
+# ::node	0.0.0	rail	5-6
+# ::node	0.0.0.0	link-01	6-7
+# ::node	0.0.0.0.0	and	
+# ::node	0.0.0.0.0.0	city	2-3
+# ::node	0.0.0.0.0.0.0	name	2-3
+# ::node	0.0.0.0.0.0.0.0	"Beijing"	2-3
+# ::node	0.0.0.0.0.1	city	4-5
+# ::node	0.0.0.0.0.1.0	name	4-5
+# ::node	0.0.0.0.0.1.0.0	"Shanghai"	4-5
+# ::node	0.1	monetary-quantity	13-14
+# ::node	0.1.0	100000000	
+# ::node	0.1.1	yuan	13-14
+# ::node	0.1.2	estimate-01	10-11
+# ::root	0	cost-01
+# ::edge	and	op1	city	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	and	op2	city	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	build-01	ARG1	rail	0.0	0.0.0	
+# ::edge	city	name	name	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	city	name	name	0.0.0.0.0.1	0.0.0.0.0.1.0	
+# ::edge	cost-01	ARG1	build-01	0	0.0	
+# ::edge	cost-01	ARG2	monetary-quantity	0	0.1	
+# ::edge	link-01	ARG1	and	0.0.0.0	0.0.0.0.0	
+# ::edge	monetary-quantity	ARG2-of	estimate-01	0.1	0.1.2	
+# ::edge	monetary-quantity	quant	100000000	0.1	0.1.0	
+# ::edge	monetary-quantity	unit	yuan	0.1	0.1.1	
+# ::edge	name	op1	"Beijing"	0.0.0.0.0.0.0	0.0.0.0.0.0.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.0.0.0.1.0	0.0.0.0.0.1.0.0	
+# ::edge	rail	ARG2-of	link-01	0.0.0	0.0.0.0	
+(c3 / cost-01
+  :ARG1 (b / build-01
+          :ARG1 (r / rail
+                  :ARG2-of (l / link-01
+                             :ARG1 (a / and
+                                     :op1 (c / city
+                                            :name (n / name
+                                                    :op1 "Beijing"))
+                                     :op2 (c2 / city
+                                            :name (n2 / name
+                                                    :op1 "Shanghai"))))))
+  :ARG2 (m / monetary-quantity
+          :quant 100000000
+          :unit (y / yuan)
+          :ARG2-of (e / estimate-01)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.23 ::date 2013-05-26T10:39:43 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt The Beijing-Shanghai rail link would reduce traveling time from Beijing to Shanghai from 12 to 5 hours.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_23.txt
+# ::tok The Beijing - Shanghai rail link would reduce traveling time from Beijing to Shanghai from 12 to 5 hours .
+# ::alignments 1-2|0.0.0.0.0+0.0.0.0.0.0+0.0.0.0.0.0.0 3-4|0.0.0.0.1+0.0.0.0.1.0+0.0.0.0.1.0.0 7-8|0 17-18|0.3.0 18-19|0.3+0.3.1 15-16|0.2.0 9-10|0.1 8-9|0.1.0 4-5|0.0 5-6|0.0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.514
+# ::node	0	reduce-01	7-8
+# ::node	0.0	rail	4-5
+# ::node	0.0.0	link-01	5-6
+# ::node	0.0.0.0	and	
+# ::node	0.0.0.0.0	city	1-2
+# ::node	0.0.0.0.0.0	name	1-2
+# ::node	0.0.0.0.0.0.0	"Beijing"	1-2
+# ::node	0.0.0.0.1	city	3-4
+# ::node	0.0.0.0.1.0	name	3-4
+# ::node	0.0.0.0.1.0.0	"Shanghai"	3-4
+# ::node	0.1	time	9-10
+# ::node	0.1.0	travel-01	8-9
+# ::node	0.2	temporal-quantity	
+# ::node	0.2.0	12	15-16
+# ::node	0.2.1	hour	
+# ::node	0.3	temporal-quantity	18-19
+# ::node	0.3.0	5	17-18
+# ::node	0.3.1	hour	18-19
+# ::root	0	reduce-01
+# ::edge	and	op1	city	0.0.0.0	0.0.0.0.0	
+# ::edge	and	op2	city	0.0.0.0	0.0.0.0.1	
+# ::edge	city	name	name	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	city	name	name	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	link-01	ARG1	and	0.0.0	0.0.0.0	
+# ::edge	name	op1	"Beijing"	0.0.0.0.0.0	0.0.0.0.0.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.0.0.1.0	0.0.0.0.1.0.0	
+# ::edge	rail	ARG2-of	link-01	0.0	0.0.0	
+# ::edge	reduce-01	ARG0	rail	0	0.0	
+# ::edge	reduce-01	ARG1	time	0	0.1	
+# ::edge	reduce-01	ARG3	temporal-quantity	0	0.2	
+# ::edge	reduce-01	ARG4	temporal-quantity	0	0.3	
+# ::edge	temporal-quantity	quant	12	0.2	0.2.0	
+# ::edge	temporal-quantity	quant	5	0.3	0.3.0	
+# ::edge	temporal-quantity	unit	hour	0.2	0.2.1	
+# ::edge	temporal-quantity	unit	hour	0.3	0.3.1	
+# ::edge	time	duration-of	travel-01	0.1	0.1.0	
+# ::edge	travel-01	ARG1	city	0.1.0	0.0.0.0.1	
+# ::edge	travel-01	source	city	0.1.0	0.0.0.0.0	
+(r / reduce-01
+  :ARG0 (r3 / rail
+          :ARG2-of (l / link-01
+                     :ARG1 (a / and
+                             :op1 (c3 / city
+                                    :name (n2 / name
+                                            :op1 "Beijing"))
+                             :op2 (c2 / city
+                                    :name (n3 / name
+                                            :op1 "Shanghai")))))
+  :ARG1 (t2 / time
+          :duration-of (t / travel-01
+                         :ARG1 c2
+                         :source c3))
+  :ARG3 (t3 / temporal-quantity
+          :quant 12
+          :unit (h / hour))
+  :ARG4 (t4 / temporal-quantity
+          :quant 5
+          :unit (h2 / hour)))
+
+# ::id PROXY_AFP_ENG_20040329_0408.24 ::date 2013-05-26T10:59:42 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Alstom is involved in large-scale infrastructure projects the Three Gorges Dam in southwest China and Daya Bay Nuclear thermal power station near Hong Kong.
+# ::save-date Wed Sep 18, 2013 ::file PROXY_AFP_ENG_20040329_0408_24.txt
+# ::tok Alstom is involved in large - scale infrastructure projects the Three Gorges Dam in southwest China and Daya Bay Nuclear thermal power station near Hong Kong .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 10-13|0.1.2.0+0.1.2.0.0+0.1.2.0.0.0+0.1.2.0.0.1+0.1.2.0.0.2 15-16|0.1.2.0.1+0.1.2.0.1.0+0.1.2.0.1.0.0 17-23|0.1.2.1+0.1.2.1.0+0.1.2.1.0.0+0.1.2.1.0.1+0.1.2.1.0.2+0.1.2.1.0.3+0.1.2.1.0.4+0.1.2.1.0.5 24-26|0.1.2.1.1.0+0.1.2.1.1.0.0+0.1.2.1.1.0.0.0+0.1.2.1.1.0.0.1 2-3|0 8-9|0.1 16-17|0.1.2 23-24|0.1.2.1.1 14-15|0.1.2.0.1.1 6-7|0.1.1 4-5|0.1.1.0 7-8|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.567
+# ::node	0	involve-01	2-3
+# ::node	0.0	company	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Alstom"	0-1
+# ::node	0.1	project	8-9
+# ::node	0.1.0	infrastructure	7-8
+# ::node	0.1.1	scale	6-7
+# ::node	0.1.1.0	large	4-5
+# ::node	0.1.2	and	16-17
+# ::node	0.1.2.0	facility	10-13
+# ::node	0.1.2.0.0	name	10-13
+# ::node	0.1.2.0.0.0	"Three"	10-13
+# ::node	0.1.2.0.0.1	"Gorges"	10-13
+# ::node	0.1.2.0.0.2	"Dam"	10-13
+# ::node	0.1.2.0.1	country	15-16
+# ::node	0.1.2.0.1.0	name	15-16
+# ::node	0.1.2.0.1.0.0	"China"	15-16
+# ::node	0.1.2.0.1.1	southwest	14-15
+# ::node	0.1.2.1	facility	17-23
+# ::node	0.1.2.1.0	name	17-23
+# ::node	0.1.2.1.0.0	"Daya"	17-23
+# ::node	0.1.2.1.0.1	"Bay"	17-23
+# ::node	0.1.2.1.0.2	"Nuclear"	17-23
+# ::node	0.1.2.1.0.3	"Thermal"	17-23
+# ::node	0.1.2.1.0.4	"Power"	17-23
+# ::node	0.1.2.1.0.5	"Station"	17-23
+# ::node	0.1.2.1.1	near	23-24
+# ::node	0.1.2.1.1.0	city	24-26
+# ::node	0.1.2.1.1.0.0	name	24-26
+# ::node	0.1.2.1.1.0.0.0	"Hong"	24-26
+# ::node	0.1.2.1.1.0.0.1	"Kong"	24-26
+# ::root	0	involve-01
+# ::edge	and	op1	facility	0.1.2	0.1.2.0	
+# ::edge	and	op2	facility	0.1.2	0.1.2.1	
+# ::edge	city	name	name	0.1.2.1.1.0	0.1.2.1.1.0.0	
+# ::edge	company	name	name	0.0	0.0.0	
+# ::edge	country	mod	southwest	0.1.2.0.1	0.1.2.0.1.1	
+# ::edge	country	name	name	0.1.2.0.1	0.1.2.0.1.0	
+# ::edge	facility	location	country	0.1.2.0	0.1.2.0.1	
+# ::edge	facility	location	near	0.1.2.1	0.1.2.1.1	
+# ::edge	facility	name	name	0.1.2.0	0.1.2.0.0	
+# ::edge	facility	name	name	0.1.2.1	0.1.2.1.0	
+# ::edge	involve-01	ARG1	company	0	0.0	
+# ::edge	involve-01	ARG2	project	0	0.1	
+# ::edge	name	op1	"Alstom"	0.0.0	0.0.0.0	
+# ::edge	name	op1	"China"	0.1.2.0.1.0	0.1.2.0.1.0.0	
+# ::edge	name	op1	"Daya"	0.1.2.1.0	0.1.2.1.0.0	
+# ::edge	name	op1	"Hong"	0.1.2.1.1.0.0	0.1.2.1.1.0.0.0	
+# ::edge	name	op1	"Three"	0.1.2.0.0	0.1.2.0.0.0	
+# ::edge	name	op2	"Bay"	0.1.2.1.0	0.1.2.1.0.1	
+# ::edge	name	op2	"Gorges"	0.1.2.0.0	0.1.2.0.0.1	
+# ::edge	name	op2	"Kong"	0.1.2.1.1.0.0	0.1.2.1.1.0.0.1	
+# ::edge	name	op3	"Dam"	0.1.2.0.0	0.1.2.0.0.2	
+# ::edge	name	op3	"Nuclear"	0.1.2.1.0	0.1.2.1.0.2	
+# ::edge	name	op4	"Thermal"	0.1.2.1.0	0.1.2.1.0.3	
+# ::edge	name	op5	"Power"	0.1.2.1.0	0.1.2.1.0.4	
+# ::edge	name	op6	"Station"	0.1.2.1.0	0.1.2.1.0.5	
+# ::edge	near	op1	city	0.1.2.1.1	0.1.2.1.1.0	
+# ::edge	project	example	and	0.1	0.1.2	
+# ::edge	project	mod	scale	0.1	0.1.1	
+# ::edge	project	topic	infrastructure	0.1	0.1.0	
+# ::edge	scale	mod	large	0.1.1	0.1.1.0	
+(i / involve-01
+      :ARG1 (c / company :name (n / name :op1 "Alstom"))
+      :ARG2 (p / project
+            :topic (i2 / infrastructure)
+            :mod (s3 / scale
+                  :mod (l / large))
+            :example (a2 / and
+                  :op1 (f / facility :name (n7 / name :op1 "Three" :op2 "Gorges" :op3 "Dam")
+                        :location (c2 / country :name (n4 / name :op1 "China")
+                              :mod (s4 / southwest)))
+                  :op2 (f2 / facility :name (n8 / name :op1 "Daya" :op2 "Bay" :op3 "Nuclear" :op4 "Thermal" :op5 "Power" :op6 "Station")
+                        :location (n5 / near
+                              :op1 (c3 / city :name (n6 / name :op1 "Hong" :op2 "Kong")))))))
+
+# ::id PROXY_AFP_ENG_20040329_0408.25 ::date 2013-05-14T02:53:13 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Beijing is China's capital.
+# ::save-date Tue May 14, 2013 ::file PROXY_AFP_ENG_20040329_0408_25.txt
+# ::tok Beijing is China 's capital .
+# ::alignments 2-3|0.0+0.0.0+0.0.0.0 0-1|0.1+0.1.0+0.1.0.0 4-5|0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.600
+# ::node	0	capital	4-5
+# ::node	0.0	country	2-3
+# ::node	0.0.0	name	2-3
+# ::node	0.0.0.0	"China"	2-3
+# ::node	0.1	city	0-1
+# ::node	0.1.0	name	0-1
+# ::node	0.1.0.0	"Beijing"	0-1
+# ::root	0	capital
+# ::edge	capital	domain	city	0	0.1	
+# ::edge	capital	poss	country	0	0.0	
+# ::edge	city	name	name	0.1	0.1.0	
+# ::edge	country	name	name	0.0	0.0.0	
+# ::edge	name	op1	"Beijing"	0.1.0	0.1.0.0	
+# ::edge	name	op1	"China"	0.0.0	0.0.0.0	
+(c / capital
+  :poss (c2 / country
+          :name (n / name
+                  :op1 "China"))
+  :domain (c3 / city
+            :name (n2 / name
+                    :op1 "Beijing")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.26 ::date 2013-05-14T02:56:45 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Shanghai is China's business hub.
+# ::save-date Tue May 28, 2013 ::file PROXY_AFP_ENG_20040329_0408_26.txt
+# ::tok Shanghai is China 's business hub .
+# ::alignments 2-3|0.1+0.1.0+0.1.0.0 0-1|0.2+0.2.0+0.2.0.0 5-6|0 4-5|0.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.617
+# ::node	0	hub	5-6
+# ::node	0.0	business	4-5
+# ::node	0.1	country	2-3
+# ::node	0.1.0	name	2-3
+# ::node	0.1.0.0	"China"	2-3
+# ::node	0.2	city	0-1
+# ::node	0.2.0	name	0-1
+# ::node	0.2.0.0	"Shanghai"	0-1
+# ::root	0	hub
+# ::edge	city	name	name	0.2	0.2.0	
+# ::edge	country	name	name	0.1	0.1.0	
+# ::edge	hub	domain	city	0	0.2	
+# ::edge	hub	mod	business	0	0.0	
+# ::edge	hub	poss	country	0	0.1	
+# ::edge	name	op1	"China"	0.1.0	0.1.0.0	
+# ::edge	name	op1	"Shanghai"	0.2.0	0.2.0.0	
+(h / hub
+  :mod (b / business)
+  :poss (c / country
+          :name (n / name
+                  :op1 "China"))
+  :domain (c2 / city
+            :name (n2 / name
+                    :op1 "Shanghai")))
+
+# ::id PROXY_AFP_ENG_20040329_0408.27 ::date 2013-05-14T02:58:20 ::snt-type body ::annotator SDL-AMR-09 ::preferred
+# ::snt Shanghai is located on China's eastern coast.
+# ::save-date Fri Sep 20, 2013 ::file PROXY_AFP_ENG_20040329_0408_27.txt
+# ::tok Shanghai is located on China 's eastern coast .
+# ::alignments 0-1|0.0+0.0.0+0.0.0.0 4-5|0.1.1+0.1.1.0+0.1.1.0.0 7-8|0.1 6-7|0.1.0 ::annotator Aligner v.03 ::date 2018-02-26T00:29:54.646
+# ::node	0	be-located-at-91	
+# ::node	0.0	city	0-1
+# ::node	0.0.0	name	0-1
+# ::node	0.0.0.0	"Shanghai"	0-1
+# ::node	0.1	coast	7-8
+# ::node	0.1.0	east	6-7
+# ::node	0.1.1	country	4-5
+# ::node	0.1.1.0	name	4-5
+# ::node	0.1.1.0.0	"China"	4-5
+# ::root	0	be-located-at-91
+# ::edge	be-located-at-91	ARG1	city	0	0.0	
+# ::edge	be-located-at-91	ARG2	coast	0	0.1	
+# ::edge	city	name	name	0.0	0.0.0	
+# ::edge	coast	mod	east	0.1	0.1.0	
+# ::edge	coast	part-of	country	0.1	0.1.1	
+# ::edge	country	name	name	0.1.1	0.1.1.0	
+# ::edge	name	op1	"China"	0.1.1.0	0.1.1.0.0	
+# ::edge	name	op1	"Shanghai"	0.0.0	0.0.0.0	
+(b / be-located-at-91
+  :ARG1 (c3 / city
+          :name (n2 / name
+                  :op1 "Shanghai"))
+  :ARG2 (c / coast
+          :mod (e / east)
+          :part-of (c2 / country
+                     :name (n / name
+                             :op1 "China"))))
+

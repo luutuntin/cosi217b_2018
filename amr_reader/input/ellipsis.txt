@@ -1,0 +1,134 @@
+# https://amr.isi.edu/download/2016-03-14/amr-release-test-bio.txt
+# ::id pmid_1684_6534.122 ::date 2015-08-13T09:18:52 ::annotator SDL-AMR-09 ::preferred
+# ::snt We examined MEK1 and MEK2 levels by western blot to confirm decreased protein in MUC1 siRNA-treated cells (Figure <xref ref-type="fig" rid="F3">3a</xref>), and found that not only were total MEK1/2 levels lower in 468.siMUC1 and BT.siMUC1 compared to controls (0.48 and 0.68 relative to siLuc, respectively), but so were the basal amounts of active (phosphorylated) MEK1/2 (pMEK1/2; 0.12 and 0.42 relative to siLuc, respectively).
+# ::save-date Mon Jan 4, 2016 ::file pmid_1684_6534_122.txt
+(a / and
+      :op1 (e / examine-01
+            :ARG0 (w / we)
+            :ARG1 (a2 / and
+                  :op1 (l / level
+                        :quant-of (e2 / enzyme :name (n / name :op1 "MEK1")))
+                  :op2 (l2 / level
+                        :quant-of (e3 / enzyme :name (n2 / name :op1 "MEK2"))))
+            :manner (i / immunoblot-01)
+            :purpose (c / confirm-01
+                  :ARG0 w
+                  :ARG1 (p / protein
+                        :ARG1-of (d / decrease-01
+                              :location (c2 / cell
+                                    :ARG1-of (t2 / treat-04
+                                          :ARG2 (n11 / nucleic-acid :name (n4 / name :op1 "siRNA")
+                                                :ARG0-of (e4 / encode-01
+                                                      :ARG1 (p2 / protein :name (n5 / name :op1 "MUC1")))))))))
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (f / figure :mod "3a")))
+      :op2 (f2 / find-01
+            :ARG0 w
+            :ARG1 (a3 / and
+                  :op1 (a4 / and
+                        :op1 (l3 / level
+                              :quant-of e2)
+                        :op2 (l4 / level
+                              :quant-of e3)
+                        :mod (t3 / total)
+                        :ARG1-of (l5 / low-04
+                              :degree (m / more)
+                              :compared-to (c3 / control))
+                        :ARG1-of (m2 / mean-01
+                              :ARG2 (a14 / and
+                                    :op1 (l6 / level :quant 0.48)
+                                    :op2 (l7 / level :quant 0.68)
+                                    :manner r2
+                                    :ARG1-of (r3 / relative-05
+                                          :ARG3 (c6 / cell-line :name (n8 / name :op1 "siLuc")))
+                                    :mod t3)))
+                  :op2 (a7 / and
+                        :op1 (a8 / amount
+                              :quant-of (e5 / enzyme :name (n9 / name :op1 "MEK1")
+                                    :ARG1-of (a10 / activate-01
+                                          :ARG1-of (m3 / mean-01
+                                                :ARG2 (p3 / phosphorylate-01
+                                                      :ARG3 e5)))))
+                        :op2 (a9 / amount
+                              :quant-of (e6 / enzyme :name (n10 / name :op1 "MEK2")
+                                    :ARG1-of (a11 / activate-01
+                                          :ARG1-of (m5 / mean-01
+                                                :ARG2 (p4 / phosphorylate-01
+                                                      :ARG3 e6)))))
+                        :mod (b / basal)
+                        :ARG1-of l5
+                        :ARG1-of (m4 / mean-01
+                              :ARG2 (a12 / and
+                                    :op1 (a6 / amount :quant 0.12)
+                                    :op2 (a13 / amount :quant 0.42)
+                                    :manner (r2 / respective)
+                                    :ARG1-of r3
+                                    :mod b))))
+            :location (a5 / and
+                  :op1 (c4 / cell-line :name (n6 / name :op1 "468.siMUC1"))
+                  :op2 (c5 / cell-line :name (n7 / name :op1 "BT.siMUC1")))))
+
+# https://amr.isi.edu/download/2016-03-14/amr-release-training-bio.txt
+# ::id pmid_1563_0473.227 ::date 2015-03-29T09:21:11 ::annotator SDL-AMR-09 ::preferred
+# ::snt However, it is intriguing that <i>K14-Snail</i> Tg epidermis displayed a marked down-regulation in E-cadherin expression, thereby demonstrating its potential to do so in skin.
+# ::save-date Mon Jan 25, 2016 ::file pmid_1563_0473_227.txt
+(h / have-concession-91
+      :ARG1 (c2 / cause-01
+            :ARG0 (d2 / display-01
+                  :ARG0 (e / epidermis
+                        :mod (t / transgenic)
+                        :mod (g / gene :name (n2 / name :op1 "Snail")
+                              :ARG2-of (m / mutate-01 :value "K14")))
+                  :ARG1 (d3 / downregulate-01
+                        :ARG1 (e2 / express-03
+                              :ARG2 (p3 / protein :name (n3 / name :op1 "E-cadherin")))
+                        :ARG1-of (m2 / mark-01))
+                  :ARG0-of (i / intrigue-01))
+            :ARG1 (d / demonstrate-01
+                  :ARG0 e
+                  :ARG1 (p4 / potential
+                        :topic d3
+                        :location (s / skin)))))
+# ::id pmid_2465_1010.95 ::date 2015-02-10T14:50:45 ::annotator SDL-AMR-09 ::preferred
+# ::snt Ras oncogenes can certainly initiate cancer in model organisms and probably do so in humans.
+# ::save-date Sat Jan 16, 2016 ::file pmid_2465_1010_95.txt
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (i / initiate-01
+                  :ARG0 (e / enzyme :name (n / name :op1 "Ras")
+                        :ARG0-of (c2 / cause-01
+                              :ARG1 d))
+                  :ARG1 (d / disease :wiki "Cancer" :name (n2 / name :op1 "cancer"))
+                  :location (o2 / organism
+                        :mod (m / model)))
+            :mod (c / certain))
+      :op2 (p2 / probable
+            :domain (i2 / initiate-01
+                  :ARG0 e
+                  :ARG1 d
+                  :location (h / human))))
+
+# file:///D:/Brandeis/2018%20Spring/COSI-217B/AMR_Annotation_Release_1.0_LDC2014T12/amr_anno_1.0/data/unsplit/amr-release-1.0-dfa.txt
+# ::id DF-199-193260-656_8105.5 ::date 2013-09-10T20:12:20 ::annotator SDL-AMR-09 ::preferred
+# ::snt You know how hawks and coyotes vomit up the undigestible parts of their food?
+# ::save-date Fri Jan 17, 2014 ::file DF-199-193260-656_8105_5.txt
+(k / know-01 :mode interrogative
+      :ARG0 (y / you)
+      :ARG1 (t2 / thing
+            :manner-of (v / vomit-02
+                  :ARG0 (a / and
+                        :op1 (h / hawk)
+                        :op2 (c / coyote))
+                  :ARG1 (t / thing
+                        :ARG1-of (d / digest-01
+                              :mod (p / possible))
+                        :part-of (f / food
+                              :poss a)))))
+
+# ::id DF-199-193260-656_8105.6 ::date 2013-09-10T20:17:43 ::annotator SDL-AMR-09 ::preferred
+# ::snt So do sperm whales.
+# ::save-date Tue Sep 10, 2013 ::file DF-199-193260-656_8105_6.txt
+(d / do-02
+      :ARG0 (w / whale
+            :mod (s / sperm))
+      :mod (s2 / so))
