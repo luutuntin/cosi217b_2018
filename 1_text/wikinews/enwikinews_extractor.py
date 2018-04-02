@@ -21,6 +21,7 @@ from gensim.corpora.dictionary import Dictionary
 from gensim.corpora.wikicorpus import *
 from gensim import utils
 import re
+import spacy
 
 DUMMY = Dictionary([['dummy']]) #Dictionary() doesn't work
 
@@ -47,7 +48,6 @@ def _repl_byline(matchobj):
             output += x.partition('=')[2] + '\n'
     return output
 
-#def process_article_enwikinews(s):
 def process_enwikinews(s,verbose=True):
     # extract text (vs pageid and title)
     ss = RE_P17.split(s)
@@ -118,12 +118,24 @@ def process_enwikinews(s,verbose=True):
         return None
     return pageid, title, text
 
-def selected_articles(raw): # raw: list of raw texts
+# (output: 20926 articles)
+def selected_articles(raw): # raw: list of raw texts (articles)
     for x in raw:
         temp = process_enwikinews(x,verbose=False)
         if temp:
             yield temp
 
+# https://github.com/c-amr/camr
+nlp = spacy.load('en',disable=['ner'])
+# (output: 20507 articles)
+def selected_articles_sents(raw):
+    """ Prerequisite for camr input format (.txt - one sentence / line) """
+    for pageid, title, text in selected_articles(raw):
+        sents = nlp(text).sents
+        if any(len(s)>=10 for s in sents):
+            yield pageid, title, sents
+        
+    
 class WikiCorpus_extended(WikiCorpus):
     """ Add self.get_texts_raw(), yielding raw texts from extract_pages() """
     # keep fname as the first argument for convinient use
@@ -158,7 +170,13 @@ class WikiCorpus_extended(WikiCorpus):
 if __name__ == "__main__":
     dump = "enwikinews-20170820-pages-meta-current.xml.bz2"
     corpus = WikiCorpus_extended(dump)
+    
     with open('extracted_enwikinews_untokenized.txt','w',encoding='utf-8') as f:
-        for t in selected_articles(corpus.get_texts_raw()):
-            f.write('\n'.join(t))
+        for a in selected_articles(corpus.get_texts_raw()):
+            f.write('\n'.join(a))
+            f.write('\n\n##################################################\n\n')    
+    
+    with open('extracted_enwikinews_amr.txt','w',encoding='utf-8') as f:
+        for a in selected_articles_sents(corpus.get_texts_raw()):
+            f.write('\n'.join(a[:-1]+[s.text for s in a[-1]]))
             f.write('\n\n##################################################\n\n')
