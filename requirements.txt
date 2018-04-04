@@ -1,12 +1,29 @@
+# Windows7-based
+
+
+##python34-base (<-> pygraphviz)
+
+### general
 anaconda
 python-3.4
 networkx-2.1
 
-#jamr
+### jamr
 scala-2.11.2
 IllinoisNerExtended-2.7
 cdec-2014-06-15
 WordNet-3.0
 
-#amr_reader
+### amr_reader
 pygraphviz-1.3.1
+
+
+##python36-base (<-> spacy)
+
+### general
+anaconda
+python-3.6
+
+### enwikinews_extractor
+gensim-3.4.0
+spacy-2.0.8

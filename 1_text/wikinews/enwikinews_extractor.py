@@ -11,6 +11,9 @@ Python 3.6
 References:
 + https://github.com/RaRe-Technologies/gensim/issues/552 <-> extract_pages()
 + https://rhettinger.wordpress.com/2011/05/26/super-considered-super/
++ https://en.wikinews.org/wiki/Category:January_2005
++ https://en.wikinews.org/wiki/Wikinews:2005/February
+(+ https://en.wikinews.org/wiki/Category:March_2005)
 
 Notes:
 + link to the article: https://en.wikinews.org/wiki?curid=[pageid]
@@ -26,21 +29,24 @@ import spacy
 DUMMY = Dictionary([['dummy']]) #Dictionary() doesn't work
 
 IGNORED_NAMESPACES = (x+':' for x in IGNORED_NAMESPACES)
-IGNORED_TITLES = ('main page', 'news briefs')
+IGNORED_TITLES = ('main page','news briefs:','digest/','crosswords/') # 'wikinews:','portal:','australia/'
 IGNORED_TEXTS = ('#redirect')
 CONTEXT = ('date=','location=')
 
+RE_P14_edited = re.compile(r'\[\[[Cc]ategory:[^][]*\]\]', re.UNICODE)
 # pageid and title
 RE_P17 = re.compile(r'(^.+\n.+\n)')
 # templates
-RE_template_1 = re.compile(r'{{([^\|]+)}}(( )+)?')
-RE_template_2 = re.compile(r'{{([^{}=]+)}}')
+RE_template_1 = re.compile(r'{{([^\|:]+)}}(( )+)?')
+RE_template_2 = re.compile(r'{{([^:{}=]+)}}')
 RE_template_3 = re.compile(r'{{([\w\|= ,.;:\(\)-]+)}}(( )+)?')
 
 def _repl_or(matchobj):
     return (matchobj.group(1)).split('|')[-1]
 
-def _repl_byline(matchobj):
+def _repl_byline(matchobj):    
+    if '|' not in matchobj.group(1): # {{Template:India}}
+        return ''
     temp = matchobj.group(1).split('|')
     output = ''
     for x in temp:
@@ -77,7 +83,7 @@ def process_enwikinews(s,verbose=True):
     text = utils.decode_htmlentities(text)
     
     # from remove_markup()
-    #text = RE_P2.sub('',text)  # remove the last list (=languages)
+    text = RE_P2.sub('',text)  # remove the last list (=languages)
     ## template-related (for future: ...=...)
     ### {{Brazil}}
     text = RE_template_1.sub(r'\1\n',text)
@@ -93,8 +99,8 @@ def process_enwikinews(s,verbose=True):
         text = RE_P1.sub('',text)  # remove footnotes
         text = RE_P9.sub('',text)  # remove outside links
         text = RE_P10.sub('MATH', text)  # remove math content
-        #text = RE_P11.sub('', text)  # remove all remaining tags
-        #text = RE_P14.sub('', text)  # remove categories
+        text = RE_P11.sub('', text)  # remove all remaining tags
+        text = RE_P14_edited.sub('', text)  # remove categories
         text = RE_P5.sub(r'\3', text)  # remove urls, keep description
         text = RE_P6.sub(r'\2', text)  # simplify links, keep description only
         # remove table markup
@@ -118,7 +124,7 @@ def process_enwikinews(s,verbose=True):
         return None
     return pageid, title, text
 
-# (output: 20926 articles)
+# (output: 20874 articles)
 def selected_articles(raw): # raw: list of raw texts (articles)
     for x in raw:
         temp = process_enwikinews(x,verbose=False)
@@ -127,13 +133,14 @@ def selected_articles(raw): # raw: list of raw texts (articles)
 
 # https://github.com/c-amr/camr
 nlp = spacy.load('en',disable=['ner'])
-# (output: 20507 articles)
+# (output: 20446 articles)
 def selected_articles_sents(raw):
     """ Prerequisite for camr input format (.txt - one sentence / line) """
     for pageid, title, text in selected_articles(raw):
-        sents = nlp(text).sents
-        if any(len(s)>=10 for s in sents):
-            yield pageid, title, sents
+        #sents = nlp(text).sents # <- bug (see below)
+        sents = list(nlp(text).sents)
+        if any(len(s)>=10 for s in sents): # sents cannot be a generator/iterator
+            yield pageid, title, sents     # its wholeness is a must for the output
         
     
 class WikiCorpus_extended(WikiCorpus):
@@ -171,12 +178,15 @@ if __name__ == "__main__":
     dump = "enwikinews-20170820-pages-meta-current.xml.bz2"
     corpus = WikiCorpus_extended(dump)
     
+    # manually fix sentence breaks in article 1117
+    # (<1h on my labtop)
     with open('extracted_enwikinews_untokenized.txt','w',encoding='utf-8') as f:
         for a in selected_articles(corpus.get_texts_raw()):
             f.write('\n'.join(a))
-            f.write('\n\n##################################################\n\n')    
-    
+            f.write('\n\n##################################################\n\n')
+            
+    # (<2h on my labtop)
     with open('extracted_enwikinews_amr.txt','w',encoding='utf-8') as f:
         for a in selected_articles_sents(corpus.get_texts_raw()):
-            f.write('\n'.join(a[:-1]+[s.text for s in a[-1]]))
+            f.write('\n'.join(list(a[:-1])+[s.text for s in a[-1]]))
             f.write('\n\n##################################################\n\n')
