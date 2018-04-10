@@ -1,0 +1,21 @@
+﻿https://github.com/attardi/wikiextractor
+
+python WikiExtractor.py -o enwikinews-20170820 -b 250K --no-templates enwikinews-20170820-pages-meta-current.xml.bz2
+-> extracted ~70% after 3 days on my laptop (Intel Core i7-6600U, RAM 16GB)
+(I should have wait for few more days before terminating the script)
+
+output format:
+    folder 'enwikinews-20170820':
+        subfolder 'AA':
+            file 'wiki_00'
+            ...
+            file 'wiki_99'
+        subfolder 'AB':
+            file 'wiki_00'
+            ...
+            file 'wiki_19' (uncompleted - last document id: 143750)
+        
+
+wikificated phrases are missed in the output (e.g. document 779 - https://en.wikinews.org/wiki?curid=779)
+
+...
