@@ -1,0 +1,440 @@
+# ::id 1
+# ::snt 736
+(x1 / 736)
+
+# ::id 2
+# ::snt President of China lunches with Brazilian President
+(x4 / lunch
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (p / president)
+		:ARG1 (x3 / country
+			:name (n / name
+				:op1 "China")))
+	:ARG2 (xap0 / person
+		:ARG2 (x7 / president
+			:ARG1 (x6 / country
+				:name (n1 / name
+					:op1 "Brazil")))))
+
+# ::id 3
+# ::snt November 13, 2004
+(x1 / name
+	:op1 "November"
+	:op2 "13"
+	:op3 ","
+	:op4 "2004")
+
+# ::id 4
+# ::snt Brazil
+(x1 / country
+	:name (n / name
+		:op1 "Brazil"))
+
+# ::id 5
+# ::snt Hu Jintao, the President of the People's Republic of China had lunch today with the President of Brazil, Luiz In?cio Lula da Silva, at the ''Granja do Torto'', the President's country residence in the Brazilian Federal District.
+(x14 / lunch-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Hu"
+			:op2 "Jintao")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x9 / amusement-park
+				:name (n3 / name
+					:op1 "'s"
+					:op2 "Republic")
+				:part-of (x12 / country
+					:name (n4 / name
+						:op1 "China")))))
+	:time (x15 / today)
+	:ARG2 (x18 / president
+		:ARG1 (x20 / government-organization
+			:name (n1 / name
+				:op1 "Brazil"
+				:op2 ","
+				:op3 "Luiz"
+				:op4 "In?cio"
+				:op5 "Lula"
+				:op6 "da"
+				:op7 "Silva")))
+	:null_edge (x44 / federal
+		:null_edge (x37 / have-org-role-91
+			:ARG2 (p1 / president))
+		:location (x39 / country)
+		:mod (x43 / country
+			:name (n2 / name
+				:op1 "Brazil"))))
+
+# ::id 6
+# ::snt Lunch was a traditional Brazilian barbecue with different kinds of meat.
+(x6 / barbecue-01
+	:domain (x1 / lunch)
+	:mod (x4 / tradition)
+	:mod (x5 / country
+		:name (n / name
+			:op1 "Brazil"))
+	:subevent (x11 / meat
+		:consist-of (x9 / kind
+			:ARG1-of (x8 / differ-02))))
+
+# ::id 7
+# ::snt Some Brazilian ministers were present at the event: Antonio Palocci (Economy), Eduardo Campos (Science and Technology), Roberto Rodrigues (Agriculture), Luiz Fernando Furlan (Development), Celso Amorim (Exterior Relations), Dilma Rousseff (Mines and Energy).
+(x5 / present-02
+	:ARG2 (xap0 / person
+		:quant (x1 / some)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / minister)
+			:ARG1 (x2 / country
+				:name (n / name
+					:op1 "Brazil")))
+		:example (x48 / and
+			:null_edge (x10 / null_tag)
+			:op2 (x20 / and
+				:mod (x13 / economy)
+				:name (x16 / name
+					:op1 "Eduardo"
+					:op2 "Campos")
+				:op2 (x19 / science)
+				:op2 (x21 / technology))
+			:name (x24 / name
+				:op1 "Roberto"
+				:op2 "Rodrigues"
+				:ARG0-of (x27 / agriculture))
+			:op2 (x32 / person
+				:name (n1 / name
+					:op1 "Furlan")
+				:null_edge (x30 / person
+					:name (n2 / name
+						:op1 "Luiz"))
+				:null_edge (x31 / person
+					:name (n3 / name
+						:op1 "Fernando")))
+			:op3 (x37 / name
+				:op1 "Celso"
+				:op2 "Amorim"
+				:null_edge (x41 / null_tag))
+			:name (x44 / name
+				:op1 "Dilma"
+				:op2 "Rousseff")
+			:op2 (x47 / mines))))
+
+# ::id 8
+# ::snt Also present were Roger Agnelli (Vale do Rio Doce company president) and Eduardo Dutra (Petrobras, government oil company, president).
+(x2 / present-01
+	:mod (x1 / also)
+	:ARG1 (x14 / and
+		:op1 (x11 / company
+			:name (x7 / name
+				:op1 "Vale"
+				:op2 "do")
+			:ARG0-of (x12 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x9 / government-organization
+					:name (n2 / name
+						:op1 "Rio"
+						:op2 "Doce")))
+			:mod (x21 / oil
+				:ARG0-of (x20 / government-organization
+					:ARG0-of (g / govern-01))))
+		:op3 (x22 / company
+			:domain (x4 / person
+				:name (n / name
+					:op1 "Roger"
+					:op2 "Agnelli"))
+			:name (x15 / name
+				:op1 "Eduardo"
+				:op2 "Dutra")
+			:mod (x18 / organization
+				:name (n1 / name
+					:op1 "Petrobras"))
+			:ARG0-of (x24 / have-org-role-91
+				:ARG2 (p1 / president)))))
+
+# ::id 9
+# ::snt This meeting is part of a new political economy agreement between Brazil and China where Brazil has recognized mainland China's market economy status, and China has promised to buy more Brazilian products.
+(x2 / meet-03
+	:mod (x1 / this)
+	:ARG0 (x10 / agree-01
+		:mod (x7 / new)
+		:ARG1 (x9 / economy
+			:mod (x8 / politics))
+		:ARG0 (x13 / and
+			:op1 (x12 / country
+				:name (n1 / name
+					:op1 "Brazil"))
+			:op2 (x14 / country
+				:name (n2 / name
+					:op1 "China"))))
+	:ARG1-of (x18 / recognize-02
+		:ARG0 (x16 / country
+			:name (n / name
+				:op1 "Brazil"))
+		:ARG1 (x24 / status
+			:poss (x19 / mainland
+				:part-of (x20 / country
+					:name (n3 / name
+						:op1 "China")))
+			:mod (x22 / market)
+			:mod (x23 / economy)))
+	:ARG1 (x26 / and))
+
+# ::id 10
+# ::snt ##################################################
+(x1 / ##################################################)
+
+# ::id 11
+# ::snt 741
+(x1 / 741)
+
+# ::id 12
+# ::snt Palestinians to elect new president on January 9
+(x3 / elect-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Palestinians"))
+	:time (x7 / date-entity)
+	:ARG1 (xap0 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (p / president)
+			:mod (x4 / new))))
+
+# ::id 13
+# ::snt Palestine
+(x1 / country
+	:name (n / name
+		:op1 "Palestine"))
+
+# ::id 14
+# ::snt November 14, 2004
+(x1 / name
+	:op1 "November"
+	:op2 "14"
+	:op3 ","
+	:op4 "2004")
+
+# ::id 15
+# ::snt RAMALLAH
+(x1 / country
+	:name (n / name
+		:op1 "RAMALLAH"))
+
+# ::id 16
+# ::snt Acting president Rawhi Fattuh has announced today that Palestinian elections will be held on January 9.
+(x6 / announce-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Fattuh")
+		:null_edge (x2 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x1 / acting)
+			:ARG1 (x3 / name
+				:op1 "Rawhi")))
+	:time (x7 / today)
+	:ARG1 (x13 / hold-01
+		:ARG1 (x10 / elect-01
+			:mod (x9 / country
+				:name (n1 / name
+					:op1 "Palestinian")))
+		:time (x15 / date-entity)))
+
+# ::id 17
+# ::snt Futtuh, head of the Palestinian parliament, was sworn in hours after the death of Yasser Arafat on Thursday, and Palestinian Basic Law dictates that he may only serve up to two months before elections are held.
+(x22 / and
+	:op1 (x10 / swear-01
+		:ARG1 (x1 / futtuh
+			:ARG0-of (x3 / head-01
+				:ARG1 (x7 / government-organization
+					:name (n1 / name
+						:op1 "parliament")
+					:mod (x6 / country
+						:name (n3 / name
+							:op1 "Palestinian")))))
+		:time (x12 / temporal-quantity
+			:unit (h / hour))
+		:time (x13 / after
+			:op1 (x15 / die-01
+				:ARG1 (x18 / person
+					:name (n2 / name
+						:op1 "Arafat")
+					:null_edge (x17 / name
+						:op1 "Yasser"))
+				:time (xap0 / date-entity
+					:weekday (x20 / thursday)))))
+	:op2 (x26 / dictate-01
+		:ARG0 (x25 / law
+			:mod (x23 / country
+				:name (n / name
+					:op1 "Palestinian"))
+			:mod (x24 / basic))
+		:ARG1 (x29 / possible-01
+			:ARG1 (x31 / serve-01
+				:ARG0 (x28 / he)
+				:mod (x30 / only)
+				:time (x36 / before
+					:op1 (x35 / temporal-quantity
+						:unit (m / month)
+						:quant 2)
+					:op1 (x39 / hold-04
+						:ARG1 (x37 / elect-01)))))))
+
+# ::id 18
+# ::snt New leadership could prove to be the key to revitalizing the peace process in the Middle East, as both Israel and the United States had refused to work with Arafat.
+(x3 / possible-01
+	:ARG1 (x4 / prove-01
+		:ARG0 (x2 / lead-02
+			:null_edge (x1 / null_tag))
+		:ARG1 (x8 / key-02
+			:ARG1 (x10 / revitalize-01
+				:ARG1 (x13 / process-02
+					:ARG1 (x12 / peace))
+				:location (x17 / east
+					:null_edge (x16 / null_tag)))))
+	:condition (x27 / refuse-01
+		:ARG0 (x22 / and
+			:mod (x20 / both)
+			:op1 (x21 / country
+				:name (n / name
+					:op1 "Israel"))
+			:op2 (x25 / state
+				:null_edge (x24 / null_tag)))
+		:ARG1 (x29 / work-01
+			:ARG0 x22
+			:ARG2 (x31 / person
+				:name (n1 / name
+					:op1 "Arafat")))))
+
+# ::id 19
+# ::snt The ''Haaretz had initially reported that former prime minister Mahmoud Abbas was selected by the Fatah central committee as their candidate for president, but Abbas has denied this, saying, "the matter is still being discussed.
+(x26 / contrast-01
+	:ARG1 (x6 / report-01
+		:ARG0 (x3 / publication
+			:name (n / name
+				:op1 "Haaretz")
+			:null_edge (x1 / null_tag))
+		:time (x5 / initial)
+		:ARG1 (x14 / select-01
+			:ARG1 (x11 / person
+				:name (n2 / name
+					:op1 "Mahmoud"
+					:op2 "Abbas")
+				:time (x8 / former)
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (m / minister)
+					:mod (x9 / prime)))
+			:ARG0 (x19 / committee
+				:mod (x17 / organization
+					:name (n3 / name
+						:op1 "Fatah"))
+				:mod (x18 / central))
+			:ARG2 (x24 / president)))
+	:ARG2 (x29 / deny-01
+		:ARG0 (x27 / person
+			:name (n1 / name
+				:op1 "Abbas"))
+		:ARG1 (x30 / this)
+		:ARG1 (x32 / say-01
+			:ARG0 x27
+			:ARG1 (x40 / discuss-01
+				:ARG1 (x36 / matter)
+				:time (x38 / still)))))
+
+# ::id 20
+# ::snt " There have also been conflicting reports on whether or not jailed Palestinian leader Marwan Barghouti will run.
+(x7 / report-01
+	:mod (x4 / also)
+	:ARG0-of (x6 / conflict-01)
+	:ARG1 (x10 / or
+		:op1 (x18 / run-01
+			:ARG0 (x15 / person
+				:name (n / name
+					:op1 "Marwan"
+					:op2 "Barghouti")
+				:ARG1-of (x12 / jail-01)
+				:ARG0-of (x14 / lead-02
+					:ARG1 (x13 / country
+						:name (n1 / name
+							:op1 "Palestinian")))))))
+
+# ::id 21
+# ::snt Barghouti is currently serving five life sentences in Israel for attacks against Israelis.
+(x4 / serve-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Barghouti"))
+	:time (x3 / current)
+	:ARG1 (x7 / sentence-01
+		:quant 5
+		:mod (x6 / life))
+	:ARG1 (x11 / attack-01
+		:location (x9 / country
+			:name (n1 / name
+				:op1 "Israel")
+			:op1 "Israel")))
+
+# ::id 22
+# ::snt Nonetheless, he remains a popular figure among Palestinians for his role in the Palestinian uprising, and could potentially win the election if he decided to run.
+(x18 / and
+	:op2 (x4 / remain-01
+		:ARG1 (x3 / he)
+		:ARG1 (x7 / figure
+			:ARG0 x3
+			:ARG1-of (x6 / popular-02)
+			:mod (x9 / country
+				:name (n / name
+					:op1 "Palestinians")))
+		:ARG3 (x12 / role
+			:poss (x16 / uprise-00
+				:ARG0 (x15 / country
+					:name (n1 / name
+						:op1 "Palestinian")))))
+	:op2 (x19 / possible-01
+		:ARG1 (x21 / win-01
+			:mod (x20 / potential)
+			:ARG2 (x23 / elect-01))
+		:condition (x26 / decide-01
+			:ARG1 (x28 / run-02))))
+
+# ::id 23
+# ::snt A win by Barghouti could put Israel in an awkward spot; however an Israeli official said this week that he would not be freed, and a landslide win by Barghouti would signify to them that the Palestinians were not yet ready for peace.
+(x / xconcept
+	:x (x12 / and
+		:op2 (x5 / possible-01
+			:ARG1 (x6 / put-01
+				:ARG0 (x2 / win-01
+					:ARG0 (x4 / person
+						:name (n / name
+							:op1 "Barghouti")))
+				:ARG1 (x7 / country
+					:name (n1 / name
+						:op1 "Israel"))
+				:ARG1 (x27 / and
+					:op1 (x17 / say-01
+						:time (x19 / week
+							:mod (x18 / this))
+						:ARG1 (x25 / free-01
+							:ARG1 (x21 / he))
+						:ARG0 (xap0 / person
+							:ARG0-of (x16 / have-org-role-91
+								:ARG2 (o / official)
+								:ARG1 (x15 / country
+									:name (n4 / name
+										:op1 "Israel")))))
+					:op2 (x34 / signify-01
+						:ARG0 (x30 / win-01
+							:degree (x29 / landslide)
+							:ARG0 (x32 / person
+								:name (n2 / name
+									:op1 "Barghouti")))
+						:ARG1 (x43 / ready-02
+							:null_edge (x39 / country
+								:name (n3 / name
+									:op1 "Palestinians"))
+							:time (x42 / yet)
+							:ARG2 (x45 / peace))))))
+		:op4 (x11 / spot
+			:ARG1-of (x10 / awkward))))
+
+# ::id 24
+# ::snt ##################################################
+(x1 / ##################################################)
+
