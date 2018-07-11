@@ -25,6 +25,8 @@ from gensim.corpora.wikicorpus import *
 from gensim import utils
 import re
 import spacy
+import itertools
+import time
 
 DUMMY = Dictionary([['dummy']]) #Dictionary() doesn't work
 
@@ -141,7 +143,23 @@ def selected_articles_sents(raw):
         sents = list(nlp(text).sents)
         if any(len(s)>=10 for s in sents): # sents cannot be a generator/iterator
             yield pageid, title, sents     # its wholeness is a must for the output
-        
+
+# https://spacy.io/usage/processing-pipelines#section-multithreading
+def selected_articles_sents_multithreading(raw):
+    """ Not tested yet """
+    # https://github.com/explosion/spacy/issues/172#issuecomment-183963403
+    #gen1, gen2, gen3 = itertools.tee(selected_articles(raw),n=3)
+    gen1, gen2, gen3 = itertools.tee(selected_articles(raw),3)
+    pageids = (pageid for (pageid,_,_) in gen1)
+    titles = (title for (_,title,_) in gen2)
+    # https://spacy.io/usage/processing-pipelines#section-multithreading
+    # nlp.pipe(texts, batch_size=10000, n_threads=3)
+    texts = nlp.pipe((text for (_,_,text) in gen3))
+    #for pageid, title, text in itertools.izip(pagedids,titles,texts):
+    for pageid, title, text in zip(pageids,titles,texts): # Python 3 specific
+        if any(len(s)>=10 for s in text.sents):
+            yield pageid, title, text.sents
+    
     
 class WikiCorpus_extended(WikiCorpus):
     """ Add self.get_texts_raw(), yielding raw texts from extract_pages() """
@@ -180,13 +198,59 @@ if __name__ == "__main__":
     
     # manually fix sentence breaks in article 1117
     # (<1h on my labtop)
-    with open('extracted_enwikinews_untokenized.txt','w',encoding='utf-8') as f:
-        for a in selected_articles(corpus.get_texts_raw()):
-            f.write('\n'.join(a))
-            f.write('\n\n##################################################\n\n')
-            
+#    t = time.time()
+#    with open('extracted_enwikinews_untokenized.txt','w',encoding='utf-8') as f:
+#        for a in selected_articles(corpus.get_texts_raw()):
+#            f.write('\n'.join(a))
+#            f.write('\n\n##################################################\n\n')
+#    print(str(time.time()-t))
+
     # (<2h on my labtop)
-    with open('extracted_enwikinews_amr.txt','w',encoding='utf-8') as f:
-        for a in selected_articles_sents(corpus.get_texts_raw()):
-            f.write('\n'.join(list(a[:-1])+[s.text for s in a[-1]]))
-            f.write('\n\n##################################################\n\n')
+#    t = time.time()
+#    with open('extracted_enwikinews_amr_multithreading_timed.txt','w',encoding='utf-8') as f:
+#        for a in selected_articles_sents(corpus.get_texts_raw()):
+#            f.write('\n'.join(list(a[:-1])+[s.text for s in a[-1]]))
+#            f.write('\n\n##################################################\n\n')
+#    print(str(time.time()-t))
+
+    # (~1.5h on my labtop)
+#    t = time.time()
+#    with open('extracted_enwikinews_amr_multithreading_timed.txt','w',encoding='utf-8') as f:
+#        for a in selected_articles_sents_multithreading(corpus.get_texts_raw()):
+#            f.write('\n'.join(list(a[:-1])+[s.text for s in a[-1]]))
+#            f.write('\n\n##################################################\n\n')
+#    print(str(time.time()-t))
+    
+    # (~3.5h(?I dont' know if my labtop slept for a while?) on my labtop)
+#    t = time.time()
+#    with open('extracted_enwikinews_amr_multithreading_timed_cleaned.txt','w',encoding='utf-8') as f:
+#        for a in selected_articles_sents_multithreading(corpus.get_texts_raw()):
+#            f.write('\n'.join(['ARTICLE '+a[0],a[1]]+[s.text.strip() for s in a[2] if len([t for t in s if t.is_alpha])>1])) # -> condition 'if len(...)>1' has no effect
+#            f.write('\n\n##################################################\n\n')
+#    print(str(time.time()-t))
+
+    with open('extracted_enwikinews_amr_multithreading_timed_cleaned.txt',encoding='utf-8') as f1, open('extracted_enwikinews_amr_cleaned.txt','w',encoding='utf-8') as f2:
+    text = f1.read()
+    #text = re.sub('\n\n##################################################\n\n','',text)
+    text = re.sub('\n\n##################################################\n','',text)
+    f2.write(text)
+    
+    # https://spacy.io/usage/processing-pipelines#disabling    
+    nlp = spacy.load('en',disable=['parser','tagger','ne'])
+
+    def analyze_line(l):
+        s =nlp(l)
+        # https://spacy.io/usage/linguistic-features#section-tokenization
+        #return len([t for t in s if t.is_alpha])
+        # https://docs.python.org/3.6/library/stdtypes.html#text-sequence-type-str
+        return len([t for t in s if t.orth_.isalnum()])
+    
+    # https://stackoverflow.com/questions/4617034/how-can-i-open-multiple-files-using-with-open-in-python
+    with open('extracted_enwikinews_amr_cleaned.txt',encoding='utf-8') as f1, open('extracted_enwikinews_amr_cleaned_super.txt','w',encoding='utf-8') as f2:
+        for l in f1.readlines():
+            if analyze_line(l)>1:
+                f2.write(l)
+    # then manually fix sentence breaks in article 1117 -> 'extracted_enwikinews_amr_cleaned_super_1117.txt'
+    # then purify -> 'purified_enwikinews.txt':
+    # search '=' -> remove metadata including picture and box info  chronologically (lines 5154,40724-40735,139754,140550,149285,149426,149539,149548,151120,152103,152508,152554,152706,153071,154255,158801,159697,159733,166538,169117,177387,178729,178880,179071,179839,180055,180121,180779,180853-180854,181011,181694,181847,181981,182189,182453,183288,185952,190233,190697,192625,208599,208612,208921,210567,210820,211705,212938,213105,214749,215003,215185,215201,215220,215366,215491,215508,215938,215955,216288,216458,216469,216490,217937,217972,218254,218279-218280,220529,220942,222153,222476,232029,237088,240967,242154,244348,247239,247958,248100,248600,249504*,250063*,250697,251661*,252442*,255749,256819,256837,258235,260835,261023,262658,266491,275825*,278890,279067,292485,296440,296689,298435,298458,298500,304368,304384,304756,304769,308076,309843,311740,316097,321257,336669,336670,336792,336793,337878-337880,338322,338324,338427,338428,339063,339576,341734,341918-341921,344121-344126,360688-360689,363528) -> final: 383462 lines (spacy-sentences)
+    # *: only part of sentence is deleted
