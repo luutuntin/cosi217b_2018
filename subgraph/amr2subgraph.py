@@ -66,12 +66,12 @@ def generate_node_single(content, amr_nodes_content, amr_nodes_acronym):
         entity_name = urllib.parse.unquote_plus(entity_name.strip())
         new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes,parents = set(),
                         entity_name=entity_name,
-                        polarity=is_polarity, content=content)
+                        polarity=is_polarity, content=content,original_content = content)
         amr_nodes_content[content] = new_node
         amr_nodes_acronym[acr] = new_node
     else:
         new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes,parents = set(),
-                        polarity=is_polarity, content=content)
+                        polarity=is_polarity, content=content,original_content=content)
         amr_nodes_content[content] = new_node
         amr_nodes_acronym[acr] = new_node
 
@@ -91,6 +91,7 @@ def generate_nodes_multiple(content, amr_nodes_content, amr_nodes_acronym):
         raise Exception('Unmatched parenthesis')
 
     _content = content
+    org = content
     arg_nodes = []
     is_named_entity = False
 
@@ -101,13 +102,16 @@ def generate_nodes_multiple(content, amr_nodes_content, amr_nodes_acronym):
             e = content.find(i)
             s = content[:e].rfind(':')
             role = re.search(':\S+\s', content[s:e]).group() # Edge label
-            content = content.replace(role+i, '', 1)
+
             amr_nodes_content[i].edge_label = role.strip()
             if ':name' in role:
                 is_named_entity = True
                 ne = amr_nodes_content[i]
             else:
                  arg_nodes.append(amr_nodes_content[i])
+            if ':name' not in role:
+                org = org.replace(role + i,'',1)
+            content = content.replace(role + i, '', 1)
 
     predict_event = re.search('\w+\s/\s\S+', content).group().split(' / ')
     if predict_event:
@@ -126,7 +130,7 @@ def generate_nodes_multiple(content, amr_nodes_content, amr_nodes_acronym):
         concept = i.group(2).strip(')')
         if role == ':wiki' and is_named_entity:
             continue
-        if role == ':polarity':
+        if role in [':polarity',':quant',':age',':value']:
             continue
         if concept in amr_nodes_acronym:
             node = copy.copy(amr_nodes_acronym[concept])
@@ -163,13 +167,13 @@ def generate_nodes_multiple(content, amr_nodes_content, amr_nodes_acronym):
         new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes, parents = set(),
                         edge_label=ne.ful_name, is_entity=True,
                         entity_type=ful, entity_name=ne.entity_name,
-                        wiki=wikititle, polarity=is_polarity, content=content)
+                        wiki=wikititle, polarity=is_polarity, content=content, original_content = org)
         amr_nodes_content[_content] = new_node
         amr_nodes_acronym[acr] = new_node
 
     elif len(arg_nodes) > 0:
         new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes, parents = set(),
-                        polarity=is_polarity, content=content)
+                        polarity=is_polarity, content=content, original_content=_content)
         amr_nodes_content[_content] = new_node
         amr_nodes_acronym[acr] = new_node
     for child in new_node.next_nodes:
@@ -226,7 +230,6 @@ def amr_reader(raw_amr, writer):
         dic[key] = subtree
 
 
-
     for i in amr_contents:
         if i.count('(') == 1 and i.count(')') == 1:
             generate_node_single(i, amr_nodes_content, amr_nodes_acronym)
@@ -249,20 +252,28 @@ def amr_reader(raw_amr, writer):
     for e in amr_nodes_acronym.values():
         if e.is_entity:
             temp = set()
+            temp.add(e.name)
             if '@' in e.parents:
                 continue
             queue = list(e.parents)
             while queue:    #queue: node list; current: current node
                 current = queue[-1]
                 queue.pop()
-                try:
+                if "mod" not in current.edge_label: #mod node root can not be a knowledge
                     temp.add(current.name)
-                except AttributeError:
-                    print(raw_amr)
-                    print('???')
                 if '@' not in current.parents:
                     queue += list(current.parents)
             trace = trace.union(temp)
+            for a in e.next_nodes:
+                try:
+                    dic[a.name] = e.original_content + dic[a.name]
+                    temp.add(a.name)
+                except KeyError:
+                    print(raw_amr)
+                    print(a.name)
+                    print(e.name)
+
+
 
     for t in trace:
         writer.write(dic[t])
@@ -328,6 +339,8 @@ if __name__ == '__main__':
             else:
                 text.append(e)
         raw_amr = '\n'.join(text)
+        if not raw_amr:
+            continue
         amr_nodes_acronym, path = amr_reader(raw_amr,g)
     f.close()
     g.close()
