@@ -252,7 +252,6 @@ def amr_reader(raw_amr, writer):
     for e in amr_nodes_acronym.values():
         if e.is_entity:
             temp = set()
-            temp.add(e.name)
             if '@' in e.parents:
                 continue
             queue = list(e.parents)
@@ -272,6 +271,15 @@ def amr_reader(raw_amr, writer):
                     print(raw_amr)
                     print(a.name)
                     print(e.name)
+                    continue
+
+            #if e is not a bare entity
+            attr = re.findall(':(\S+)',e.original_content)
+            for a in attr:
+                if a != 'name' and 'op' not in a:
+                    temp.add(e.name)
+                    break
+
             trace = trace.union(temp)
 
 
@@ -326,8 +334,8 @@ def revise_node(content, amr_nodes_content, amr_nodes_acronym):
 
 
 if __name__ == '__main__':
-    f = open('./amr-release-1.0-training-proxy.txt','r')
-    g = open('./amr-release-1.0-training-proxy-subgraph.txt','w')
+    f = open('amr-release-1.0-training-proxy.txt','r')
+    g = open('amr-release-1.0-training-proxy-subgraph.txt','w')
     raw_amrs = re.split("\n\n",f.read().strip())
     for raw_amr in raw_amrs:
         g.write('-'*50+'\n')
