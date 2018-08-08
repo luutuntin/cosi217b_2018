@@ -335,6 +335,7 @@ if __name__ == '__main__':
         text=[]
         for e in raw_amr_lst:
             if e.startswith('#'):
+                g.write(e+'\n')
                 continue
             else:
                 text.append(e)
