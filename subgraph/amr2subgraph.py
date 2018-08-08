@@ -263,16 +263,16 @@ def amr_reader(raw_amr, writer):
                     temp.add(current.name)
                 if '@' not in current.parents:
                     queue += list(current.parents)
-            trace = trace.union(temp)
+
             for a in e.next_nodes:
                 try:
-                    dic[a.name] = e.original_content + dic[a.name]
+                    dic[a.name] = e.original_content[:-1].strip()+'\n\t' + a.edge_label+dic[a.name]+')'
                     temp.add(a.name)
                 except KeyError:
                     print(raw_amr)
                     print(a.name)
                     print(e.name)
-
+            trace = trace.union(temp)
 
 
     for t in trace:
@@ -326,8 +326,8 @@ def revise_node(content, amr_nodes_content, amr_nodes_acronym):
 
 
 if __name__ == '__main__':
-    f = open('amr-release-1.0-training-proxy.txt','r')
-    g = open('amr-release-1.0-training-proxy-subgraph.txt','w')
+    f = open('./amr-release-1.0-training-proxy.txt','r')
+    g = open('./amr-release-1.0-training-proxy-subgraph.txt','w')
     raw_amrs = re.split("\n\n",f.read().strip())
     for raw_amr in raw_amrs:
         g.write('-'*50+'\n')
