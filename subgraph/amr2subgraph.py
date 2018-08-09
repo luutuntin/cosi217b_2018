@@ -259,6 +259,10 @@ def amr_reader(raw_amr, writer):
                 current = queue[-1]
                 queue.pop()
                 if "mod" not in current.edge_label: #mod node root can not be a knowledge
+                    if not current.is_entity and len(current.next_nodes) < 2:
+                        continue
+                    if current.ful_name == 'and':
+                        continue
                     temp.add(current.name)
                 if '@' not in current.parents:
                     queue += list(current.parents)
@@ -282,9 +286,10 @@ def amr_reader(raw_amr, writer):
 
             trace = trace.union(temp)
 
-
+    ind = 0
     for t in trace:
-        writer.write(dic[t])
+        ind += 1
+        writer.write('('+str(ind)+')'+dic[t])
         writer.write('\n\n')
     return amr_nodes_acronym, path
 
