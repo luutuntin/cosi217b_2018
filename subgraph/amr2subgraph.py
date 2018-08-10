@@ -267,23 +267,24 @@ def amr_reader(raw_amr, writer):
                     continue
                 temp.add(current.name)
 
+            if len(e.next_nodes) > 1:
+                for a in e.next_nodes:
+                    try:
+                        dic[a.name] = e.original_content[:-1].strip()+'\n\t' + a.edge_label+dic[a.name]+')'
+                        temp.add(a.name)
+                    except KeyError:
+                        print(raw_amr)
+                        print(a.name)
+                        print(e.name)
+                        continue
+            else:
 
-            for a in e.next_nodes:
-                try:
-                    dic[a.name] = e.original_content[:-1].strip()+'\n\t' + a.edge_label+dic[a.name]+')'
-                    temp.add(a.name)
-                except KeyError:
-                    print(raw_amr)
-                    print(a.name)
-                    print(e.name)
-                    continue
-
-            #if e is not a bare entity
-            attr = re.findall(':(\S+)',e.original_content)
-            for a in attr:
-                if a != 'name' and 'op' not in a:
-                    temp.add(e.name)
-                    break
+                #if e is not a bare entity
+                attr = re.findall(':(\S+)',e.original_content)
+                for a in attr:
+                    if a != 'name' and 'op' not in a:
+                        temp.add(e.name)
+                        break
 
             trace = trace.union(temp)
 
