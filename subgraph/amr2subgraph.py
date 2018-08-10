@@ -258,14 +258,15 @@ def amr_reader(raw_amr, writer):
             while queue:    #queue: node list; current: current node
                 current = queue[-1]
                 queue.pop()
-                if "mod" not in current.edge_label: #mod node root can not be a knowledge
-                    if not current.is_entity and len(current.next_nodes) < 2:
-                        continue
-                    if current.ful_name == 'and':
-                        continue
-                    temp.add(current.name)
                 if '@' not in current.parents:
                     queue += list(current.parents)
+
+                if not current.is_entity and len(current.next_nodes) < 2:
+                    continue
+                if current.ful_name == 'and':
+                    continue
+                temp.add(current.name)
+
 
             for a in e.next_nodes:
                 try:
