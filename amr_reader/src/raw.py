@@ -36,7 +36,12 @@ def wrap(raw_amr):
         m = re.findall('\"(\S+)\"', line)
         for i in m:
             if '(' in i or ')' in i:
-                line = line.replace(i, urllib.quote_plus(i))
+                # line = line.replace(i, urllib.quote_plus(i))
+                # https://github.com/web2py/web2py/issues/1822
+                try:
+                    line = line.replace(i, urllib.quote_plus(i))
+                except:
+                    line = line.replace(i, urllib.parse.quote_plus(i))
 
         output.append(line)
     return '\n'.join(output)
