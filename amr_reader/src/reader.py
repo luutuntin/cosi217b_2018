@@ -11,6 +11,10 @@ from amr_reader.models.Node import Node
 from amr_reader.models.Sentence import Sentence
 import uuid
 
+"""
+Code update - based on https://github.com/panx27/amr-reader/commit/cee7ac05fd84c80ca3caf5943f40a7f4c4dadf39
+"""
+
 
 def amr_validator(raw_amr): # TODO: add more test cases
     '''
@@ -77,6 +81,27 @@ def generate_node_single(content, amr_nodes_content, amr_nodes_acronym):
     # In case of :polarity -
     is_polarity = True if re.search(":polarity\s-", content) else False
 
+    # :ARG nodes
+    arg_nodes = []
+    nodes = re.findall(':\S+\s\S+', content)
+    for i in nodes:
+        i = re.search('(:\S+)\s(\S+)', i)
+        role = i.group(1)
+        concept = i.group(2).strip(')')
+        if role == ':wiki' and is_named_entity:
+            continue
+        if role == ':polarity':
+            continue
+        if concept in amr_nodes_acronym:
+            node = copy.copy(amr_nodes_acronym[concept])
+            node.next_nodes = []
+        # In case of (d / date-entity :year 2012)
+        else:
+            node = Node(name=concept)
+            amr_nodes_acronym[concept] = node
+        node.edge_label = role
+        arg_nodes.append(node)
+
     # Node is a named entity
     names = re.findall(':op\d\s\"\S+\"', content)
     if len(names) > 0:
@@ -84,13 +109,15 @@ def generate_node_single(content, amr_nodes_content, amr_nodes_acronym):
         for i in names:
             entity_name += re.match(':op\d\s\"(\S+)\"', i).group(1) + ' '
         entity_name = urllib.parse.unquote_plus(entity_name.strip())
-        new_node = Node(name=acr, ful_name=ful,
+        # new_node = Node(name=acr, ful_name=ful,
+        new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes,
                         entity_name=entity_name,
                         polarity=is_polarity, content=content)
         amr_nodes_content[content] = new_node
         amr_nodes_acronym[acr] = new_node
     else:
-        new_node = Node(name=acr, ful_name=ful,
+        # new_node = Node(name=acr, ful_name=ful,
+        new_node = Node(name=acr, ful_name=ful, next_nodes=arg_nodes,
                         polarity=is_polarity, content=content)
         amr_nodes_content[content] = new_node
         amr_nodes_acronym[acr] = new_node
@@ -366,6 +393,7 @@ def main_amr_table(raw_amrs):
         amr_nodes_acronym, path = amr_reader(raw_amr)
 
         if docid not in amr_table:
+            print(docid)
             amr_table[docid] = dict()
         amr_table[docid][int_id] = Sentence(sentid, sent, raw_amr, comments,
                                             amr_nodes_acronym, path)
