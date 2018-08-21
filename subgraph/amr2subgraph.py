@@ -270,7 +270,7 @@ def amr_reader(raw_amr, writer):
             if len(e.next_nodes) > 1:
                 for a in e.next_nodes:
                     try:
-                        dic[a.name] = e.original_content[:-1].strip()+'\n\t' + a.edge_label+dic[a.name]+')'
+                        dic[a.name] = e.original_content[:-1].strip()+'\n\t' + a.edge_label+' '+dic[a.name]+')'
                         temp.add(a.name)
                     except KeyError:
                         print(raw_amr)

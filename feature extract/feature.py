@@ -2,13 +2,16 @@
 from tuple import subGraph
 import pickle
 import sys
-sys.path.append("../")
-from subgraph import *
-from subgraph import 
+sys.path.append("../subgraph/")
+import amr_reader
+# import constant
+
+
 
 feature_funcs = []
 
 def register(feature_func):
+	print('extracting feature: ',feature_func.__name__)
 	feature_funcs.append(feature_func)
 	return feature_func
 
@@ -29,28 +32,30 @@ def nenum2f(data, root):
 @register
 def level2f(data, root):
 	max = 1
-	current = root
-	while current.next_nodes:
-		for child in current.next_nodes:
-			current = child
-			level += 1
-			if level > max:
-				max = level
+	data.level = detectLevel(root)
+
+
+def detectLevel(node):
+	if not node.next_nodes:
+		return 1
+	else:
+		return max([1 + detectLevel(e) for e in node.next_nodes])
+
 
 
 
 @register
 def children2f(data, root):
 	data.childrenNum = len(root.next_nodes)
+#
+# @register
+# def pred2f(data, root):
+# 	data.pred = (root)
 
-@register
-def pred2f(data, root):
-	data.pred = one_hot(root)
-
-@register
-def label2f(data, root):
-	pass
-
+# @register
+# def label2f(data, root):
+# 	seq = [1 if e.edge_labels in noneCoreLabels else 0 for e in root.next_nodes]
+# 	pass
 
 def main():
 	global feature_funcs
@@ -61,7 +66,8 @@ def main():
 			amr_nodes_acronym, root = amr_reader.amr_reader(amr)
 			for f in feature_funcs:
 				f(s, root)
-	with open('./data.pkl','w') as p:
+	print(subGraphs[:5])
+	with open('./data.pkl','wb') as p:
 		pickle.dump(subGraphs,p)
 
 

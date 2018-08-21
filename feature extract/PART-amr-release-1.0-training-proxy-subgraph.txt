@@ -76,11 +76,11 @@
                         :time (d2 / date-entity :year 2001 :month 9))
 
 (2)(u / university :name (n / name :op1 "Naif" :op2 "Arab" :op3 "Academy" :op4 "for" :op5 "Security" :op6 "Sciences")
-	:mod(e / ethnic-group :name (n3 / name :op1 "Arab")
+  :mod (e / ethnic-group :name (n3 / name :op1 "Arab")
                   :mod (p / pan)))
 
 (3)(u / university :name (n / name :op1 "Naif" :op2 "Arab" :op3 "Academy" :op4 "for" :op5 "Security" :op6 "Sciences")
-	:purpose(o / oppose-01
+  :purpose (o / oppose-01
                   :ARG1 (t / terror)))
 
 (4)(r / reopen-01
@@ -1059,7 +1059,7 @@
             :mod (c4 / cyber)))
 
 (3)(c / company :name (n2 / name :op1 "Warner" :op2 "Bros.")
-	:ARG1-of(b / base-01
+  :ARG1-of (b / base-01
                               :location (c5 / country :name (n4 / name :op1 "U.S."))))
 
 (4)(c2 / channel :quant 1
@@ -1084,7 +1084,7 @@
             :mod (c4 / cyber))
 
 (6)(c / company :name (n2 / name :op1 "Warner" :op2 "Bros.")
-	:mod(m / media))
+  :mod (m / media))
 
 --------------------------------------------------
 # ::id PROXY_AFP_ENG_20020111_0093.9 ::date 2013-05-08T14:41:14 ::snt-type body ::annotator LDC-AMR-14 ::preferred
@@ -1194,11 +1194,11 @@
       :degree (p / partly))
 
 (2)(b / body :name (n / name :op1 "FIFA")
-	:ARG0-of(g / govern-01
+  :ARG0-of (g / govern-01
                   :ARG1 (f2 / football)))
 
 (3)(b / body :name (n / name :op1 "FIFA")
-	:mod(i / international))
+  :mod (i / international))
 
 --------------------------------------------------
 # ::id PROXY_AFP_ENG_20020111_0093.15 ::date 2013-05-09T06:10:55 ::snt-type body ::annotator LDC-AMR-14 ::preferred
@@ -1625,7 +1625,7 @@
                  :name (n / name
                          :op1 "Brigitte"
                          :op2 "Bardot")
-	:source(c2 / country
+  :source (c2 / country
                            :name (n2 / name
                                    :op1 "France")))
 
@@ -1645,7 +1645,7 @@
                  :name (n / name
                          :op1 "Brigitte"
                          :op2 "Bardot")
-	:ARG1-of(t / turn-02
+  :ARG1-of (t / turn-02
                             :ARG2 (a3 / activist)
                             :ARG3 (p2 / person
                                     :ARG0-of (a2 / act-01))))
@@ -1719,7 +1719,7 @@
 # ::snt Head of the Korean Football Association and a FIFA vice president Chung Mong-Joon said FIFA should not intervene in the eating habits of a sovereign nation.
 # ::save-date Wed Dec 11, 2013 ::file PROXY_AFP_ENG_20020111_0093_34.txt
 (1)(p / person :name (n / name :op1 "Chung" :op2 "Mong-Joon")
-	:ARG0-of(h3 / have-org-role-91
+  :ARG0-of (h3 / have-org-role-91
                   :ARG1 (o2 / organization :name (n3 / name :op1 "FIFA"))
                   :ARG2 (p2 / president
                         :mod (v / vice))))
@@ -1732,7 +1732,7 @@
                         :topic (e / eat-01)))
 
 (3)(p / person :name (n / name :op1 "Chung" :op2 "Mong-Joon")
-	:ARG0-of(h / head-01
+  :ARG0-of (h / head-01
                   :ARG1 (o / organization :name (n2 / name :op1 "Korean" :op2 "Football" :op3 "Association"))))
 
 (4)(s / say-01
@@ -2782,10 +2782,10 @@
                                                                   :mod (w / world-region :name (n6 / name :op1 "Himalayas"))))))))
 
 (5)(s6 / state :name (n5 / name :op1 "Kashmir")
-	:mod(w / world-region :name (n6 / name :op1 "Himalayas")))
+  :mod (w / world-region :name (n6 / name :op1 "Himalayas")))
 
 (6)(s6 / state :name (n5 / name :op1 "Kashmir")
-	:ARG1-of(d3 / divide-02))
+  :ARG1-of (d3 / divide-02))
 
 (7)(s / state-01
       :ARG0 (h / headline
@@ -3566,10 +3566,10 @@
                         :ARG1 (c / country :name (n3 / name :op1 "Iran")))))
 
 (3)(a / agency :name (n / name :op1 "IRNA")
-	:mod(n2 / news))
+  :mod (n2 / news))
 
 (4)(a / agency :name (n / name :op1 "IRNA")
-	:poss(g / government-organization
+  :poss (g / government-organization
                   :ARG0-of (g2 / govern-01
                         :ARG1 (c / country :name (n3 / name :op1 "Iran")))))
 
@@ -4552,10 +4552,10 @@
                         :location (c3 / city :name (n5 / name :op1 "Montreal"))))
 
 (2)(p2 / person :name (n2 / name :op1 "MafiaBoy")
-	:ARG0-of(h / hack-04))
+  :ARG0-of (h / hack-04))
 
 (3)(p2 / person :name (n2 / name :op1 "MafiaBoy")
-	:ARG0-of(a / attack-01
+  :ARG0-of (a / attack-01
                         :ARG1 (w / website
                               :mod (c2 / country :name (n3 / name :op1 "U.S."))
                               :ARG2-of (i / include-91
@@ -4582,7 +4582,7 @@
                                     :ARG1 (u / url-entity :value "amazon.com")))
 
 (6)(p2 / person :name (n2 / name :op1 "MafiaBoy")
-	:ARG1-of(b / base-01
+  :ARG1-of (b / base-01
                         :location (c3 / city :name (n5 / name :op1 "Montreal"))))
 
 --------------------------------------------------
@@ -4656,10 +4656,10 @@
                   :time (r3 / recent))
 
 (3)(g3 / group :name (n / name :op1 "Computer" :op2 "Science" :op3 "and" :op4 "Telecommunications" :op5 "Board")
-	:mod(r2 / research))
+  :mod (r2 / research))
 
 (4)(g3 / group :name (n / name :op1 "Computer" :op2 "Science" :op3 "and" :op4 "Telecommunications" :op5 "Board")
-	:ARG1-of(f / fund-01
+  :ARG1-of (f / fund-01
                               :ARG0 (g / government-organization
                                     :ARG0-of (g2 / govern-01
                                           :ARG1 (c / country :name (n2 / name :op1 "U.S."))))))
@@ -5059,12 +5059,12 @@
 (2)(p2 / peninsula
           :name (n2 / name
                   :op1 "Kamchatka")
-	:mod(v / vast))
+  :mod (v / vast))
 
 (3)(p2 / peninsula
           :name (n2 / name
                   :op1 "Kamchatka")
-	:location(e / east
+  :location (e / east
                       :part-of (c2 / country
                                  :name (n3 / name
                                          :op1 "Russia"))
@@ -5139,12 +5139,12 @@
 (2)(p3 / platform
                                                   :name (n3 / name
                                                           :op1 "Alfa")
-	:mod(s2 / space))
+  :mod (s2 / space))
 
 (3)(p3 / platform
                                                   :name (n3 / name
                                                           :op1 "Alfa")
-	:mod(i / international))
+  :mod (i / international))
 
 (4)(e / element
   :mod (k / key)
@@ -5196,7 +5196,7 @@
 (2)(s2 / subsidiary :name (n2 / name :op1 "Kamchatenergo")
                   
                   :poss m
-	:poss(m / monopoly :name (n / name :op1 "United" :op2 "Energy" :op3 "Services")
+  :poss (m / monopoly :name (n / name :op1 "United" :op2 "Energy" :op3 "Services")
                   :mod (p / power)
                   :mod (s / state)))
 
@@ -5218,13 +5218,13 @@
 (4)(s2 / subsidiary :name (n2 / name :op1 "Kamchatenergo")
                   
                   :poss m
-	:location(r / region))
+  :location (r / region))
 
 (5)(m / monopoly :name (n / name :op1 "United" :op2 "Energy" :op3 "Services")
-	:mod(s / state))
+  :mod (s / state))
 
 (6)(m / monopoly :name (n / name :op1 "United" :op2 "Energy" :op3 "Services")
-	:mod(p / power))
+  :mod (p / power))
 
 --------------------------------------------------
 # ::id PROXY_AFP_ENG_20020126_0161.12 ::date 2013-05-19T13:47:36 ::snt-type body ::annotator LDC-AMR-14 ::preferred
@@ -6218,20 +6218,20 @@
                   
                   
                   :poss p3
-	:mod(f2 / flagship))
+  :mod (f2 / flagship))
 
 (4)(p / program :name (n2 / name :op1 "Four" :op2 "Corners")
                   
                   
                   :poss p3
-	:topic(a / affair
+  :topic (a / affair
                         :mod (c3 / current)))
 
 (5)(p / program :name (n2 / name :op1 "Four" :op2 "Corners")
                   
                   
                   :poss p3
-	:poss(p3 / publication :name (n / name :op1 "ABC")))
+  :poss (p3 / publication :name (n / name :op1 "ABC")))
 
 (6)(i / imply-01
             :ARG0 (p / program :name (n2 / name :op1 "Four" :op2 "Corners")
@@ -6535,14 +6535,14 @@
           :name (n6 / name
                   :op1 "National"
                   :op2 "Gazette")
-	:poss(g / government-organization
+  :poss (g / government-organization
                   :ARG0-of (g2 / govern-01)))
 
 (6)(n5 / newspaper
           :name (n6 / name
                   :op1 "National"
                   :op2 "Gazette")
-	:frequency(r2 / rate-entity-91
+  :frequency (r2 / rate-entity-91
                        :ARG3 (t2 / temporal-quantity
                                :unit (w / week)
                                :quant 1)))
@@ -6873,7 +6873,7 @@
 # ::snt Tajik government expert and head of the Tajik Drug Control Agency Vladimir Rakhmonov stated on 10 February 2002 that the U.S.-led war in Afghanistan had failed to stop drug trafficking across the border into Tajikistan.
 # ::save-date Fri Jan 24, 2014 ::file PROXY_AFP_ENG_20020210_0074_15.txt
 (1)(p / person :name (n / name :op1 "Vladimir" :op2 "Rakhmonov")
-	:ARG0-of(h / head-01
+  :ARG0-of (h / head-01
                   :ARG1 (g / government-organization :name (n2 / name :op1 "Tajik" :op2 "Drug" :op3 "Control" :op4 "Agency"))))
 
 (2)(s / state-01
@@ -6903,7 +6903,7 @@
                   :location (c3 / country :name (n5 / name :op1 "Afghanistan")))
 
 (4)(p / person :name (n / name :op1 "Vladimir" :op2 "Rakhmonov")
-	:ARG1-of(e / expert-41
+  :ARG1-of (e / expert-41
                   :ARG2 (g2 / government-organization
                         :ARG0-of (g3 / govern-01
                               :ARG1 (c / country :name (n3 / name :op1 "Tajikistan"))))))
@@ -7994,7 +7994,7 @@
 (1)(a2 / aircraft-type
                           :name (n3 / name
                                   :op1 "Rafale")
-	:ARG1-of(m2 / make-01
+  :ARG1-of (m2 / make-01
                                      :ARG0 (c2 / country
                                              :name (n4 / name
                                                      :op1 "France"))))
@@ -8096,7 +8096,7 @@
 (6)(a2 / aircraft-type
                           :name (n3 / name
                                   :op1 "Rafale")
-	:ARG0-of(f / fight-01))
+  :ARG0-of (f / fight-01))
 
 (7)(a3 / aircraft-type
                                                           :quant 4
@@ -8287,10 +8287,10 @@
                                     :ARG1-of (a2 / age-01))
 
 (4)(a / aircraft-type :name (n4 / name :op1 "F-15K")
-	:ARG1-of(a2 / age-01))
+  :ARG1-of (a2 / age-01))
 
 (5)(a / aircraft-type :name (n4 / name :op1 "F-15K")
-	:poss(c3 / company :name (n5 / name :op1 "Boeing")))
+  :poss (c3 / company :name (n5 / name :op1 "Boeing")))
 
 (6)(b / buy-01
                               :ARG0 g
@@ -8407,11 +8407,11 @@
                         :ARG0 (c5 / company :name (n7 / name :op1 "Sukhoi"))))
 
 (3)(p3 / plane :name (n5 / name :op1 "Su-32")
-	:ARG1-of(m / make-01
+  :ARG1-of (m / make-01
                         :ARG0 (c5 / company :name (n7 / name :op1 "Sukhoi"))))
 
 (4)(p3 / plane :name (n5 / name :op1 "Su-32")
-	:source(c4 / country :name (n6 / name :op1 "Russia")))
+  :source (c4 / country :name (n6 / name :op1 "Russia")))
 
 (5)(p / plane :name (n / name :op1 "Rafale")
                   :poss (f / firm :name (n2 / name :op1 "Dassault")))
@@ -8452,7 +8452,7 @@
                               :mod (p3 / political)))
 
 (3)(p / person :name (n / name :op1 "Kang" :op2 "Chang-Sung")
-	:ARG0-of(h / have-org-role-91
+  :ARG0-of (h / have-org-role-91
                   :ARG1 (p2 / political-party :name (n2 / name :op1 "Grand" :op2 "National" :op3 "Party")
                         :ARG0-of (o / oppose-01)
                         :poss p)))
@@ -8487,7 +8487,7 @@
 (6)(p2 / political-party :name (n2 / name :op1 "Grand" :op2 "National" :op3 "Party")
                         
                         :poss p
-	:ARG0-of(o / oppose-01))
+  :ARG0-of (o / oppose-01))
 
 (7)(r / reason-01
                               :ARG0 (g2 / government-organization :name (n3 / name :op1 "Defense" :op2 "Ministry"))
@@ -8497,7 +8497,7 @@
                               :mod (p3 / political))
 
 (8)(p / person :name (n / name :op1 "Kang" :op2 "Chang-Sung")
-	:ARG0-of(s / state-01
+  :ARG0-of (s / state-01
                   :ARG1 (s2 / suspect-01
                         :ARG0 p2
                         :ARG1 (r / reason-01
@@ -8510,7 +8510,7 @@
 (9)(p2 / political-party :name (n2 / name :op1 "Grand" :op2 "National" :op3 "Party")
                         
                         :poss p
-	:poss(p / person :name (n / name :op1 "Kang" :op2 "Chang-Sung")
+  :poss (p / person :name (n / name :op1 "Kang" :op2 "Chang-Sung")
             :ARG0-of (s / state-01
                   :ARG1 (s2 / suspect-01
                         :ARG0 p2
@@ -9312,14 +9312,14 @@
                   :location (c2 / country :name (n6 / name :op1 "United" :op2 "States")))
 
 (3)(a / agency :name (n2 / name :op1 "Yonhap")
-	:mod(n3 / news))
+  :mod (n3 / news))
 
 (4)(i / inspect-01
                               :ARG0 (o2 / organization :name (n5 / name :op1 "IAEA"))
                               :time (d2 / date-entity :year 2002 :month 8))
 
 (5)(a / agency :name (n2 / name :op1 "Yonhap")
-	:mod(n4 / nation))
+  :mod (n4 / nation))
 
 (6)(t / tell-01
       :ARG0 (p4 / person
@@ -9825,11 +9825,11 @@
                         :ARG0 c2)))
 
 (6)(c2 / company :name (n2 / name :op1 "Hindustan" :op2 "Aeronautics" :op3 "Limited")
-	:ARG1-of(b / base-01
+  :ARG1-of (b / base-01
                               :location (c4 / city :name (n4 / name :op1 "Bangalore"))))
 
 (7)(c2 / company :name (n2 / name :op1 "Hindustan" :op2 "Aeronautics" :op3 "Limited")
-	:ARG1-of(o / own-01
+  :ARG1-of (o / own-01
                               :ARG0 (c3 / country :name (n3 / name :op1 "India"))))
 
 (8)(s / state-01
@@ -10360,14 +10360,14 @@
 # ::snt An earlier 340 million United States dollar plan to upgrade India's MiG-21 fighter jets was delayed by more than 5 years.
 # ::save-date Wed Dec 11, 2013 ::file PROXY_AFP_ENG_20020404_0305_20.txt
 (1)(j / jet :name (n / name :op1 "MiG-21")
-	:poss(c / country :name (n2 / name :op1 "India")))
+  :poss (c / country :name (n2 / name :op1 "India")))
 
 (2)(j / jet :name (n / name :op1 "MiG-21")
                         :poss (c / country :name (n2 / name :op1 "India"))
                         :ARG0-of (f / fight-01))
 
 (3)(j / jet :name (n / name :op1 "MiG-21")
-	:ARG0-of(f / fight-01))
+  :ARG0-of (f / fight-01))
 
 (4)(d / delay-01
       :ARG1 (p / plan-01
@@ -10577,7 +10577,7 @@
 (2)(j2 / jet :name (n4 / name :op1 "HJT-36")
                               
                               :poss c2
-	:poss(c2 / country :name (n3 / name :op1 "India")))
+  :poss (c2 / country :name (n3 / name :op1 "India")))
 
 (3)(s / state-01
       :ARG0 (p / person :name (n / name :op1 "N.R." :op2 "Mohanty"))
@@ -10616,7 +10616,7 @@
 (5)(j2 / jet :name (n4 / name :op1 "HJT-36")
                               
                               :poss c2
-	:mod(i / intermediate))
+  :mod (i / intermediate))
 
 (6)(f / fly-01
                         :ARG1 (j2 / jet :name (n4 / name :op1 "HJT-36")
@@ -10633,7 +10633,7 @@
 (8)(j2 / jet :name (n4 / name :op1 "HJT-36")
                               
                               :poss c2
-	:purpose(t / train-01))
+  :purpose (t / train-01))
 
 --------------------------------------------------
 # ::id PROXY_AFP_ENG_20020404_0305.26 ::date 2013-05-28T15:58:05 ::snt-type body ::annotator LDC-AMR-14 ::preferred
@@ -10703,7 +10703,7 @@
                         :degree (e / excessive))))
 
 (2)(p / political-party :name (n2 / name :op1 "Liberal" :op2 "Party")
-	:ARG0-of(o3 / oppose-01))
+  :ARG0-of (o3 / oppose-01))
 
 (3)(h / have-org-role-91
                   :ARG1 (p / political-party :name (n2 / name :op1 "Liberal" :op2 "Party")
@@ -10740,7 +10740,7 @@
                         :degree (e / excessive)))))
 
 (6)(p / political-party :name (n2 / name :op1 "Liberal" :op2 "Party")
-	:mod(c2 / country :name (n3 / name :op1 "Japan")))
+  :mod (c2 / country :name (n3 / name :op1 "Japan")))
 
 (7)(b / build-05
                         :ARG0 c3
@@ -10777,10 +10777,10 @@
                   :time (o2 / overnight))
 
 (2)(p / political-party :name (n2 / name :op1 "Liberal" :op2 "Party")
-	:mod(c2 / country :name (n3 / name :op1 "Japan")))
+  :mod (c2 / country :name (n3 / name :op1 "Japan")))
 
 (3)(p / political-party :name (n2 / name :op1 "Liberal" :op2 "Party")
-	:ARG0-of(o3 / oppose-01))
+  :ARG0-of (o3 / oppose-01))
 
 (4)(p3 / person :name (n / name :op1 "Ichiro" :op2 "Ozawa")
             :ARG0-of (h / have-org-role-91
@@ -11266,7 +11266,7 @@
                         :ARG1 (c2 / country :name (n5 / name :op1 "China"))))
 
 (3)(n2 / newspaper :name (n3 / name :op1 "Sankei" :op2 "Shimbun")
-	:mod(c / conservative))
+  :mod (c / conservative))
 
 (4)(t2 / threaten-01
             :ARG0 (p / person :name (n / name :op1 "Ozawa"))
@@ -11294,7 +11294,7 @@
                         :ARG1 (c2 / country :name (n5 / name :op1 "China"))))))
 
 (6)(n2 / newspaper :name (n3 / name :op1 "Sankei" :op2 "Shimbun")
-	:frequency(t / temporal-quantity :quant 1
+  :frequency (t / temporal-quantity :quant 1
                   :unit (d / day)))
 
 --------------------------------------------------
@@ -11357,13 +11357,13 @@
           :name (n2 / name
                   :op1 "Asahi"
                   :op2 "Shimbun")
-	:ARG0-of(i / influence-01))
+  :ARG0-of (i / influence-01))
 
 (3)(n / newspaper
           :name (n2 / name
                   :op1 "Asahi"
                   :op2 "Shimbun")
-	:frequency(t / temporal-quantity
+  :frequency (t / temporal-quantity
                        :unit (d / day)
                        :quant 1))
 
@@ -12692,7 +12692,7 @@
           :name (n / name
                   :op1 "Brian"
                   :op2 "Burnell")
-	:ARG0-of(w / work-01
+  :ARG0-of (w / work-01
                      :ARG1 (p2 / program
                              :mod (m / military)
                              :mod (n2 / nucleus)
@@ -12704,7 +12704,7 @@
           :name (n / name
                   :op1 "Brian"
                   :op2 "Burnell")
-	:ARG0-of(e / engineer-01
+  :ARG0-of (e / engineer-01
                      :mod (f / former)))
 
 (4)(s / state-01
@@ -12873,7 +12873,7 @@
 # ::snt The Telegraph stated that opposition Conservative Party defense spokesman Bernard Jenkin immediately called for explanations from the Labour government calling the documents a monstrous free gift to terrorists.
 # ::save-date Wed Dec 11, 2013 ::file PROXY_AFP_ENG_20020414_0542_16.txt
 (1)(p2 / person :name (n4 / name :op1 "Bernard" :op2 "Jenkin")
-	:ARG0-of(c2 / call-01
+  :ARG0-of (c2 / call-01
                         :ARG1 (d2 / document)
                         :ARG2 (t / thing
                               :ARG1-of (g3 / gift-01
@@ -12916,7 +12916,7 @@
                               :topic (d / defense))))
 
 (4)(p2 / person :name (n4 / name :op1 "Bernard" :op2 "Jenkin")
-	:ARG0-of(h / have-org-role-91
+  :ARG0-of (h / have-org-role-91
                         :ARG1 (p / political-party :name (n2 / name :op1 "Conservative" :op2 "Party")
                               :ARG0-of (o / oppose-01))
                         :ARG2 (s2 / spokesman
@@ -14331,13 +14331,13 @@
                                                 :mod (c3 / country :name (n7 / name :op1 "France")))))))
 
 (2)(p / person :name (n / name :op1 "Michael" :op2 "Marks")
-	:ARG0-of(h2 / have-org-role-91
+  :ARG0-of (h2 / have-org-role-91
                   :ARG1 c
                   :ARG2 (m / manage-01
                         :mod (g / general))))
 
 (3)(p / person :name (n / name :op1 "Michael" :op2 "Marks")
-	:ARG0-of(h / have-org-role-91
+  :ARG0-of (h / have-org-role-91
                   :ARG1 (c / company :name (n2 / name :op1 "Boeing" :op2 "Corporation"))
                   :ARG2 (p3 / president
                         :mod (v / vice))))

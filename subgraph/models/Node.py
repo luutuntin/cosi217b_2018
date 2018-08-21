@@ -5,7 +5,7 @@
 class Node(object):
     def __init__(self, name='', ful_name='', next_nodes=[], parents = set(), edge_label='',
                  is_entity=False, entity_type='', entity_name='', wiki='',
-                 polarity=False, content=''):
+                 polarity=False, content='',original_content = ''):
         self.name = name               # Node name (acronym)
         self.ful_name = ful_name       # Full name of the node
         self.next_nodes = next_nodes   # Next nodes (list)
@@ -17,6 +17,7 @@ class Node(object):
         self.wiki = wiki               # Entity Wikipedia title
         self.polarity = polarity       # Whether the node is polarity
         self.content = content         # Original content
+        self.original_content = original_content
 
     def __str__(self):
         if not self.ful_name:
