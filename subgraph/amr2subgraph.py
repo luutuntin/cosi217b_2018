@@ -340,9 +340,9 @@ def revise_node(content, amr_nodes_content, amr_nodes_acronym):
         amr_nodes_content[content].next_nodes = arg_nodes
 
 
-if __name__ == '__main__':
-    f = open('amr-release-1.0-training-proxy.txt','r')
-    g = open('amr-release-1.0-training-proxy-subgraph.txt','w')
+def main(filename):
+    f = open(filename,'r')
+    g = open(filename+'.sg','w')
     raw_amrs = re.split("\n\n",f.read().strip())
     for raw_amr in raw_amrs:
         g.write('-'*50+'\n')
@@ -359,4 +359,9 @@ if __name__ == '__main__':
             continue
         amr_nodes_acronym, path = amr_reader(raw_amr,g)
     f.close()
-    g.close()
+    g.close()    
+
+
+if __name__ == '__main__':
+    filename = sys.argv[1]
+    main(filename)
